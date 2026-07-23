@@ -30,12 +30,12 @@ def quantize(layer):
 case = 0
 
 case_dir = Path(f"results/case{case:03d}")
-
 case_dir.mkdir(parents=True)
 
-prompts_dir = case_dir / "prompts"
-
 metadata_file = case_dir / "metadata.txt"
+
+prompts_dir = case_dir / "prompts"
+prompts_dir.mkdir(parents=True, exist_ok=True)
 
 original_type = torch.float16
 
@@ -50,116 +50,97 @@ tokenizer = AutoTokenizer.from_pretrained(model_name)
 with open(metadata_file, "w") as f:
     f.write(f"Device: {device}\nModel: {model_name}\nOriginal type: {original_type}\nQuantization: {q_type}\n")
 
-prompts = [
-    "Explain gravity.",
-    "What is 173 × 29?",
-    "Write a Python function to reverse a list.",
-    "Translate 'Good morning' into Bulgarian.",
-    "Why is the sky blue?"
-]
+prompts = ["Explain gravity.", "What is 173 × 29?", "Write a Python function to reverse a list.",
+           "Translate 'Good morning' into Bulgarian.", "Why is the sky blue?"]
 
-prompt_results, results = [], []
-
-model = AutoModelForCausalLM.from_pretrained(
-    model_name,
-    torch_dtype=original_type
-)
+model = AutoModelForCausalLM.from_pretrained(model_name, torch_dtype=original_type)
 model = model.to(device)
+global_heatmap_mse = []
 
 for i, prompt in enumerate(prompts):
-    curr_prompt = prompts_dir / f"prompt{i}"
+    prompt_dir = prompts_dir / f"prompt{i:03d}"
+    prompt_dir.mkdir(parents=True, exist_ok=True)
+    prompt_heatmap_mse = []
 
-    with open(curr_prompt / "content.txt") as f:
-        f.write(prompt)
+    with open(prompt_dir / "content.txt", "w") as f:
+        f.write(f"{prompt}\n")
 
-    result = ""
     inputs = tokenizer(prompt, return_tensors="pt")
-
     inputs = {k: v.to(device) for k, v in inputs.items()}
 
-    outputs_fp = model(
-        **inputs,
-        output_hidden_states=True
-    )
+    outputs_fp = model(**inputs, output_hidden_states=True)
     baseline_hidden = outputs_fp.hidden_states
 
     for j in range(len(model.model.layers)):
-        result += f"Quantized layer {j}:\n"
-        model_q = AutoModelForCausalLM.from_pretrained(
-            model_name,
-            torch_dtype=original_type
-        )
+        result = ""
+        q_layer = prompt_dir / f"q_layer{j:03d}"
+        q_layer.mkdir(exist_ok=True)
+
+        damage_plot = {"layer": [], "mse": [], "cosine": []}
+
+        model_q = AutoModelForCausalLM.from_pretrained(model_name, torch_dtype=original_type)
         model_q = model_q.to(device)
         quantize(model_q.model.layers[j])
-        outputs_q = model_q(
-            **inputs,
-            output_hidden_states=True
-        )
+        outputs_q = model_q(**inputs, output_hidden_states=True)
 
         for k, (fp, q) in enumerate(zip(baseline_hidden, outputs_q.hidden_states)):
             d = damage(fp, q)
-            cos = torch.nn.functional.cosine_similarity(
-                fp.flatten(),
-                q.flatten(),
-                dim=0
-            ).item()
+            cos = torch.nn.functional.cosine_similarity(fp.flatten(), q.flatten(), 0).item()
             result += f"{k:02d}; MSE: {d:.4f}; cos: {cos:.4f}\n"
 
-            results.append({
-                "prompt": prompt,
-                "quantized_layer": j,
-                "measured_layer": k,
-                "mse": d,
-                "cosine": cos
-            })
+            damage_plot["layer"].append(k), damage_plot["mse"].append(d), damage_plot["cosine"].append(cos)
+            prompt_heatmap_mse.append({"quantized_layer": j, "measured_layer": k, "mse": d})
+            global_heatmap_mse.append({"prompt": prompt, "quantized_layer": j, "measured_layer": k, "mse": d})
 
-        result += "\n"
-        prompt_results.append(result)
+        with open(q_layer / "results.txt", "w") as f:
+            f.write(result)
 
-df = pd.DataFrame(results)
+        fig, ax1 = plt.subplots(figsize=(7, 4))
+
+        ax1.plot(damage_plot["layer"], damage_plot["mse"], marker="o", color="tab:red")
+
+        ax1.set_xlabel("Measured layer")
+        ax1.set_ylabel("MSE", color="tab:red")
+
+        ax2 = ax1.twinx()
+
+        ax2.plot(damage_plot["layer"], damage_plot["cosine"], marker="s", color="tab:blue")
+
+        ax2.set_ylabel("Cosine similarity", color="tab:blue")
+
+        plt.title("Damage per layer")
+
+        plt.grid(True)
+
+        plt.savefig(q_layer / "damage_plot.png")
+
+        plt.close()
+
+    df = pd.DataFrame(prompt_heatmap_mse)
+
+    pivot = df.pivot(index="quantized_layer", columns="measured_layer", values="mse")
+
+    plt.figure(figsize=(10, 8))
+    plt.imshow(pivot, aspect="auto")
+    plt.xlabel("Measured layer")
+    plt.ylabel("Quantized layer")
+    plt.colorbar(label="MSE")
+    plt.savefig(prompt_dir / "heatmap_mse.png", bbox_inches="tight")
+
+df = pd.DataFrame(global_heatmap_mse)
 df = (
     df.groupby(
         ["quantized_layer", "measured_layer"],
         as_index=False
-    )[["mse", "cosine"]]
+    )[["mse"]]
     .mean()
 )
 
-pivot = df.pivot(
-    index="quantized_layer",
-    columns="measured_layer",
-    values="mse"
-)
+pivot = df.pivot(index="quantized_layer", columns="measured_layer", values="mse")
 
 plt.figure(figsize=(10, 8))
 plt.imshow(pivot, aspect="auto")
 plt.xlabel("Measured layer")
 plt.ylabel("Quantized layer")
 plt.colorbar(label="MSE")
-plt.savefig(
-    case_dir / "heatmap_mse.png",
-    bbox_inches="tight"
-)
-
-for j, (prompt, result) in enumerate(zip(prompts, prompt_results)):
-    with open(prompts_dir / f"prompt{j}.txt", "w") as f:
-        f.write(prompt + "\n" + result + "\n")
-
-for prompt in df["prompt"].unique():
-    for layer in df["quantized_layer"].unique():
-        subset = df[df["quantized_layer"] == layer]
-
-        plt.figure(figsize=(6, 4))
-
-        plt.plot(
-            subset["measured_layer"],
-            subset["mse"],
-            marker="o"
-        )
-
-        plt.title(f"Quantized layer {layer}")
-        plt.xlabel("Measured layer")
-        plt.ylabel("Damage")
-
-        plt.grid(True)
-        plt.savefig(case_dir / f"layer{layer:02d}.png", bbox_inches="tight")
+plt.savefig(case_dir / "heatmap_mse.png", bbox_inches="tight")
