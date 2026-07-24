@@ -9,10 +9,6 @@ import pandas as pd
 from pathlib import Path
 
 
-def damage(hidden_fp, hidden_q):
-    return torch.mean((hidden_fp - hidden_q) ** 2).item()
-
-
 def quantize_tensor(weight):
     scale = weight.abs().max() / torch.iinfo(q_type).max
     return torch.round(weight / scale) * scale
@@ -27,7 +23,7 @@ def quantize(layer):
                 weight.copy_(quantized)
 
 
-case = 0
+case = 1
 
 case_dir = Path(f"results/case{case:03d}")
 case_dir.mkdir(parents=True)
@@ -43,7 +39,7 @@ q_type = torch.int8
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
-model_name = ["HuggingFaceTB/SmolLM2-360M", "Qwen/Qwen2.5-3B", "meta-llama/Llama-3.1-8B-Instruct"][0]
+model_name = ["HuggingFaceTB/SmolLM2-360M", "Qwen/Qwen2.5-3B", "meta-llama/Llama-3.1-8B-Instruct"][1]
 
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 
@@ -63,7 +59,7 @@ for i, prompt in enumerate(prompts):
     prompt_dir.mkdir(parents=True, exist_ok=True)
     prompt_heatmap_mse = []
 
-    with open(prompt_dir / "content.txt", "w") as f:
+    with open(prompt_dir / "content.txt", "w", encoding="utf-8") as f:
         f.write(f"{prompt}\n")
 
     inputs = tokenizer(prompt, return_tensors="pt")
@@ -84,7 +80,7 @@ for i, prompt in enumerate(prompts):
             outputs_q = model_q(**inputs, output_hidden_states=True)
 
             for k, (fp, q) in enumerate(zip(baseline_hidden, outputs_q.hidden_states)):
-                d = damage(fp, q)
+                d = torch.mean((fp - q) ** 2).item()
                 cos = torch.nn.functional.cosine_similarity(fp.flatten(), q.flatten(), 0).item()
                 result += f"{k:02d}; MSE: {d:.4f}; cos: {cos:.4f}\n"
 
@@ -124,7 +120,7 @@ for i, prompt in enumerate(prompts):
     pivot = df.pivot(index="quantized_layer", columns="measured_layer", values="mse")
 
     plt.figure(figsize=(10, 8))
-    # plt.imshow(pivot, aspect="auto")
+    plt.imshow(pivot, aspect="auto", cmap="viridis")
     plt.xticks(range(len(pivot.columns)))
     plt.yticks(range(len(pivot.index)))
     plt.xlabel("Measured layer")
@@ -133,13 +129,7 @@ for i, prompt in enumerate(prompts):
     plt.savefig(prompt_dir / "heatmap_mse.png", bbox_inches="tight")
 
 df = pd.DataFrame(global_heatmap_mse)
-df = (
-    df.groupby(
-        ["quantized_layer", "measured_layer"],
-        as_index=False
-    )[["mse"]]
-    .mean()
-)
+df = (df.groupby(["quantized_layer", "measured_layer"], as_index=False)[["mse"]].mean())
 
 pivot = df.pivot(index="quantized_layer", columns="measured_layer", values="mse")
 
