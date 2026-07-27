@@ -35,7 +35,7 @@ def quantize(layer):
                 weight.copy_(quantized)
 
 
-case = 2
+case = 7
 
 case_dir = Path(f"results/case{case:03d}")
 case_dir.mkdir(parents=True)
@@ -45,17 +45,17 @@ metadata_file = case_dir / "metadata.txt"
 prompts_dir = case_dir / "prompts"
 prompts_dir.mkdir(parents=True, exist_ok=True)
 
-original_type = (torch.float16, torch.float32, torch.float64)[0]
+original_type = (torch.float16, torch.float32, torch.float64)[1]
 
 q_type = ("int", "float")[0]
 
-int_bits = (2, 4, 8, 16, 32)[2]
+int_bits = (2, 4, 8, 16, 32)[0]
 
 float_sign_bits, float_exp_bits, float_mantissa_bits = 1, 8, 7
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
-model_name = ("HuggingFaceTB/SmolLM2-360M", "Qwen/Qwen2.5-3B")[1]
+model_name = ("HuggingFaceTB/SmolLM2-360M", "HuggingFaceTB/SmolLM2-1.7B-Instruct", "HuggingFaceTB/SmolLM3-3B", "Qwen/Qwen2.5-3B", "Qwen/Qwen2.5-7B-Instruct", "microsoft/Phi-3-mini-4k-instruct", "mistralai/Mistral-7B-Instruct-v0.3", "google/gemma-2-2b-it")[0]
 
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 
