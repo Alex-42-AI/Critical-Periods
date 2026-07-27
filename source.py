@@ -9,9 +9,21 @@ import pandas as pd
 from pathlib import Path
 
 
-def quantize_tensor(weight):
-    scale = weight.abs().max() / torch.iinfo(q_type).max
+def quantize_int(weight):
+    max_int = 2 ** (int_bits - 1) - 1
+    scale = weight.abs().max() / max_int
+
     return torch.round(weight / scale) * scale
+
+
+def quantize_float(weight):
+    # TODO: Implement float quantization
+
+    raise NotImplementedError
+
+
+def quantize_tensor(weight):
+    return (quantize_int if q_type == "int" else quantize_float)(weight)
 
 
 def quantize(layer):
@@ -23,7 +35,7 @@ def quantize(layer):
                 weight.copy_(quantized)
 
 
-case = 1
+case = 2
 
 case_dir = Path(f"results/case{case:03d}")
 case_dir.mkdir(parents=True)
@@ -33,18 +45,28 @@ metadata_file = case_dir / "metadata.txt"
 prompts_dir = case_dir / "prompts"
 prompts_dir.mkdir(parents=True, exist_ok=True)
 
-original_type = torch.float16
+original_type = (torch.float16, torch.float32, torch.float64)[0]
 
-q_type = torch.int8
+q_type = ("int", "float")[0]
+
+int_bits = (2, 4, 8, 16, 32)[2]
+
+float_sign_bits, float_exp_bits, float_mantissa_bits = 1, 8, 7
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
-model_name = ["HuggingFaceTB/SmolLM2-360M", "Qwen/Qwen2.5-3B", "meta-llama/Llama-3.1-8B-Instruct"][1]
+model_name = ("HuggingFaceTB/SmolLM2-360M", "Qwen/Qwen2.5-3B")[1]
 
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 
 with open(metadata_file, "w") as f:
-    f.write(f"Device: {device}\nModel: {model_name}\nOriginal type: {original_type}\nQuantization: {q_type}\n")
+    f.write(f"Device: {device}\nModel: {model_name}\nOriginal type: {original_type}\nQuantization: {q_type}")
+
+    if q_type == "int":
+        f.write(f"{int_bits}\n")
+
+    else:
+        f.write(f"\nSign: {float_sign_bits}\nExponent: {float_exp_bits}\nMantissa: {float_mantissa_bits}\n")
 
 prompts = ["Explain gravity.", "What is 173 × 29?", "Write a Python function to reverse a list.",
            "Translate 'Good morning' into Bulgarian.", "Why is the sky blue?"]
