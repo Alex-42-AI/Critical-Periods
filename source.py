@@ -35,7 +35,7 @@ def quantize(layer):
                 weight.copy_(quantized)
 
 
-case = 7
+case = 0
 
 case_dir = Path(f"results/case{case:03d}")
 case_dir.mkdir(parents=True)
@@ -45,17 +45,19 @@ metadata_file = case_dir / "metadata.txt"
 prompts_dir = case_dir / "prompts"
 prompts_dir.mkdir(parents=True, exist_ok=True)
 
-original_type = (torch.float16, torch.float32, torch.float64)[1]
+original_type = (torch.float16, torch.float32, torch.float64)[0]
 
 q_type = ("int", "float")[0]
 
-int_bits = (2, 4, 8, 16, 32)[0]
+int_bits = (2, 4, 8, 16, 32)[2]
 
 float_sign_bits, float_exp_bits, float_mantissa_bits = 1, 8, 7
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
-model_name = ("HuggingFaceTB/SmolLM2-360M", "HuggingFaceTB/SmolLM2-1.7B-Instruct", "HuggingFaceTB/SmolLM3-3B", "Qwen/Qwen2.5-3B", "Qwen/Qwen2.5-7B-Instruct", "microsoft/Phi-3-mini-4k-instruct", "mistralai/Mistral-7B-Instruct-v0.3", "google/gemma-2-2b-it")[0]
+model_name = ("HuggingFaceTB/SmolLM2-360M", "HuggingFaceTB/SmolLM2-1.7B-Instruct", "HuggingFaceTB/SmolLM3-3B",
+              "Qwen/Qwen2.5-3B", "Qwen/Qwen2.5-7B-Instruct", "microsoft/Phi-3-mini-4k-instruct",
+              "mistralai/Mistral-7B-Instruct-v0.3", "google/gemma-2-2b-it")[0]
 
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 
@@ -73,7 +75,9 @@ prompts = ["Explain gravity.", "What is 173 × 29?", "Write a Python function to
 
 global_heatmap_mse = []
 model = AutoModelForCausalLM.from_pretrained(model_name, torch_dtype=original_type).to(device)
+model.eval()
 model_q = AutoModelForCausalLM.from_pretrained(model_name, torch_dtype=original_type).to(device)
+model_q.eval()
 original_layers = [{k: v.clone() for k, v in layer.state_dict().items()} for layer in model_q.model.layers]
 
 for i, prompt in enumerate(prompts):
@@ -87,10 +91,11 @@ for i, prompt in enumerate(prompts):
     inputs = tokenizer(prompt, return_tensors="pt")
     inputs = {k: v.to(device) for k, v in inputs.items()}
 
-    outputs_fp = model(**inputs, output_hidden_states=True)
-    baseline_hidden = outputs_fp.hidden_states
+    with torch.inference_mode():
+        outputs_fp = model(**inputs, output_hidden_states=True)
+        baseline_hidden = outputs_fp.hidden_states
 
-    for j, layer in enumerate(model_q.model.layers):
+    for j, layer in enumerate(model_q.model.layers[:-1]):
         result = ""
         q_layer = prompt_dir / f"q_layer{j:03d}"
         q_layer.mkdir(exist_ok=True)
@@ -99,7 +104,8 @@ for i, prompt in enumerate(prompts):
 
         try:
             quantize(layer)
-            outputs_q = model_q(**inputs, output_hidden_states=True)
+            with torch.inference_mode():
+                outputs_q = model_q(**inputs, output_hidden_states=True)
 
             for k, (fp, q) in enumerate(zip(baseline_hidden, outputs_q.hidden_states)):
                 d = torch.mean((fp - q) ** 2).item()
