@@ -54,9 +54,9 @@ prompts = ["Explain gravity.", "What is 173 × 29?", "Write a Python function to
            "Translate 'Good morning' into Bulgarian.", "Why is the sky blue?"]
 
 global_heatmap_mse = []
-model = AutoModelForCausalLM.from_pretrained(model_name, torch_dtype=original_type).to(device)
+model = AutoModelForCausalLM.from_pretrained(model_name, dtype=original_type).to(device)
 model.eval()
-model_q = AutoModelForCausalLM.from_pretrained(model_name, torch_dtype=original_type).to(device)
+model_q = AutoModelForCausalLM.from_pretrained(model_name, dtype=original_type).to(device)
 model_q.eval()
 original_layers = [{k: v.clone() for k, v in layer.state_dict().items()} for layer in model_q.model.layers]
 
