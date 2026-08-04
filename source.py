@@ -53,9 +53,9 @@ for m in ["Qwen/Qwen2.5-7B-Instruct", "microsoft/Phi-3-mini-4k-instruct"]:
     for int_bits in [32, 16, 8, 4, 2]:
         experiments.append((m, torch.float64, int_bits))
 
-case = 39
+case = 54
 
-for (model_name, original_type, q_bits) in experiments:
+for (model_name, original_type, q_bits) in experiments[15:]:
     print(model_name, original_type, q_bits)
     case_dir = Path(f"results/case{case:03d}")
     case_dir.mkdir(parents=True)
