@@ -66,17 +66,12 @@ for (model_name, original_type, q_bits) in experiments[15:]:
     prompts_dir.mkdir(parents=True, exist_ok=True)
     case += 1
 
-    tokenizer = AutoTokenizer.from_pretrained(model_name)
-
     with open(metadata_file, "w") as f:
         f.write(f"Device: {device}\nModel: {model_name}\nOriginal type: {original_type}\nQuantization: int{q_bits}\n")
 
     global_heatmap_mse = []
-    model = AutoModelForCausalLM.from_pretrained(model_name, dtype=original_type).to(device)
-    model.eval()
-    model_q = AutoModelForCausalLM.from_pretrained(model_name, dtype=original_type).to(device)
-    model_q.eval()
-    original_layers = [{k: v.clone() for k, v in layer.state_dict().items()} for layer in model_q.model.layers]
+
+    tokenizer = AutoTokenizer.from_pretrained(model_name)
 
     for i, prompt in enumerate(prompts):
         prompt_dir = prompts_dir / f"prompt{i:03d}"
@@ -89,16 +84,26 @@ for (model_name, original_type, q_bits) in experiments[15:]:
         inputs = tokenizer(prompt, return_tensors="pt")
         inputs = {k: v.to(device) for k, v in inputs.items()}
 
+        model = AutoModelForCausalLM.from_pretrained(model_name, dtype=original_type).to(device)
+        model.eval()
+
         with torch.inference_mode():
             outputs_fp = model(**inputs, output_hidden_states=True)
             baseline_hidden = outputs_fp.hidden_states
 
+        del model, outputs_fp
+
+        model_q = AutoModelForCausalLM.from_pretrained(model_name, dtype=original_type).to(device)
+        model_q.eval()
+
         for j, layer in enumerate(model_q.model.layers[:-1]):
-            result = ""
+            result = []
             q_layer = prompt_dir / f"q_layer{j:03d}"
             q_layer.mkdir(exist_ok=True)
-
             damage_plot = {"layer": [], "mse": [], "cosine": []}
+
+            with torch.no_grad():
+                restore_layer = {k: v.clone() for k, v in layer.state_dict().items()}
 
             try:
                 quantize(layer)
@@ -109,17 +114,25 @@ for (model_name, original_type, q_bits) in experiments[15:]:
                 for k, (fp, q) in enumerate(zip(baseline_hidden, outputs_q.hidden_states)):
                     d = torch.mean((fp - q) ** 2).item()
                     cos = torch.nn.functional.cosine_similarity(fp.flatten(), q.flatten(), 0).item()
-                    result += f"{k:02d}; MSE: {d:.4f}; cos: {cos:.4f}\n"
+                    result.append(f"{k:02d}; MSE: {d:.4f}; cos: {cos:.4f}\n")
 
                     damage_plot["layer"].append(k), damage_plot["mse"].append(d), damage_plot["cosine"].append(cos)
                     prompt_heatmap_mse.append({"quantized_layer": j, "measured_layer": k, "mse": d})
                     global_heatmap_mse.append({"prompt": prompt, "quantized_layer": j, "measured_layer": k, "mse": d})
 
                 with open(q_layer / "results.txt", "w") as f:
-                    f.write(result)
+                    f.write("".join(result))
 
             finally:
-                layer.load_state_dict(original_layers[j])
+                layer.load_state_dict(restore_layer)
+
+                del restore_layer
+
+                try:
+                    del outputs_q
+
+                except NameError:
+                    ...
 
             fig, ax1 = plt.subplots(figsize=(7, 4))
 
@@ -142,6 +155,16 @@ for (model_name, original_type, q_bits) in experiments[15:]:
 
             plt.close()
 
+            del damage_plot
+
+        del model_q, baseline_hidden, inputs
+
+        collect()
+
+        if p:
+            torch.cuda.empty_cache()
+            torch.cuda.synchronize()
+
         df = pd.DataFrame(prompt_heatmap_mse)
 
         pivot = df.pivot(index="quantized_layer", columns="measured_layer", values="mse")
@@ -155,6 +178,8 @@ for (model_name, original_type, q_bits) in experiments[15:]:
         plt.colorbar(label="MSE")
         plt.savefig(prompt_dir / "heatmap_mse.png", bbox_inches="tight")
 
+    del tokenizer
+
     df = pd.DataFrame(global_heatmap_mse)
     df = (df.groupby(["quantized_layer", "measured_layer"], as_index=False)[["mse"]].mean())
 
@@ -166,17 +191,3 @@ for (model_name, original_type, q_bits) in experiments[15:]:
     plt.ylabel("Quantized layer")
     plt.colorbar(label="MSE")
     plt.savefig(case_dir / "heatmap_mse.png", bbox_inches="tight")
-
-    del model, model_q, original_layers, tokenizer
-
-    try:
-        del outputs_q, outputs_fp, baseline_hidden, inputs
-
-    except NameError:
-        ...
-
-    collect()
-
-    if p:
-        torch.cuda.empty_cache()
-        torch.cuda.synchronize()
