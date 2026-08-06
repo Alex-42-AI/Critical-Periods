@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 
 import torch
 
-import pandas as pd
+from pandas import DataFrame
 
 from pathlib import Path
 
@@ -29,9 +29,9 @@ def quantize(layer):
 
 device = "cuda" if (p := torch.cuda.is_available()) else "cpu"
 
-# original_type = (torch.float16, torch.float32, torch.float64)[0]
+# original_type = (torch.float16, torch.float32, torch.float64)[2]
 #
-# q_bits = (2, 4, 8, 16, 32)[2]
+# q_bits = (2, 4, 8, 16, 32)[0]
 #
 # model_name = ("HuggingFaceTB/SmolLM2-360M", "HuggingFaceTB/SmolLM2-1.7B-Instruct", "HuggingFaceTB/SmolLM3-3B",
 #               "Qwen/Qwen2.5-3B", "Qwen/Qwen2.5-7B-Instruct", "microsoft/Phi-3-mini-4k-instruct",
@@ -40,31 +40,22 @@ device = "cuda" if (p := torch.cuda.is_available()) else "cpu"
 prompts = ["Explain gravity.", "What is 173 × 29?", "Write a Python function to reverse a list.",
            "Translate 'Good morning' into Bulgarian.", "Why is the sky blue?"]
 
+case = 72
 experiments = []
 
-for m in ["HuggingFaceTB/SmolLM2-1.7B-Instruct", "HuggingFaceTB/SmolLM3-3B", "Qwen/Qwen2.5-3B"]:
-    for int_bits in [32, 16, 8, 4, 2]:
-        experiments.append((m, torch.float64, int_bits))
+for i, original_type in enumerate([torch.float16, torch.float32, torch.float64]):
+    for q_bits in [32, 16, 8, 4, 2][2 - i:]:
+        experiments.append(("mistralai/Mistral-7B-Instruct-v0.3", original_type, q_bits))
 
-for m in ["Qwen/Qwen2.5-7B-Instruct", "microsoft/Phi-3-mini-4k-instruct"]:
-    for int_bits in [16, 8, 4, 2]:
-        experiments.append((m, torch.float32, int_bits))
-
-    for int_bits in [32, 16, 8, 4, 2]:
-        experiments.append((m, torch.float64, int_bits))
-
-case = 54
-
-for (model_name, original_type, q_bits) in experiments[15:]:
-    print(model_name, original_type, q_bits)
+for model_name, original_type, q_bits in experiments:
     case_dir = Path(f"results/case{case:03d}")
     case_dir.mkdir(parents=True)
+    case += 1
 
     metadata_file = case_dir / "metadata.txt"
 
     prompts_dir = case_dir / "prompts"
     prompts_dir.mkdir(parents=True, exist_ok=True)
-    case += 1
 
     with open(metadata_file, "w") as f:
         f.write(f"Device: {device}\nModel: {model_name}\nOriginal type: {original_type}\nQuantization: int{q_bits}\n")
@@ -165,7 +156,7 @@ for (model_name, original_type, q_bits) in experiments[15:]:
             torch.cuda.empty_cache()
             torch.cuda.synchronize()
 
-        df = pd.DataFrame(prompt_heatmap_mse)
+        df = DataFrame(prompt_heatmap_mse)
 
         pivot = df.pivot(index="quantized_layer", columns="measured_layer", values="mse")
 
@@ -180,7 +171,7 @@ for (model_name, original_type, q_bits) in experiments[15:]:
 
     del tokenizer
 
-    df = pd.DataFrame(global_heatmap_mse)
+    df = DataFrame(global_heatmap_mse)
     df = (df.groupby(["quantized_layer", "measured_layer"], as_index=False)[["mse"]].mean())
 
     pivot = df.pivot(index="quantized_layer", columns="measured_layer", values="mse")
