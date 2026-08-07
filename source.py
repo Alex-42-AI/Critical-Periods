@@ -221,6 +221,7 @@ for model_name, original_type, q_bits in experiments:
         plt.ylabel("Quantized layer")
         plt.colorbar(label="Hidden-state MAE")
         plt.savefig(prompt_dir / f"prompt{i}_heatmap_mae.png", bbox_inches="tight")
+        plt.savefig(prompt_dir / f"prompt{i}_heatmap_mae.pdf", bbox_inches="tight")
 
     del tokenizer
 
@@ -246,3 +247,4 @@ for model_name, original_type, q_bits in experiments:
     plt.ylabel("Quantized layer")
     plt.colorbar(label="Hidden-state MAE")
     plt.savefig(case_dir / "heatmap_mae.png", bbox_inches="tight")
+    plt.savefig(case_dir / "heatmap_mae.pdf", bbox_inches="tight")

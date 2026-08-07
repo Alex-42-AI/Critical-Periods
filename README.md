@@ -137,12 +137,14 @@ results/
     ├── global_results.json
     ├── global_RMSNorm.json
     ├── heatmap_mae.png
+    ├── heatmap_mae.pdf
     └── prompts/
         └── prompt{j}/
             ├── content.txt
             ├── prompt{j}_results.json
             ├── prompt{j}_RMSNorm.json
             ├── prompt{j}_heatmap_mae.png
+            ├── prompt{j}_heatmap_mae.pdf
             └── q_layer{k}/
                 ├── layer{k}_results.json
                 ├── layer{k}_RMSNorm.json
