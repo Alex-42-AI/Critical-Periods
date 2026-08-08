@@ -61,7 +61,7 @@ for model_name in model_names:
 for model_name, original_type, q_bits in experiments:
     print(model_name, original_type, q_bits)
 
-    case_dir = Path(f"results/case{case:02d}")
+    case_dir = Path(f"results/case{case:03d}")
     case_dir.mkdir(parents=True)
     case += 1
 
