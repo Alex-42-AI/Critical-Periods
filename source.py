@@ -70,7 +70,7 @@ for case, (model_name, original_type, q_bits) in enumerate(experiments[START:], 
     prompts_dir.mkdir(parents=True, exist_ok=True)
 
     with open(metadata_file, "w") as f:
-        dump({"Device": device, "Model": model_name, "Original type": str(original_type), "Quantization": f"int{q_bits}"}, f)
+        dump({"Device": device, "Model": model_name, "Original type": str(original_type), "Quantization": f"int{q_bits}", "Prompts": prompts}, f)
 
     global_heatmap_mae, global_result_json, global_RMSNorm_json = [], [], []
 
