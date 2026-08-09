@@ -49,7 +49,7 @@ model_names = ("HuggingFaceTB/SmolLM2-360M", "HuggingFaceTB/SmolLM2-1.7B-Instruc
 
 prompts = ["Explain gravity.", "What is 173 × 29?", "Write a Python function to reverse a list.", "Translate 'Good morning' into Bulgarian.", "Why is the sky blue?"]
 
-START, END = 0, -1
+START = 0
 experiments = []
 
 for model_name in model_names:
@@ -57,7 +57,7 @@ for model_name in model_names:
         for q_bits in q_bits_ls[2 - i:]:
             experiments.append((model_name, original_type, q_bits))
 
-for case, (model_name, original_type, q_bits) in enumerate(experiments[START:END], START):
+for case, (model_name, original_type, q_bits) in enumerate(experiments[START:], START):
     print(case, model_name, original_type, q_bits)
 
     case_dir = Path(f"results/case{case:03d}")
@@ -260,13 +260,15 @@ for case, (model_name, original_type, q_bits) in enumerate(experiments[START:END
         del global_RMSNorm_json
 
     df = DataFrame(global_heatmap_mae)
-    df = (df.groupby(["quantized_layer", "measured_layer"], as_index=False)[["mae"]].mean())
+    df = df.groupby(["quantized_layer", "measured_layer"], as_index=False)[["mae"]].mean()
 
     pivot = df.pivot(index="quantized_layer", columns="measured_layer", values="mae")
 
     plt.figure(figsize=(10, 8))
     plt.imshow(pivot, aspect="auto")
     plt.title(f"Model: {Path(model_name).name} | {str(original_type)[6:]} → int{q_bits}")
+    plt.xticks(range(len(pivot.columns)), pivot.columns)
+    plt.yticks(range(len(pivot.index)), pivot.index)
     plt.xlabel("Measured layer")
     plt.ylabel("Quantized layer")
     plt.colorbar(label="Hidden-state MAE")

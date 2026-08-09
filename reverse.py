@@ -74,14 +74,14 @@ model_names = ("HuggingFaceTB/SmolLM2-360M", "Qwen/Qwen2.5-3B", "Qwen/Qwen2.5-7B
 
 prompts = ["Explain gravity.", "What is 173 × 29?", "Write a Python function to reverse a list.", "Translate 'Good morning' into Bulgarian.", "Why is the sky blue?"]
 
-START, END = 0, -1
+START = 0
 experiments = []
 
 for model_name in model_names:
     for original_type in original_types:
         experiments.append((model_name, original_type))
 
-for case, (model_name, original_type) in enumerate(experiments[START:END], START):
+for case, (model_name, original_type) in enumerate(experiments[START:], START):
     print(case, model_name, original_type)
 
     case_dir = Path(f"reverse_results/case{case:03d}")
