@@ -154,7 +154,7 @@ results/
                 └── damage_plot_layer{k}.pdf
 ```
 
-### `metadata.txt`
+### `metadata.json`
 
 Contains the experimental configuration:
 
@@ -162,6 +162,7 @@ Contains the experimental configuration:
 * model
 * original floating-point type
 * quantization level
+* prompts content
 
 ### `global_results.json`
 
