@@ -47,10 +47,9 @@ model_names = ("HuggingFaceTB/SmolLM2-360M", "HuggingFaceTB/SmolLM2-1.7B-Instruc
                "Qwen/Qwen2.5-3B", "Qwen/Qwen2.5-7B-Instruct", "microsoft/Phi-3-mini-4k-instruct",
                "mistralai/Mistral-7B-Instruct-v0.3")
 
-prompts = ["Explain gravity.", "What is 173 × 29?", "Write a Python function to reverse a list.",
-           "Translate 'Good morning' into Bulgarian.", "Why is the sky blue?"]
+prompts = ["Explain gravity.", "What is 173 × 29?", "Write a Python function to reverse a list.", "Translate 'Good morning' into Bulgarian.", "Why is the sky blue?"]
 
-START = 0
+START, END = 0, -1
 experiments = []
 
 for model_name in model_names:
@@ -58,18 +57,16 @@ for model_name in model_names:
         for q_bits in q_bits_ls[2 - i:]:
             experiments.append((model_name, original_type, q_bits))
 
-for case, (model_name, original_type, q_bits) in enumerate(experiments[START:], START):
-    print(model_name, original_type, q_bits)
+for case, (model_name, original_type, q_bits) in enumerate(experiments[START:END], START):
+    print(case, model_name, original_type, q_bits)
 
     case_dir = Path(f"results/case{case:03d}")
     case_dir.mkdir(parents=True)
 
-    metadata_file = case_dir / "metadata.json"
-
     prompts_dir = case_dir / "prompts"
     prompts_dir.mkdir(parents=True, exist_ok=True)
 
-    with open(metadata_file, "w") as f:
+    with open(case_dir / "metadata.json", "w") as f:
         dump({"Device": device, "Model": model_name, "Original type": str(original_type), "Quantization": f"int{q_bits}", "Prompts": prompts}, f)
 
     global_heatmap_mae, global_result_json, global_RMSNorm_json = [], [], []
