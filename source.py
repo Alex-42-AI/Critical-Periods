@@ -50,7 +50,7 @@ model_names = ("HuggingFaceTB/SmolLM2-360M", "HuggingFaceTB/SmolLM2-1.7B-Instruc
 prompts = ["Explain gravity.", "What is 173 × 29?", "Write a Python function to reverse a list.",
            "Translate 'Good morning' into Bulgarian.", "Why is the sky blue?"]
 
-case = 0
+START = 0
 experiments = []
 
 for model_name in model_names:
@@ -58,12 +58,11 @@ for model_name in model_names:
         for q_bits in q_bits_ls[2 - i:]:
             experiments.append((model_name, original_type, q_bits))
 
-for model_name, original_type, q_bits in experiments:
+for case, (model_name, original_type, q_bits) in enumerate(experiments[START:], START):
     print(model_name, original_type, q_bits)
 
     case_dir = Path(f"results/case{case:03d}")
     case_dir.mkdir(parents=True)
-    case += 1
 
     metadata_file = case_dir / "metadata.json"
 
