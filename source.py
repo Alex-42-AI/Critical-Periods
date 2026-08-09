@@ -65,13 +65,13 @@ for model_name, original_type, q_bits in experiments:
     case_dir.mkdir(parents=True)
     case += 1
 
-    metadata_file = case_dir / "metadata.txt"
+    metadata_file = case_dir / "metadata.json"
 
     prompts_dir = case_dir / "prompts"
     prompts_dir.mkdir(parents=True, exist_ok=True)
 
     with open(metadata_file, "w") as f:
-        f.write(f"Device: {device}\nModel: {model_name}\nOriginal type: {original_type}\nQuantization: int{q_bits}\n")
+        dump({"Device": device, "Model": model_name, "Original type": str(original_type), "Quantization": f"int{q_bits}"}, f)
 
     global_heatmap_mae, global_result_json, global_RMSNorm_json = [], [], []
 
@@ -97,6 +97,7 @@ for model_name, original_type, q_bits in experiments:
         # hidden_states[-1] corresponds to the output of the model's final RMSNorm,
         # rather than an additional transformer layer. This was verified by comparing
         # the final transformer-layer and RMSNorm outputs using forward hooks.
+        #
         # with torch.inference_mode():
         #     outputs = model(**inputs, output_hidden_states=True)
         #
@@ -202,6 +203,33 @@ for model_name, original_type, q_bits in experiments:
             dump(prompt_result_json, f)
 
             del prompt_result_json
+
+        quantized_layers = [result["quantized layer"] for result in prompt_RMSNorm_json]
+        rmsnorm_mae = [result["mae"] for result in prompt_RMSNorm_json]
+        rmsnorm_cosine = [result["cos"] for result in prompt_RMSNorm_json]
+
+        fig, ax1 = plt.subplots(figsize=(9, 4))
+
+        ax1.plot(quantized_layers, rmsnorm_mae, marker="o", color="tab:red")
+        ax1.set_xlabel("Quantized layer")
+        ax1.set_ylabel("MAE", color="tab:red")
+        ax1.tick_params(axis="y", labelcolor="tab:red")
+
+        ax2 = ax1.twinx()
+
+        ax2.plot(quantized_layers, rmsnorm_cosine, marker="s", color="tab:blue")
+        ax2.set_ylabel("Cosine similarity", color="tab:blue")
+        ax2.tick_params(axis="y", labelcolor="tab:blue")
+
+        plt.title(f"{Path(model_name).name} | Prompt {i}\nFinal RMSNorm output damage | {str(original_type)[6:]} → int{q_bits}")
+
+        ax1.grid(True)
+        fig.tight_layout()
+
+        plt.savefig(prompt_dir / f"prompt{i}_RMSNorm_plot.png", bbox_inches="tight")
+        plt.savefig(prompt_dir / f"prompt{i}_RMSNorm_plot.pdf", bbox_inches="tight")
+
+        plt.close(fig)
 
         with open(prompt_dir / f"prompt{i}_RMSNorm.json", "w") as f:
             dump(prompt_RMSNorm_json, f)

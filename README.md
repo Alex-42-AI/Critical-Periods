@@ -143,6 +143,8 @@ results/
             ├── content.txt
             ├── prompt{j}_results.json
             ├── prompt{j}_RMSNorm.json
+            ├── prompt{j}_RMSNorm_plot.png
+            ├── prompt{j}_RMSNorm_plot.pdf
             ├── prompt{j}_heatmap_mae.png
             ├── prompt{j}_heatmap_mae.pdf
             └── q_layer{k}/
