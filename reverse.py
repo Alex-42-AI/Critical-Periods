@@ -131,7 +131,6 @@ for case, (model_name, original_type) in enumerate(experiments[START:END], START
 
         with torch.inference_mode():
             outputs_unquantized = unquantized(**inputs,  output_hidden_states=True)
-
             unquantized_hidden = outputs_unquantized.hidden_states
 
         # Save the original transformer layers so that individual
@@ -145,12 +144,10 @@ for case, (model_name, original_type) in enumerate(experiments[START:END], START
         # ------------------------------------------------------------
 
         quantized = AutoModelForCausalLM.from_pretrained(model_name, device_map="auto", quantization_config=config).to(device)
-
         quantized.eval()
 
         with torch.inference_mode():
             outputs_quantized = quantized(**inputs, output_hidden_states=True)
-
             quantized_hidden = outputs_quantized.hidden_states
 
         # ------------------------------------------------------------
@@ -173,11 +170,7 @@ for case, (model_name, original_type) in enumerate(experiments[START:END], START
             global_fp_q_damage["mae"][i].append(mae)
             global_fp_q_damage["cosine"][i].append(cosine)
 
-        plot_damage(
-            prompt_fp_q_damage["layer"],
-            prompt_fp_q_damage["mae"],
-            prompt_fp_q_damage["cosine"],
-            f"{Path(model_name).name} | Prompt {i}\nUnquantized vs GPTQ int{BITS}", prompt_dir,f"prompt{i}_unquantized_quantized_damage")
+        plot_damage(prompt_fp_q_damage["layer"], prompt_fp_q_damage["mae"], prompt_fp_q_damage["cosine"], f"{Path(model_name).name} | Prompt {i}\nUnquantized vs GPTQ int{BITS}", prompt_dir,f"prompt{i}_unquantized_quantized_damage")
 
         del prompt_fp_q_damage
 
