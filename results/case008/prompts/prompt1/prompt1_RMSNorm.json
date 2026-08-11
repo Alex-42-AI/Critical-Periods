@@ -1,1 +1,157 @@
-[{"quantized layer": 0, "mae": 0.00010090379510074854, "cos": 1.0}, {"quantized layer": 1, "mae": 6.805653538322076e-05, "cos": 1.0}, {"quantized layer": 2, "mae": 5.785275061498396e-05, "cos": 1.0}, {"quantized layer": 3, "mae": 0.0013787143398076296, "cos": 0.9999971985816956}, {"quantized layer": 4, "mae": 4.234183143125847e-05, "cos": 1.0}, {"quantized layer": 5, "mae": 4.358977093943395e-05, "cos": 1.0}, {"quantized layer": 6, "mae": 4.455674934433773e-05, "cos": 1.0}, {"quantized layer": 7, "mae": 4.035109668620862e-05, "cos": 0.9999999403953552}, {"quantized layer": 8, "mae": 4.27238701377064e-05, "cos": 1.0}, {"quantized layer": 9, "mae": 4.212181374896318e-05, "cos": 0.9999999403953552}, {"quantized layer": 10, "mae": 3.8385762309189886e-05, "cos": 1.0}, {"quantized layer": 11, "mae": 3.314677087473683e-05, "cos": 1.0}, {"quantized layer": 12, "mae": 4.945605542161502e-05, "cos": 0.9999998807907104}, {"quantized layer": 13, "mae": 9.889117063721642e-05, "cos": 1.0}, {"quantized layer": 14, "mae": 4.8170746595133096e-05, "cos": 0.9999998807907104}, {"quantized layer": 15, "mae": 6.0897815274074674e-05, "cos": 1.0}, {"quantized layer": 16, "mae": 4.758405702887103e-05, "cos": 0.9999999403953552}, {"quantized layer": 17, "mae": 3.449123687460087e-05, "cos": 1.0}, {"quantized layer": 18, "mae": 6.674960604868829e-05, "cos": 1.0}, {"quantized layer": 19, "mae": 4.2159477743553e-05, "cos": 1.0}, {"quantized layer": 20, "mae": 3.719392043421976e-05, "cos": 1.0}, {"quantized layer": 21, "mae": 6.176290480652824e-05, "cos": 1.0}, {"quantized layer": 22, "mae": 6.741101969964802e-05, "cos": 1.0}, {"quantized layer": 23, "mae": 5.938133836025372e-05, "cos": 1.0}, {"quantized layer": 24, "mae": 4.7182697016978636e-05, "cos": 1.0}, {"quantized layer": 25, "mae": 4.5447974116541445e-05, "cos": 0.9999998807907104}, {"quantized layer": 26, "mae": 6.105220381869003e-05, "cos": 1.0}, {"quantized layer": 27, "mae": 6.110913818702102e-05, "cos": 1.0}, {"quantized layer": 28, "mae": 5.2764367865165696e-05, "cos": 1.0}, {"quantized layer": 29, "mae": 8.82528256624937e-05, "cos": 1.0}, {"quantized layer": 30, "mae": 0.00020033805049024522, "cos": 0.9999998807907104}]
+[
+    {
+        "quantized layer": 0,
+        "mae": 0.00010090379510074854,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 1,
+        "mae": 6.805653538322076e-05,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 2,
+        "mae": 5.785275061498396e-05,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 3,
+        "mae": 0.0013787143398076296,
+        "cos": 0.9999971985816956
+    },
+    {
+        "quantized layer": 4,
+        "mae": 4.234183143125847e-05,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 5,
+        "mae": 4.358977093943395e-05,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 6,
+        "mae": 4.455674934433773e-05,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 7,
+        "mae": 4.035109668620862e-05,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 8,
+        "mae": 4.27238701377064e-05,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 9,
+        "mae": 4.212181374896318e-05,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 10,
+        "mae": 3.8385762309189886e-05,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 11,
+        "mae": 3.314677087473683e-05,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 12,
+        "mae": 4.945605542161502e-05,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 13,
+        "mae": 9.889117063721642e-05,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 14,
+        "mae": 4.8170746595133096e-05,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 15,
+        "mae": 6.0897815274074674e-05,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 16,
+        "mae": 4.758405702887103e-05,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 17,
+        "mae": 3.449123687460087e-05,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 18,
+        "mae": 6.674960604868829e-05,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 19,
+        "mae": 4.2159477743553e-05,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 20,
+        "mae": 3.719392043421976e-05,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 21,
+        "mae": 6.176290480652824e-05,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 22,
+        "mae": 6.741101969964802e-05,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 23,
+        "mae": 5.938133836025372e-05,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 24,
+        "mae": 4.7182697016978636e-05,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 25,
+        "mae": 4.5447974116541445e-05,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 26,
+        "mae": 6.105220381869003e-05,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 27,
+        "mae": 6.110913818702102e-05,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 28,
+        "mae": 5.2764367865165696e-05,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 29,
+        "mae": 8.82528256624937e-05,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 30,
+        "mae": 0.00020033805049024522,
+        "cos": 0.9999998807907104
+    }
+]

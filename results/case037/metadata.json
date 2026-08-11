@@ -1,1 +1,13 @@
-{"Device": "cuda", "Model": "Qwen/Qwen2.5-3B", "Original type": "torch.float16", "Quantization": "int4", "Prompts": ["Explain gravity.", "What is 173 \u00d7 29?", "Write a Python function to reverse a list.", "Translate 'Good morning' into Bulgarian.", "Why is the sky blue?"]}
+{
+    "Device": "cuda",
+    "Model": "Qwen/Qwen2.5-3B",
+    "Original type": "torch.float16",
+    "Quantization": "int4",
+    "Prompts": [
+        "Explain gravity.",
+        "What is 173 \u00d7 29?",
+        "Write a Python function to reverse a list.",
+        "Translate 'Good morning' into Bulgarian.",
+        "Why is the sky blue?"
+    ]
+}

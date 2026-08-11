@@ -133,7 +133,7 @@ Each experimental configuration is stored in its own directory:
 ```text
 results/
 └── case{i}/
-    ├── metadata.txt
+    ├── metadata.json
     ├── global_results.json
     ├── global_RMSNorm.json
     ├── heatmap_mae.png

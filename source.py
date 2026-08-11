@@ -67,7 +67,7 @@ for case, (model_name, original_type, q_bits) in enumerate(experiments[START:], 
     prompts_dir.mkdir(parents=True, exist_ok=True)
 
     with open(case_dir / "metadata.json", "w") as f:
-        dump({"Device": device, "Model": model_name, "Original type": str(original_type), "Quantization": f"int{q_bits}", "Prompts": prompts}, f)
+        dump({"Device": device, "Model": model_name, "Original type": str(original_type), "Quantization": f"int{q_bits}", "Prompts": prompts}, f, indent=4)
 
     global_heatmap_mae, global_result_json, global_RMSNorm_json = [], [], []
 
@@ -154,12 +154,12 @@ for case, (model_name, original_type, q_bits) in enumerate(experiments[START:], 
                     mae = torch.mean(torch.abs(fp.float() - q.float())).item()
                     cos = torch.nn.functional.cosine_similarity(fp.float().flatten(), q.float().flatten(), 0).item()
 
-                    dump({"mae": mae, "cos": cos}, f)
+                    dump({"mae": mae, "cos": cos}, f, indent=4)
                     prompt_RMSNorm_json.append({"quantized layer": j, "mae": mae, "cos": cos})
                     global_RMSNorm_json.append({"prompt": prompt, "quantized layer": j, "mae": mae, "cos": cos})
 
                 with open(q_layer / f"layer{j}_results.json", "w") as f:
-                    dump(layer_result_json, f)
+                    dump(layer_result_json, f, indent=4)
 
                     del layer_result_json
 
@@ -196,7 +196,7 @@ for case, (model_name, original_type, q_bits) in enumerate(experiments[START:], 
             torch.cuda.synchronize()
 
         with open(prompt_dir / f"prompt{i}_results.json", "w") as f:
-            dump(prompt_result_json, f)
+            dump(prompt_result_json, f, indent=4)
 
             del prompt_result_json
 
@@ -228,7 +228,7 @@ for case, (model_name, original_type, q_bits) in enumerate(experiments[START:], 
         plt.close(fig)
 
         with open(prompt_dir / f"prompt{i}_RMSNorm.json", "w") as f:
-            dump(prompt_RMSNorm_json, f)
+            dump(prompt_RMSNorm_json, f, indent=4)
 
             del prompt_RMSNorm_json
 
@@ -250,12 +250,12 @@ for case, (model_name, original_type, q_bits) in enumerate(experiments[START:], 
     del tokenizer
 
     with open(case_dir / "global_results.json", "w") as f:
-        dump(global_result_json, f)
+        dump(global_result_json, f, indent=4)
 
         del global_result_json
 
     with open(case_dir / "global_RMSNorm.json", "w") as f:
-        dump(global_RMSNorm_json, f)
+        dump(global_RMSNorm_json, f, indent=4)
 
         del global_RMSNorm_json
 

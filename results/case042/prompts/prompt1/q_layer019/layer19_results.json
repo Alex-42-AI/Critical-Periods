@@ -1,1 +1,182 @@
-[{"measured layer": 0, "mae": 0.0, "cos": 0.9999999403953552}, {"measured layer": 1, "mae": 0.0, "cos": 1.0000001192092896}, {"measured layer": 2, "mae": 0.0, "cos": 1.0}, {"measured layer": 3, "mae": 0.0, "cos": 1.0}, {"measured layer": 4, "mae": 0.0, "cos": 0.9999999403953552}, {"measured layer": 5, "mae": 0.0, "cos": 0.9999998807907104}, {"measured layer": 6, "mae": 0.0, "cos": 1.0}, {"measured layer": 7, "mae": 0.0, "cos": 1.0000001192092896}, {"measured layer": 8, "mae": 0.0, "cos": 0.9999998807907104}, {"measured layer": 9, "mae": 0.0, "cos": 0.9999997615814209}, {"measured layer": 10, "mae": 0.0, "cos": 1.0}, {"measured layer": 11, "mae": 0.0, "cos": 1.0000001192092896}, {"measured layer": 12, "mae": 0.0, "cos": 0.9999998807907104}, {"measured layer": 13, "mae": 0.0, "cos": 1.0}, {"measured layer": 14, "mae": 0.0, "cos": 0.9999999403953552}, {"measured layer": 15, "mae": 0.0, "cos": 1.0000001192092896}, {"measured layer": 16, "mae": 0.0, "cos": 1.000000238418579}, {"measured layer": 17, "mae": 0.0, "cos": 0.9999998807907104}, {"measured layer": 18, "mae": 0.0, "cos": 1.0}, {"measured layer": 19, "mae": 0.0, "cos": 1.000000238418579}, {"measured layer": 20, "mae": 0.3371467590332031, "cos": 0.9998584985733032}, {"measured layer": 21, "mae": 0.3239750564098358, "cos": 0.99986732006073}, {"measured layer": 22, "mae": 0.3141753673553467, "cos": 0.9998748302459717}, {"measured layer": 23, "mae": 0.32344576716423035, "cos": 0.9998677968978882}, {"measured layer": 24, "mae": 0.3288286626338959, "cos": 0.9998611211776733}, {"measured layer": 25, "mae": 0.34229418635368347, "cos": 0.9998502135276794}, {"measured layer": 26, "mae": 0.35132673382759094, "cos": 0.9998396635055542}, {"measured layer": 27, "mae": 0.36623725295066833, "cos": 0.9998259544372559}, {"measured layer": 28, "mae": 0.399625688791275, "cos": 0.9997900724411011}, {"measured layer": 29, "mae": 0.445319801568985, "cos": 0.9997349977493286}, {"measured layer": 30, "mae": 0.5018265843391418, "cos": 0.9996536374092102}, {"measured layer": 31, "mae": 0.5733085870742798, "cos": 0.9826421737670898}, {"measured layer": 32, "mae": 0.6916654109954834, "cos": 0.988131582736969}, {"measured layer": 33, "mae": 0.8250945806503296, "cos": 0.9878954887390137}, {"measured layer": 34, "mae": 0.9077799916267395, "cos": 0.9892513155937195}, {"measured layer": 35, "mae": 1.011309027671814, "cos": 0.9892981052398682}]
+[
+    {
+        "measured layer": 0,
+        "mae": 0.0,
+        "cos": 0.9999999403953552
+    },
+    {
+        "measured layer": 1,
+        "mae": 0.0,
+        "cos": 1.0000001192092896
+    },
+    {
+        "measured layer": 2,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "measured layer": 3,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "measured layer": 4,
+        "mae": 0.0,
+        "cos": 0.9999999403953552
+    },
+    {
+        "measured layer": 5,
+        "mae": 0.0,
+        "cos": 0.9999998807907104
+    },
+    {
+        "measured layer": 6,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "measured layer": 7,
+        "mae": 0.0,
+        "cos": 1.0000001192092896
+    },
+    {
+        "measured layer": 8,
+        "mae": 0.0,
+        "cos": 0.9999998807907104
+    },
+    {
+        "measured layer": 9,
+        "mae": 0.0,
+        "cos": 0.9999997615814209
+    },
+    {
+        "measured layer": 10,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "measured layer": 11,
+        "mae": 0.0,
+        "cos": 1.0000001192092896
+    },
+    {
+        "measured layer": 12,
+        "mae": 0.0,
+        "cos": 0.9999998807907104
+    },
+    {
+        "measured layer": 13,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "measured layer": 14,
+        "mae": 0.0,
+        "cos": 0.9999999403953552
+    },
+    {
+        "measured layer": 15,
+        "mae": 0.0,
+        "cos": 1.0000001192092896
+    },
+    {
+        "measured layer": 16,
+        "mae": 0.0,
+        "cos": 1.000000238418579
+    },
+    {
+        "measured layer": 17,
+        "mae": 0.0,
+        "cos": 0.9999998807907104
+    },
+    {
+        "measured layer": 18,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "measured layer": 19,
+        "mae": 0.0,
+        "cos": 1.000000238418579
+    },
+    {
+        "measured layer": 20,
+        "mae": 0.3371467590332031,
+        "cos": 0.9998584985733032
+    },
+    {
+        "measured layer": 21,
+        "mae": 0.3239750564098358,
+        "cos": 0.99986732006073
+    },
+    {
+        "measured layer": 22,
+        "mae": 0.3141753673553467,
+        "cos": 0.9998748302459717
+    },
+    {
+        "measured layer": 23,
+        "mae": 0.32344576716423035,
+        "cos": 0.9998677968978882
+    },
+    {
+        "measured layer": 24,
+        "mae": 0.3288286626338959,
+        "cos": 0.9998611211776733
+    },
+    {
+        "measured layer": 25,
+        "mae": 0.34229418635368347,
+        "cos": 0.9998502135276794
+    },
+    {
+        "measured layer": 26,
+        "mae": 0.35132673382759094,
+        "cos": 0.9998396635055542
+    },
+    {
+        "measured layer": 27,
+        "mae": 0.36623725295066833,
+        "cos": 0.9998259544372559
+    },
+    {
+        "measured layer": 28,
+        "mae": 0.399625688791275,
+        "cos": 0.9997900724411011
+    },
+    {
+        "measured layer": 29,
+        "mae": 0.445319801568985,
+        "cos": 0.9997349977493286
+    },
+    {
+        "measured layer": 30,
+        "mae": 0.5018265843391418,
+        "cos": 0.9996536374092102
+    },
+    {
+        "measured layer": 31,
+        "mae": 0.5733085870742798,
+        "cos": 0.9826421737670898
+    },
+    {
+        "measured layer": 32,
+        "mae": 0.6916654109954834,
+        "cos": 0.988131582736969
+    },
+    {
+        "measured layer": 33,
+        "mae": 0.8250945806503296,
+        "cos": 0.9878954887390137
+    },
+    {
+        "measured layer": 34,
+        "mae": 0.9077799916267395,
+        "cos": 0.9892513155937195
+    },
+    {
+        "measured layer": 35,
+        "mae": 1.011309027671814,
+        "cos": 0.9892981052398682
+    }
+]

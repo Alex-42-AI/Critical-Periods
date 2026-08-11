@@ -1,1 +1,4538 @@
-[{"quantized layer": 0, "measured layer": 0, "mae": 0.0, "cos": 1.0}, {"quantized layer": 0, "measured layer": 1, "mae": 0.010898198932409286, "cos": 0.9988634586334229}, {"quantized layer": 0, "measured layer": 2, "mae": 0.01131975557655096, "cos": 0.9995851516723633}, {"quantized layer": 0, "measured layer": 3, "mae": 0.011521407403051853, "cos": 0.999557614326477}, {"quantized layer": 0, "measured layer": 4, "mae": 0.015013732016086578, "cos": 0.9999998807907104}, {"quantized layer": 0, "measured layer": 5, "mae": 0.015189196914434433, "cos": 0.9999998211860657}, {"quantized layer": 0, "measured layer": 6, "mae": 0.015000015497207642, "cos": 0.9999998807907104}, {"quantized layer": 0, "measured layer": 7, "mae": 0.01527728047221899, "cos": 1.0}, {"quantized layer": 0, "measured layer": 8, "mae": 0.016016928479075432, "cos": 1.0}, {"quantized layer": 0, "measured layer": 9, "mae": 0.0173573549836874, "cos": 0.9999998807907104}, {"quantized layer": 0, "measured layer": 10, "mae": 0.01542468462139368, "cos": 0.9999998807907104}, {"quantized layer": 0, "measured layer": 11, "mae": 0.014895441941916943, "cos": 0.9999997615814209}, {"quantized layer": 0, "measured layer": 12, "mae": 0.01506379060447216, "cos": 1.0}, {"quantized layer": 0, "measured layer": 13, "mae": 0.014997005462646484, "cos": 1.0}, {"quantized layer": 0, "measured layer": 14, "mae": 0.015374031849205494, "cos": 1.0000001192092896}, {"quantized layer": 0, "measured layer": 15, "mae": 0.015426273457705975, "cos": 0.9999998807907104}, {"quantized layer": 0, "measured layer": 16, "mae": 0.015650132670998573, "cos": 1.0}, {"quantized layer": 0, "measured layer": 17, "mae": 0.01610700413584709, "cos": 0.9999998807907104}, {"quantized layer": 0, "measured layer": 18, "mae": 0.01687430776655674, "cos": 0.9999998807907104}, {"quantized layer": 0, "measured layer": 19, "mae": 0.017536206170916557, "cos": 0.9999997615814209}, {"quantized layer": 0, "measured layer": 20, "mae": 0.01940193772315979, "cos": 0.9999998211860657}, {"quantized layer": 0, "measured layer": 21, "mae": 0.02214999869465828, "cos": 0.9999999403953552}, {"quantized layer": 0, "measured layer": 22, "mae": 0.02574431709945202, "cos": 1.0}, {"quantized layer": 0, "measured layer": 23, "mae": 0.030090102925896645, "cos": 0.9999998807907104}, {"quantized layer": 0, "measured layer": 24, "mae": 0.03615516796708107, "cos": 0.9999998807907104}, {"quantized layer": 0, "measured layer": 25, "mae": 0.04491738975048065, "cos": 0.9999996423721313}, {"quantized layer": 0, "measured layer": 26, "mae": 0.05585889518260956, "cos": 0.9999993443489075}, {"quantized layer": 0, "measured layer": 27, "mae": 0.06774304062128067, "cos": 0.9999915361404419}, {"quantized layer": 1, "measured layer": 0, "mae": 0.0, "cos": 1.0}, {"quantized layer": 1, "measured layer": 1, "mae": 0.0, "cos": 1.0}, {"quantized layer": 1, "measured layer": 2, "mae": 0.009753834456205368, "cos": 0.9997119903564453}, {"quantized layer": 1, "measured layer": 3, "mae": 0.01000097207725048, "cos": 0.9996905326843262}, {"quantized layer": 1, "measured layer": 4, "mae": 0.014646130613982677, "cos": 0.9999997615814209}, {"quantized layer": 1, "measured layer": 5, "mae": 0.015088208019733429, "cos": 0.9999998807907104}, {"quantized layer": 1, "measured layer": 6, "mae": 0.014856508933007717, "cos": 0.9999998807907104}, {"quantized layer": 1, "measured layer": 7, "mae": 0.015193813480436802, "cos": 1.0000001192092896}, {"quantized layer": 1, "measured layer": 8, "mae": 0.015926850959658623, "cos": 0.9999998807907104}, {"quantized layer": 1, "measured layer": 9, "mae": 0.0169855747371912, "cos": 0.9999999403953552}, {"quantized layer": 1, "measured layer": 10, "mae": 0.01519574411213398, "cos": 0.9999998807907104}, {"quantized layer": 1, "measured layer": 11, "mae": 0.014633061364293098, "cos": 0.9999998807907104}, {"quantized layer": 1, "measured layer": 12, "mae": 0.01474958099424839, "cos": 0.9999999403953552}, {"quantized layer": 1, "measured layer": 13, "mae": 0.014683220535516739, "cos": 0.9999999403953552}, {"quantized layer": 1, "measured layer": 14, "mae": 0.015113115310668945, "cos": 1.0}, {"quantized layer": 1, "measured layer": 15, "mae": 0.015433606691658497, "cos": 1.0}, {"quantized layer": 1, "measured layer": 16, "mae": 0.015803588554263115, "cos": 0.9999998807907104}, {"quantized layer": 1, "measured layer": 17, "mae": 0.016300560906529427, "cos": 0.9999999403953552}, {"quantized layer": 1, "measured layer": 18, "mae": 0.017022212967276573, "cos": 0.9999998211860657}, {"quantized layer": 1, "measured layer": 19, "mae": 0.017787232995033264, "cos": 0.9999998211860657}, {"quantized layer": 1, "measured layer": 20, "mae": 0.01955641806125641, "cos": 0.9999997615814209}, {"quantized layer": 1, "measured layer": 21, "mae": 0.022351114079356194, "cos": 1.0}, {"quantized layer": 1, "measured layer": 22, "mae": 0.026045065373182297, "cos": 1.0}, {"quantized layer": 1, "measured layer": 23, "mae": 0.030405493453145027, "cos": 0.9999998211860657}, {"quantized layer": 1, "measured layer": 24, "mae": 0.03670389577746391, "cos": 0.9999998211860657}, {"quantized layer": 1, "measured layer": 25, "mae": 0.046281419694423676, "cos": 0.9999994039535522}, {"quantized layer": 1, "measured layer": 26, "mae": 0.05756952986121178, "cos": 0.9999991655349731}, {"quantized layer": 1, "measured layer": 27, "mae": 0.06990905851125717, "cos": 0.9999904036521912}, {"quantized layer": 2, "measured layer": 0, "mae": 0.0, "cos": 1.0}, {"quantized layer": 2, "measured layer": 1, "mae": 0.0, "cos": 1.0}, {"quantized layer": 2, "measured layer": 2, "mae": 0.0, "cos": 1.0}, {"quantized layer": 2, "measured layer": 3, "mae": 0.010012640617787838, "cos": 0.9996952414512634}, {"quantized layer": 2, "measured layer": 4, "mae": 0.020916657522320747, "cos": 0.9999999403953552}, {"quantized layer": 2, "measured layer": 5, "mae": 0.021428534761071205, "cos": 0.9999998807907104}, {"quantized layer": 2, "measured layer": 6, "mae": 0.021056033670902252, "cos": 0.9999999403953552}, {"quantized layer": 2, "measured layer": 7, "mae": 0.021282747387886047, "cos": 1.0000001192092896}, {"quantized layer": 2, "measured layer": 8, "mae": 0.02192782610654831, "cos": 1.0}, {"quantized layer": 2, "measured layer": 9, "mae": 0.023187395185232162, "cos": 1.0}, {"quantized layer": 2, "measured layer": 10, "mae": 0.02141481824219227, "cos": 0.9999998807907104}, {"quantized layer": 2, "measured layer": 11, "mae": 0.020902052521705627, "cos": 0.9999998807907104}, {"quantized layer": 2, "measured layer": 12, "mae": 0.020985471084713936, "cos": 1.0}, {"quantized layer": 2, "measured layer": 13, "mae": 0.02105550654232502, "cos": 0.9999998807907104}, {"quantized layer": 2, "measured layer": 14, "mae": 0.02140996605157852, "cos": 0.9999998807907104}, {"quantized layer": 2, "measured layer": 15, "mae": 0.021587319672107697, "cos": 0.9999998807907104}, {"quantized layer": 2, "measured layer": 16, "mae": 0.02175489254295826, "cos": 0.9999998807907104}, {"quantized layer": 2, "measured layer": 17, "mae": 0.022210469469428062, "cos": 0.9999997615814209}, {"quantized layer": 2, "measured layer": 18, "mae": 0.022849448025226593, "cos": 1.0}, {"quantized layer": 2, "measured layer": 19, "mae": 0.023427460342645645, "cos": 0.9999997615814209}, {"quantized layer": 2, "measured layer": 20, "mae": 0.02508504129946232, "cos": 0.9999998807907104}, {"quantized layer": 2, "measured layer": 21, "mae": 0.027394846081733704, "cos": 0.9999998807907104}, {"quantized layer": 2, "measured layer": 22, "mae": 0.03066110983490944, "cos": 0.9999998807907104}, {"quantized layer": 2, "measured layer": 23, "mae": 0.034176718443632126, "cos": 0.9999995231628418}, {"quantized layer": 2, "measured layer": 24, "mae": 0.03916472941637039, "cos": 1.0}, {"quantized layer": 2, "measured layer": 25, "mae": 0.04736718162894249, "cos": 0.9999995231628418}, {"quantized layer": 2, "measured layer": 26, "mae": 0.0613773874938488, "cos": 0.9999992847442627}, {"quantized layer": 2, "measured layer": 27, "mae": 0.06331941485404968, "cos": 0.999991238117218}, {"quantized layer": 3, "measured layer": 0, "mae": 0.0, "cos": 1.0}, {"quantized layer": 3, "measured layer": 1, "mae": 0.0, "cos": 1.0}, {"quantized layer": 3, "measured layer": 2, "mae": 0.0, "cos": 1.0}, {"quantized layer": 3, "measured layer": 3, "mae": 0.0, "cos": 1.0000001192092896}, {"quantized layer": 3, "measured layer": 4, "mae": 0.12181375920772552, "cos": 0.9999684691429138}, {"quantized layer": 3, "measured layer": 5, "mae": 0.1227278783917427, "cos": 0.9999790787696838}, {"quantized layer": 3, "measured layer": 6, "mae": 0.12229593843221664, "cos": 0.9999796748161316}, {"quantized layer": 3, "measured layer": 7, "mae": 0.12250450998544693, "cos": 0.9999803304672241}, {"quantized layer": 3, "measured layer": 8, "mae": 0.12378230690956116, "cos": 0.9999805688858032}, {"quantized layer": 3, "measured layer": 9, "mae": 0.1259169727563858, "cos": 0.9999808073043823}, {"quantized layer": 3, "measured layer": 10, "mae": 0.12322492897510529, "cos": 0.9999813437461853}, {"quantized layer": 3, "measured layer": 11, "mae": 0.12213379889726639, "cos": 0.9999815225601196}, {"quantized layer": 3, "measured layer": 12, "mae": 0.12212175875902176, "cos": 0.9999822378158569}, {"quantized layer": 3, "measured layer": 13, "mae": 0.12199179083108902, "cos": 0.9999825358390808}, {"quantized layer": 3, "measured layer": 14, "mae": 0.12269825488328934, "cos": 0.9999827146530151}, {"quantized layer": 3, "measured layer": 15, "mae": 0.12295524775981903, "cos": 0.9999828934669495}, {"quantized layer": 3, "measured layer": 16, "mae": 0.12324925512075424, "cos": 0.9999831914901733}, {"quantized layer": 3, "measured layer": 17, "mae": 0.12416316568851471, "cos": 0.9999828934669495}, {"quantized layer": 3, "measured layer": 18, "mae": 0.125392347574234, "cos": 0.9999830722808838}, {"quantized layer": 3, "measured layer": 19, "mae": 0.12668104469776154, "cos": 0.9999827146530151}, {"quantized layer": 3, "measured layer": 20, "mae": 0.12934541702270508, "cos": 0.9999826550483704}, {"quantized layer": 3, "measured layer": 21, "mae": 0.13326799869537354, "cos": 0.999982476234436}, {"quantized layer": 3, "measured layer": 22, "mae": 0.13894833624362946, "cos": 0.999982476234436}, {"quantized layer": 3, "measured layer": 23, "mae": 0.14570803940296173, "cos": 0.9999820590019226}, {"quantized layer": 3, "measured layer": 24, "mae": 0.15518368780612946, "cos": 0.9999818801879883}, {"quantized layer": 3, "measured layer": 25, "mae": 0.16833828389644623, "cos": 0.999981164932251}, {"quantized layer": 3, "measured layer": 26, "mae": 0.1841311901807785, "cos": 0.9999796748161316}, {"quantized layer": 3, "measured layer": 27, "mae": 0.20276102423667908, "cos": 0.9997886419296265}, {"quantized layer": 4, "measured layer": 0, "mae": 0.0, "cos": 1.0}, {"quantized layer": 4, "measured layer": 1, "mae": 0.0, "cos": 1.0}, {"quantized layer": 4, "measured layer": 2, "mae": 0.0, "cos": 1.0}, {"quantized layer": 4, "measured layer": 3, "mae": 0.0, "cos": 1.0000001192092896}, {"quantized layer": 4, "measured layer": 4, "mae": 0.0, "cos": 0.9999999403953552}, {"quantized layer": 4, "measured layer": 5, "mae": 0.14007137715816498, "cos": 0.9999755024909973}, {"quantized layer": 4, "measured layer": 6, "mae": 0.1396673172712326, "cos": 0.9999762773513794}, {"quantized layer": 4, "measured layer": 7, "mae": 0.13976547122001648, "cos": 0.9999768733978271}, {"quantized layer": 4, "measured layer": 8, "mae": 0.14093643426895142, "cos": 0.9999774694442749}, {"quantized layer": 4, "measured layer": 9, "mae": 0.14339300990104675, "cos": 0.9999775886535645}, {"quantized layer": 4, "measured layer": 10, "mae": 0.13966254889965057, "cos": 0.9999783635139465}, {"quantized layer": 4, "measured layer": 11, "mae": 0.1385623663663864, "cos": 0.9999784231185913}, {"quantized layer": 4, "measured layer": 12, "mae": 0.13865818083286285, "cos": 0.9999793767929077}, {"quantized layer": 4, "measured layer": 13, "mae": 0.13863691687583923, "cos": 0.9999797344207764}, {"quantized layer": 4, "measured layer": 14, "mae": 0.13954268395900726, "cos": 0.9999797940254211}, {"quantized layer": 4, "measured layer": 15, "mae": 0.14003168046474457, "cos": 0.999980092048645}, {"quantized layer": 4, "measured layer": 16, "mae": 0.1404341459274292, "cos": 0.9999801516532898}, {"quantized layer": 4, "measured layer": 17, "mae": 0.14160417020320892, "cos": 0.9999802112579346}, {"quantized layer": 4, "measured layer": 18, "mae": 0.14345486462116241, "cos": 0.9999798536300659}, {"quantized layer": 4, "measured layer": 19, "mae": 0.14540810883045197, "cos": 0.9999799728393555}, {"quantized layer": 4, "measured layer": 20, "mae": 0.1488688588142395, "cos": 0.9999799132347107}, {"quantized layer": 4, "measured layer": 21, "mae": 0.15463128685951233, "cos": 0.9999797940254211}, {"quantized layer": 4, "measured layer": 22, "mae": 0.1626826673746109, "cos": 0.9999794960021973}, {"quantized layer": 4, "measured layer": 23, "mae": 0.17160744965076447, "cos": 0.9999788999557495}, {"quantized layer": 4, "measured layer": 24, "mae": 0.18510308861732483, "cos": 0.9999785423278809}, {"quantized layer": 4, "measured layer": 25, "mae": 0.20499229431152344, "cos": 0.9999773502349854}, {"quantized layer": 4, "measured layer": 26, "mae": 0.23012419044971466, "cos": 0.999974250793457}, {"quantized layer": 4, "measured layer": 27, "mae": 0.2613327205181122, "cos": 0.999687910079956}, {"quantized layer": 5, "measured layer": 0, "mae": 0.0, "cos": 1.0}, {"quantized layer": 5, "measured layer": 1, "mae": 0.0, "cos": 1.0}, {"quantized layer": 5, "measured layer": 2, "mae": 0.0, "cos": 1.0}, {"quantized layer": 5, "measured layer": 3, "mae": 0.0, "cos": 1.0000001192092896}, {"quantized layer": 5, "measured layer": 4, "mae": 0.0, "cos": 0.9999999403953552}, {"quantized layer": 5, "measured layer": 5, "mae": 0.0, "cos": 0.9999998807907104}, {"quantized layer": 5, "measured layer": 6, "mae": 0.026621440425515175, "cos": 0.9999997019767761}, {"quantized layer": 5, "measured layer": 7, "mae": 0.02729293890297413, "cos": 0.9999998807907104}, {"quantized layer": 5, "measured layer": 8, "mae": 0.028448309749364853, "cos": 0.9999998807907104}, {"quantized layer": 5, "measured layer": 9, "mae": 0.030913380905985832, "cos": 0.9999997615814209}, {"quantized layer": 5, "measured layer": 10, "mae": 0.028109755367040634, "cos": 0.9999998211860657}, {"quantized layer": 5, "measured layer": 11, "mae": 0.02730138599872589, "cos": 0.9999997615814209}, {"quantized layer": 5, "measured layer": 12, "mae": 0.02763308398425579, "cos": 0.9999997615814209}, {"quantized layer": 5, "measured layer": 13, "mae": 0.027728090062737465, "cos": 0.9999998211860657}, {"quantized layer": 5, "measured layer": 14, "mae": 0.028563054278492928, "cos": 0.9999995231628418}, {"quantized layer": 5, "measured layer": 15, "mae": 0.029409898445010185, "cos": 0.9999998807907104}, {"quantized layer": 5, "measured layer": 16, "mae": 0.030438702553510666, "cos": 0.9999997615814209}, {"quantized layer": 5, "measured layer": 17, "mae": 0.03163290396332741, "cos": 0.9999995827674866}, {"quantized layer": 5, "measured layer": 18, "mae": 0.03343186527490616, "cos": 0.9999995231628418}, {"quantized layer": 5, "measured layer": 19, "mae": 0.034815628081560135, "cos": 0.9999995231628418}, {"quantized layer": 5, "measured layer": 20, "mae": 0.038872066885232925, "cos": 0.9999995231628418}, {"quantized layer": 5, "measured layer": 21, "mae": 0.044849131256341934, "cos": 0.9999997019767761}, {"quantized layer": 5, "measured layer": 22, "mae": 0.05338864400982857, "cos": 0.999999463558197}, {"quantized layer": 5, "measured layer": 23, "mae": 0.06211860477924347, "cos": 0.9999991655349731}, {"quantized layer": 5, "measured layer": 24, "mae": 0.07623065263032913, "cos": 0.9999990463256836}, {"quantized layer": 5, "measured layer": 25, "mae": 0.09883320331573486, "cos": 0.9999977350234985}, {"quantized layer": 5, "measured layer": 26, "mae": 0.12494359910488129, "cos": 0.9999958276748657}, {"quantized layer": 5, "measured layer": 27, "mae": 0.15340681374073029, "cos": 0.9999367594718933}, {"quantized layer": 6, "measured layer": 0, "mae": 0.0, "cos": 1.0}, {"quantized layer": 6, "measured layer": 1, "mae": 0.0, "cos": 1.0}, {"quantized layer": 6, "measured layer": 2, "mae": 0.0, "cos": 1.0}, {"quantized layer": 6, "measured layer": 3, "mae": 0.0, "cos": 1.0000001192092896}, {"quantized layer": 6, "measured layer": 4, "mae": 0.0, "cos": 0.9999999403953552}, {"quantized layer": 6, "measured layer": 5, "mae": 0.0, "cos": 0.9999998807907104}, {"quantized layer": 6, "measured layer": 6, "mae": 0.0, "cos": 0.9999999403953552}, {"quantized layer": 6, "measured layer": 7, "mae": 0.04160067066550255, "cos": 0.9999996423721313}, {"quantized layer": 6, "measured layer": 8, "mae": 0.04304514452815056, "cos": 0.9999996423721313}, {"quantized layer": 6, "measured layer": 9, "mae": 0.04644535854458809, "cos": 0.9999997615814209}, {"quantized layer": 6, "measured layer": 10, "mae": 0.03939555957913399, "cos": 0.9999996423721313}, {"quantized layer": 6, "measured layer": 11, "mae": 0.03708040714263916, "cos": 0.9999997019767761}, {"quantized layer": 6, "measured layer": 12, "mae": 0.03691653162240982, "cos": 0.9999998211860657}, {"quantized layer": 6, "measured layer": 13, "mae": 0.03643589839339256, "cos": 0.9999998211860657}, {"quantized layer": 6, "measured layer": 14, "mae": 0.03709295764565468, "cos": 0.9999996423721313}, {"quantized layer": 6, "measured layer": 15, "mae": 0.037044454365968704, "cos": 0.9999997615814209}, {"quantized layer": 6, "measured layer": 16, "mae": 0.03758992627263069, "cos": 0.9999998211860657}, {"quantized layer": 6, "measured layer": 17, "mae": 0.038639165461063385, "cos": 0.9999996423721313}, {"quantized layer": 6, "measured layer": 18, "mae": 0.04030516371130943, "cos": 0.9999996423721313}, {"quantized layer": 6, "measured layer": 19, "mae": 0.04154519736766815, "cos": 0.9999995231628418}, {"quantized layer": 6, "measured layer": 20, "mae": 0.04565580189228058, "cos": 0.9999997615814209}, {"quantized layer": 6, "measured layer": 21, "mae": 0.05200664699077606, "cos": 0.9999996423721313}, {"quantized layer": 6, "measured layer": 22, "mae": 0.060522839426994324, "cos": 0.9999994039535522}, {"quantized layer": 6, "measured layer": 23, "mae": 0.0702679231762886, "cos": 0.9999992847442627}, {"quantized layer": 6, "measured layer": 24, "mae": 0.08463121950626373, "cos": 0.9999991655349731}, {"quantized layer": 6, "measured layer": 25, "mae": 0.10510499030351639, "cos": 0.999998152256012}, {"quantized layer": 6, "measured layer": 26, "mae": 0.13083456456661224, "cos": 0.9999968409538269}, {"quantized layer": 6, "measured layer": 27, "mae": 0.1596742570400238, "cos": 0.999952495098114}, {"quantized layer": 7, "measured layer": 0, "mae": 0.0, "cos": 1.0}, {"quantized layer": 7, "measured layer": 1, "mae": 0.0, "cos": 1.0}, {"quantized layer": 7, "measured layer": 2, "mae": 0.0, "cos": 1.0}, {"quantized layer": 7, "measured layer": 3, "mae": 0.0, "cos": 1.0000001192092896}, {"quantized layer": 7, "measured layer": 4, "mae": 0.0, "cos": 0.9999999403953552}, {"quantized layer": 7, "measured layer": 5, "mae": 0.0, "cos": 0.9999998807907104}, {"quantized layer": 7, "measured layer": 6, "mae": 0.0, "cos": 0.9999999403953552}, {"quantized layer": 7, "measured layer": 7, "mae": 0.0, "cos": 1.000000238418579}, {"quantized layer": 7, "measured layer": 8, "mae": 0.040572281926870346, "cos": 0.9999998807907104}, {"quantized layer": 7, "measured layer": 9, "mae": 0.043726976960897446, "cos": 0.9999996423721313}, {"quantized layer": 7, "measured layer": 10, "mae": 0.036482103168964386, "cos": 0.9999998807907104}, {"quantized layer": 7, "measured layer": 11, "mae": 0.033838383853435516, "cos": 0.9999998807907104}, {"quantized layer": 7, "measured layer": 12, "mae": 0.03372178599238396, "cos": 0.9999998807907104}, {"quantized layer": 7, "measured layer": 13, "mae": 0.0333518348634243, "cos": 0.9999998807907104}, {"quantized layer": 7, "measured layer": 14, "mae": 0.03416033834218979, "cos": 0.9999998807907104}, {"quantized layer": 7, "measured layer": 15, "mae": 0.0341474786400795, "cos": 0.9999998211860657}, {"quantized layer": 7, "measured layer": 16, "mae": 0.03446974232792854, "cos": 0.9999998211860657}, {"quantized layer": 7, "measured layer": 17, "mae": 0.03541651740670204, "cos": 0.9999997615814209}, {"quantized layer": 7, "measured layer": 18, "mae": 0.03721774369478226, "cos": 0.9999998211860657}, {"quantized layer": 7, "measured layer": 19, "mae": 0.03833303973078728, "cos": 0.9999995827674866}, {"quantized layer": 7, "measured layer": 20, "mae": 0.04238555207848549, "cos": 0.9999996423721313}, {"quantized layer": 7, "measured layer": 21, "mae": 0.04915458336472511, "cos": 0.9999996423721313}, {"quantized layer": 7, "measured layer": 22, "mae": 0.058191731572151184, "cos": 0.9999995231628418}, {"quantized layer": 7, "measured layer": 23, "mae": 0.06795516610145569, "cos": 0.9999991655349731}, {"quantized layer": 7, "measured layer": 24, "mae": 0.08234886825084686, "cos": 0.9999991655349731}, {"quantized layer": 7, "measured layer": 25, "mae": 0.10410316288471222, "cos": 0.9999980926513672}, {"quantized layer": 7, "measured layer": 26, "mae": 0.13003236055374146, "cos": 0.9999968409538269}, {"quantized layer": 7, "measured layer": 27, "mae": 0.16316384077072144, "cos": 0.9999493360519409}, {"quantized layer": 8, "measured layer": 0, "mae": 0.0, "cos": 1.0}, {"quantized layer": 8, "measured layer": 1, "mae": 0.0, "cos": 1.0}, {"quantized layer": 8, "measured layer": 2, "mae": 0.0, "cos": 1.0}, {"quantized layer": 8, "measured layer": 3, "mae": 0.0, "cos": 1.0000001192092896}, {"quantized layer": 8, "measured layer": 4, "mae": 0.0, "cos": 0.9999999403953552}, {"quantized layer": 8, "measured layer": 5, "mae": 0.0, "cos": 0.9999998807907104}, {"quantized layer": 8, "measured layer": 6, "mae": 0.0, "cos": 0.9999999403953552}, {"quantized layer": 8, "measured layer": 7, "mae": 0.0, "cos": 1.000000238418579}, {"quantized layer": 8, "measured layer": 8, "mae": 0.0, "cos": 1.0}, {"quantized layer": 8, "measured layer": 9, "mae": 0.041805680841207504, "cos": 0.9999996423721313}, {"quantized layer": 8, "measured layer": 10, "mae": 0.0345761775970459, "cos": 0.9999998807907104}, {"quantized layer": 8, "measured layer": 11, "mae": 0.031918004155159, "cos": 0.9999997615814209}, {"quantized layer": 8, "measured layer": 12, "mae": 0.03151307255029678, "cos": 0.9999998807907104}, {"quantized layer": 8, "measured layer": 13, "mae": 0.030638718977570534, "cos": 1.0}, {"quantized layer": 8, "measured layer": 14, "mae": 0.031028004363179207, "cos": 0.9999998807907104}, {"quantized layer": 8, "measured layer": 15, "mae": 0.0307286586612463, "cos": 0.9999998807907104}, {"quantized layer": 8, "measured layer": 16, "mae": 0.030744174495339394, "cos": 0.9999997615814209}, {"quantized layer": 8, "measured layer": 17, "mae": 0.03143518790602684, "cos": 0.9999997615814209}, {"quantized layer": 8, "measured layer": 18, "mae": 0.0329551137983799, "cos": 0.9999998807907104}, {"quantized layer": 8, "measured layer": 19, "mae": 0.03382982686161995, "cos": 0.9999997615814209}, {"quantized layer": 8, "measured layer": 20, "mae": 0.03716770187020302, "cos": 0.9999997615814209}, {"quantized layer": 8, "measured layer": 21, "mae": 0.04284067824482918, "cos": 0.9999996423721313}, {"quantized layer": 8, "measured layer": 22, "mae": 0.05027663707733154, "cos": 0.9999996423721313}, {"quantized layer": 8, "measured layer": 23, "mae": 0.0588817335665226, "cos": 0.9999992847442627}, {"quantized layer": 8, "measured layer": 24, "mae": 0.07168006896972656, "cos": 0.999999463558197}, {"quantized layer": 8, "measured layer": 25, "mae": 0.0907849669456482, "cos": 0.9999984502792358}, {"quantized layer": 8, "measured layer": 26, "mae": 0.11307647079229355, "cos": 0.9999974966049194}, {"quantized layer": 8, "measured layer": 27, "mae": 0.13802406191825867, "cos": 0.9999634027481079}, {"quantized layer": 9, "measured layer": 0, "mae": 0.0, "cos": 1.0}, {"quantized layer": 9, "measured layer": 1, "mae": 0.0, "cos": 1.0}, {"quantized layer": 9, "measured layer": 2, "mae": 0.0, "cos": 1.0}, {"quantized layer": 9, "measured layer": 3, "mae": 0.0, "cos": 1.0000001192092896}, {"quantized layer": 9, "measured layer": 4, "mae": 0.0, "cos": 0.9999999403953552}, {"quantized layer": 9, "measured layer": 5, "mae": 0.0, "cos": 0.9999998807907104}, {"quantized layer": 9, "measured layer": 6, "mae": 0.0, "cos": 0.9999999403953552}, {"quantized layer": 9, "measured layer": 7, "mae": 0.0, "cos": 1.000000238418579}, {"quantized layer": 9, "measured layer": 8, "mae": 0.0, "cos": 1.0}, {"quantized layer": 9, "measured layer": 9, "mae": 0.0, "cos": 1.0}, {"quantized layer": 9, "measured layer": 10, "mae": 0.0446539968252182, "cos": 0.9999997615814209}, {"quantized layer": 9, "measured layer": 11, "mae": 0.04166216030716896, "cos": 0.9999996423721313}, {"quantized layer": 9, "measured layer": 12, "mae": 0.04126827418804169, "cos": 0.9999997615814209}, {"quantized layer": 9, "measured layer": 13, "mae": 0.04069438576698303, "cos": 0.9999996423721313}, {"quantized layer": 9, "measured layer": 14, "mae": 0.04149002954363823, "cos": 0.9999997019767761}, {"quantized layer": 9, "measured layer": 15, "mae": 0.041152581572532654, "cos": 0.9999997019767761}, {"quantized layer": 9, "measured layer": 16, "mae": 0.0416816882789135, "cos": 0.9999998807907104}, {"quantized layer": 9, "measured layer": 17, "mae": 0.0426698736846447, "cos": 0.9999996423721313}, {"quantized layer": 9, "measured layer": 18, "mae": 0.04460213705897331, "cos": 0.9999996423721313}, {"quantized layer": 9, "measured layer": 19, "mae": 0.045346859842538834, "cos": 0.9999995231628418}, {"quantized layer": 9, "measured layer": 20, "mae": 0.04934386536478996, "cos": 0.9999995231628418}, {"quantized layer": 9, "measured layer": 21, "mae": 0.0560976080596447, "cos": 0.9999996423721313}, {"quantized layer": 9, "measured layer": 22, "mae": 0.06484903395175934, "cos": 0.9999995231628418}, {"quantized layer": 9, "measured layer": 23, "mae": 0.0758434608578682, "cos": 0.9999991059303284}, {"quantized layer": 9, "measured layer": 24, "mae": 0.09372265636920929, "cos": 0.9999986886978149}, {"quantized layer": 9, "measured layer": 25, "mae": 0.11870163679122925, "cos": 0.9999972581863403}, {"quantized layer": 9, "measured layer": 26, "mae": 0.14793604612350464, "cos": 0.9999954700469971}, {"quantized layer": 9, "measured layer": 27, "mae": 0.17948968708515167, "cos": 0.9999332427978516}, {"quantized layer": 10, "measured layer": 0, "mae": 0.0, "cos": 1.0}, {"quantized layer": 10, "measured layer": 1, "mae": 0.0, "cos": 1.0}, {"quantized layer": 10, "measured layer": 2, "mae": 0.0, "cos": 1.0}, {"quantized layer": 10, "measured layer": 3, "mae": 0.0, "cos": 1.0000001192092896}, {"quantized layer": 10, "measured layer": 4, "mae": 0.0, "cos": 0.9999999403953552}, {"quantized layer": 10, "measured layer": 5, "mae": 0.0, "cos": 0.9999998807907104}, {"quantized layer": 10, "measured layer": 6, "mae": 0.0, "cos": 0.9999999403953552}, {"quantized layer": 10, "measured layer": 7, "mae": 0.0, "cos": 1.000000238418579}, {"quantized layer": 10, "measured layer": 8, "mae": 0.0, "cos": 1.0}, {"quantized layer": 10, "measured layer": 9, "mae": 0.0, "cos": 1.0}, {"quantized layer": 10, "measured layer": 10, "mae": 0.0, "cos": 1.0}, {"quantized layer": 10, "measured layer": 11, "mae": 0.040609899908304214, "cos": 0.9999995827674866}, {"quantized layer": 10, "measured layer": 12, "mae": 0.03996928781270981, "cos": 0.9999997615814209}, {"quantized layer": 10, "measured layer": 13, "mae": 0.03851693496108055, "cos": 0.9999997615814209}, {"quantized layer": 10, "measured layer": 14, "mae": 0.03927161917090416, "cos": 0.9999997019767761}, {"quantized layer": 10, "measured layer": 15, "mae": 0.03924135863780975, "cos": 0.9999997615814209}, {"quantized layer": 10, "measured layer": 16, "mae": 0.039806902408599854, "cos": 0.9999997019767761}, {"quantized layer": 10, "measured layer": 17, "mae": 0.04100841283798218, "cos": 0.9999995827674866}, {"quantized layer": 10, "measured layer": 18, "mae": 0.04323793575167656, "cos": 0.9999997615814209}, {"quantized layer": 10, "measured layer": 19, "mae": 0.044724155217409134, "cos": 0.9999996423721313}, {"quantized layer": 10, "measured layer": 20, "mae": 0.04979192838072777, "cos": 0.999999463558197}, {"quantized layer": 10, "measured layer": 21, "mae": 0.05784519761800766, "cos": 0.9999993443489075}, {"quantized layer": 10, "measured layer": 22, "mae": 0.06861541420221329, "cos": 0.9999994039535522}, {"quantized layer": 10, "measured layer": 23, "mae": 0.08164124935865402, "cos": 0.9999988079071045}, {"quantized layer": 10, "measured layer": 24, "mae": 0.09955921024084091, "cos": 0.9999985098838806}, {"quantized layer": 10, "measured layer": 25, "mae": 0.12688535451889038, "cos": 0.9999971389770508}, {"quantized layer": 10, "measured layer": 26, "mae": 0.15971964597702026, "cos": 0.9999951720237732}, {"quantized layer": 10, "measured layer": 27, "mae": 0.1969369798898697, "cos": 0.9999228715896606}, {"quantized layer": 11, "measured layer": 0, "mae": 0.0, "cos": 1.0}, {"quantized layer": 11, "measured layer": 1, "mae": 0.0, "cos": 1.0}, {"quantized layer": 11, "measured layer": 2, "mae": 0.0, "cos": 1.0}, {"quantized layer": 11, "measured layer": 3, "mae": 0.0, "cos": 1.0000001192092896}, {"quantized layer": 11, "measured layer": 4, "mae": 0.0, "cos": 0.9999999403953552}, {"quantized layer": 11, "measured layer": 5, "mae": 0.0, "cos": 0.9999998807907104}, {"quantized layer": 11, "measured layer": 6, "mae": 0.0, "cos": 0.9999999403953552}, {"quantized layer": 11, "measured layer": 7, "mae": 0.0, "cos": 1.000000238418579}, {"quantized layer": 11, "measured layer": 8, "mae": 0.0, "cos": 1.0}, {"quantized layer": 11, "measured layer": 9, "mae": 0.0, "cos": 1.0}, {"quantized layer": 11, "measured layer": 10, "mae": 0.0, "cos": 1.0}, {"quantized layer": 11, "measured layer": 11, "mae": 0.0, "cos": 0.9999998807907104}, {"quantized layer": 11, "measured layer": 12, "mae": 0.047323789447546005, "cos": 0.9999996423721313}, {"quantized layer": 11, "measured layer": 13, "mae": 0.04647819697856903, "cos": 0.9999994039535522}, {"quantized layer": 11, "measured layer": 14, "mae": 0.0469319224357605, "cos": 0.9999994039535522}, {"quantized layer": 11, "measured layer": 15, "mae": 0.046406179666519165, "cos": 0.9999992847442627}, {"quantized layer": 11, "measured layer": 16, "mae": 0.04648204147815704, "cos": 0.9999995231628418}, {"quantized layer": 11, "measured layer": 17, "mae": 0.04757221043109894, "cos": 0.9999992847442627}, {"quantized layer": 11, "measured layer": 18, "mae": 0.04906083270907402, "cos": 0.999999463558197}, {"quantized layer": 11, "measured layer": 19, "mae": 0.04960373044013977, "cos": 0.9999993443489075}, {"quantized layer": 11, "measured layer": 20, "mae": 0.05375691130757332, "cos": 0.9999992847442627}, {"quantized layer": 11, "measured layer": 21, "mae": 0.05995869264006615, "cos": 0.9999994039535522}, {"quantized layer": 11, "measured layer": 22, "mae": 0.0684179812669754, "cos": 0.9999991655349731}, {"quantized layer": 11, "measured layer": 23, "mae": 0.07811475545167923, "cos": 0.999998927116394}, {"quantized layer": 11, "measured layer": 24, "mae": 0.0912667065858841, "cos": 0.9999988079071045}, {"quantized layer": 11, "measured layer": 25, "mae": 0.11196635663509369, "cos": 0.9999977946281433}, {"quantized layer": 11, "measured layer": 26, "mae": 0.13691022992134094, "cos": 0.9999966025352478}, {"quantized layer": 11, "measured layer": 27, "mae": 0.1657508760690689, "cos": 0.9999502897262573}, {"quantized layer": 12, "measured layer": 0, "mae": 0.0, "cos": 1.0}, {"quantized layer": 12, "measured layer": 1, "mae": 0.0, "cos": 1.0}, {"quantized layer": 12, "measured layer": 2, "mae": 0.0, "cos": 1.0}, {"quantized layer": 12, "measured layer": 3, "mae": 0.0, "cos": 1.0000001192092896}, {"quantized layer": 12, "measured layer": 4, "mae": 0.0, "cos": 0.9999999403953552}, {"quantized layer": 12, "measured layer": 5, "mae": 0.0, "cos": 0.9999998807907104}, {"quantized layer": 12, "measured layer": 6, "mae": 0.0, "cos": 0.9999999403953552}, {"quantized layer": 12, "measured layer": 7, "mae": 0.0, "cos": 1.000000238418579}, {"quantized layer": 12, "measured layer": 8, "mae": 0.0, "cos": 1.0}, {"quantized layer": 12, "measured layer": 9, "mae": 0.0, "cos": 1.0}, {"quantized layer": 12, "measured layer": 10, "mae": 0.0, "cos": 1.0}, {"quantized layer": 12, "measured layer": 11, "mae": 0.0, "cos": 0.9999998807907104}, {"quantized layer": 12, "measured layer": 12, "mae": 0.0, "cos": 1.000000238418579}, {"quantized layer": 12, "measured layer": 13, "mae": 0.05315280333161354, "cos": 0.9999996423721313}, {"quantized layer": 12, "measured layer": 14, "mae": 0.05374722182750702, "cos": 0.999999463558197}, {"quantized layer": 12, "measured layer": 15, "mae": 0.05283880978822708, "cos": 0.9999995827674866}, {"quantized layer": 12, "measured layer": 16, "mae": 0.052814435213804245, "cos": 0.9999996423721313}, {"quantized layer": 12, "measured layer": 17, "mae": 0.05376662313938141, "cos": 0.9999995827674866}, {"quantized layer": 12, "measured layer": 18, "mae": 0.055823709815740585, "cos": 0.9999995231628418}, {"quantized layer": 12, "measured layer": 19, "mae": 0.056877296417951584, "cos": 0.9999995231628418}, {"quantized layer": 12, "measured layer": 20, "mae": 0.06244776025414467, "cos": 0.9999994039535522}, {"quantized layer": 12, "measured layer": 21, "mae": 0.07162105292081833, "cos": 0.9999993443489075}, {"quantized layer": 12, "measured layer": 22, "mae": 0.08405499905347824, "cos": 0.9999991059303284}, {"quantized layer": 12, "measured layer": 23, "mae": 0.09894603490829468, "cos": 0.9999982714653015}, {"quantized layer": 12, "measured layer": 24, "mae": 0.12018944323062897, "cos": 0.9999978542327881}, {"quantized layer": 12, "measured layer": 25, "mae": 0.14992257952690125, "cos": 0.9999961853027344}, {"quantized layer": 12, "measured layer": 26, "mae": 0.18794706463813782, "cos": 0.9999934434890747}, {"quantized layer": 12, "measured layer": 27, "mae": 0.2290259450674057, "cos": 0.99989914894104}, {"quantized layer": 13, "measured layer": 0, "mae": 0.0, "cos": 1.0}, {"quantized layer": 13, "measured layer": 1, "mae": 0.0, "cos": 1.0}, {"quantized layer": 13, "measured layer": 2, "mae": 0.0, "cos": 1.0}, {"quantized layer": 13, "measured layer": 3, "mae": 0.0, "cos": 1.0000001192092896}, {"quantized layer": 13, "measured layer": 4, "mae": 0.0, "cos": 0.9999999403953552}, {"quantized layer": 13, "measured layer": 5, "mae": 0.0, "cos": 0.9999998807907104}, {"quantized layer": 13, "measured layer": 6, "mae": 0.0, "cos": 0.9999999403953552}, {"quantized layer": 13, "measured layer": 7, "mae": 0.0, "cos": 1.000000238418579}, {"quantized layer": 13, "measured layer": 8, "mae": 0.0, "cos": 1.0}, {"quantized layer": 13, "measured layer": 9, "mae": 0.0, "cos": 1.0}, {"quantized layer": 13, "measured layer": 10, "mae": 0.0, "cos": 1.0}, {"quantized layer": 13, "measured layer": 11, "mae": 0.0, "cos": 0.9999998807907104}, {"quantized layer": 13, "measured layer": 12, "mae": 0.0, "cos": 1.000000238418579}, {"quantized layer": 13, "measured layer": 13, "mae": 0.0, "cos": 1.0}, {"quantized layer": 13, "measured layer": 14, "mae": 0.03682014346122742, "cos": 0.9999996423721313}, {"quantized layer": 13, "measured layer": 15, "mae": 0.03601954132318497, "cos": 0.9999996423721313}, {"quantized layer": 13, "measured layer": 16, "mae": 0.03558044880628586, "cos": 0.9999997615814209}, {"quantized layer": 13, "measured layer": 17, "mae": 0.036346472799777985, "cos": 0.9999996423721313}, {"quantized layer": 13, "measured layer": 18, "mae": 0.03801893815398216, "cos": 0.9999999403953552}, {"quantized layer": 13, "measured layer": 19, "mae": 0.03840738162398338, "cos": 0.9999997019767761}, {"quantized layer": 13, "measured layer": 20, "mae": 0.042159199714660645, "cos": 0.9999997615814209}, {"quantized layer": 13, "measured layer": 21, "mae": 0.04849987477064133, "cos": 0.9999997615814209}, {"quantized layer": 13, "measured layer": 22, "mae": 0.05778475105762482, "cos": 0.9999996423721313}, {"quantized layer": 13, "measured layer": 23, "mae": 0.06865565478801727, "cos": 0.9999992847442627}, {"quantized layer": 13, "measured layer": 24, "mae": 0.0843314677476883, "cos": 0.9999991655349731}, {"quantized layer": 13, "measured layer": 25, "mae": 0.10709071159362793, "cos": 0.9999979138374329}, {"quantized layer": 13, "measured layer": 26, "mae": 0.13308753073215485, "cos": 0.9999963045120239}, {"quantized layer": 13, "measured layer": 27, "mae": 0.16080032289028168, "cos": 0.9999467134475708}, {"quantized layer": 14, "measured layer": 0, "mae": 0.0, "cos": 1.0}, {"quantized layer": 14, "measured layer": 1, "mae": 0.0, "cos": 1.0}, {"quantized layer": 14, "measured layer": 2, "mae": 0.0, "cos": 1.0}, {"quantized layer": 14, "measured layer": 3, "mae": 0.0, "cos": 1.0000001192092896}, {"quantized layer": 14, "measured layer": 4, "mae": 0.0, "cos": 0.9999999403953552}, {"quantized layer": 14, "measured layer": 5, "mae": 0.0, "cos": 0.9999998807907104}, {"quantized layer": 14, "measured layer": 6, "mae": 0.0, "cos": 0.9999999403953552}, {"quantized layer": 14, "measured layer": 7, "mae": 0.0, "cos": 1.000000238418579}, {"quantized layer": 14, "measured layer": 8, "mae": 0.0, "cos": 1.0}, {"quantized layer": 14, "measured layer": 9, "mae": 0.0, "cos": 1.0}, {"quantized layer": 14, "measured layer": 10, "mae": 0.0, "cos": 1.0}, {"quantized layer": 14, "measured layer": 11, "mae": 0.0, "cos": 0.9999998807907104}, {"quantized layer": 14, "measured layer": 12, "mae": 0.0, "cos": 1.000000238418579}, {"quantized layer": 14, "measured layer": 13, "mae": 0.0, "cos": 1.0}, {"quantized layer": 14, "measured layer": 14, "mae": 0.0, "cos": 1.0}, {"quantized layer": 14, "measured layer": 15, "mae": 0.042163070291280746, "cos": 0.9999997615814209}, {"quantized layer": 14, "measured layer": 16, "mae": 0.041778311133384705, "cos": 0.9999998807907104}, {"quantized layer": 14, "measured layer": 17, "mae": 0.04231175407767296, "cos": 0.9999996423721313}, {"quantized layer": 14, "measured layer": 18, "mae": 0.04431972652673721, "cos": 0.9999998211860657}, {"quantized layer": 14, "measured layer": 19, "mae": 0.04454289749264717, "cos": 0.9999996423721313}, {"quantized layer": 14, "measured layer": 20, "mae": 0.04892624169588089, "cos": 0.9999996423721313}, {"quantized layer": 14, "measured layer": 21, "mae": 0.05678882822394371, "cos": 0.9999996423721313}, {"quantized layer": 14, "measured layer": 22, "mae": 0.0677383691072464, "cos": 0.9999992847442627}, {"quantized layer": 14, "measured layer": 23, "mae": 0.08037090301513672, "cos": 0.9999988079071045}, {"quantized layer": 14, "measured layer": 24, "mae": 0.09793980419635773, "cos": 0.9999982118606567}, {"quantized layer": 14, "measured layer": 25, "mae": 0.12442345917224884, "cos": 0.9999970197677612}, {"quantized layer": 14, "measured layer": 26, "mae": 0.1562463790178299, "cos": 0.9999948740005493}, {"quantized layer": 14, "measured layer": 27, "mae": 0.19391614198684692, "cos": 0.9999192953109741}, {"quantized layer": 15, "measured layer": 0, "mae": 0.0, "cos": 1.0}, {"quantized layer": 15, "measured layer": 1, "mae": 0.0, "cos": 1.0}, {"quantized layer": 15, "measured layer": 2, "mae": 0.0, "cos": 1.0}, {"quantized layer": 15, "measured layer": 3, "mae": 0.0, "cos": 1.0000001192092896}, {"quantized layer": 15, "measured layer": 4, "mae": 0.0, "cos": 0.9999999403953552}, {"quantized layer": 15, "measured layer": 5, "mae": 0.0, "cos": 0.9999998807907104}, {"quantized layer": 15, "measured layer": 6, "mae": 0.0, "cos": 0.9999999403953552}, {"quantized layer": 15, "measured layer": 7, "mae": 0.0, "cos": 1.000000238418579}, {"quantized layer": 15, "measured layer": 8, "mae": 0.0, "cos": 1.0}, {"quantized layer": 15, "measured layer": 9, "mae": 0.0, "cos": 1.0}, {"quantized layer": 15, "measured layer": 10, "mae": 0.0, "cos": 1.0}, {"quantized layer": 15, "measured layer": 11, "mae": 0.0, "cos": 0.9999998807907104}, {"quantized layer": 15, "measured layer": 12, "mae": 0.0, "cos": 1.000000238418579}, {"quantized layer": 15, "measured layer": 13, "mae": 0.0, "cos": 1.0}, {"quantized layer": 15, "measured layer": 14, "mae": 0.0, "cos": 1.0}, {"quantized layer": 15, "measured layer": 15, "mae": 0.0, "cos": 0.9999999403953552}, {"quantized layer": 15, "measured layer": 16, "mae": 0.03716505318880081, "cos": 0.9999997615814209}, {"quantized layer": 15, "measured layer": 17, "mae": 0.03761688619852066, "cos": 0.9999997019767761}, {"quantized layer": 15, "measured layer": 18, "mae": 0.0393797941505909, "cos": 0.9999997615814209}, {"quantized layer": 15, "measured layer": 19, "mae": 0.03982234373688698, "cos": 0.9999996423721313}, {"quantized layer": 15, "measured layer": 20, "mae": 0.04425055533647537, "cos": 0.9999996423721313}, {"quantized layer": 15, "measured layer": 21, "mae": 0.051025986671447754, "cos": 0.9999997019767761}, {"quantized layer": 15, "measured layer": 22, "mae": 0.06127595156431198, "cos": 0.9999995231628418}, {"quantized layer": 15, "measured layer": 23, "mae": 0.07249017059803009, "cos": 0.9999991655349731}, {"quantized layer": 15, "measured layer": 24, "mae": 0.09074537456035614, "cos": 0.9999986886978149}, {"quantized layer": 15, "measured layer": 25, "mae": 0.11535535752773285, "cos": 0.9999973773956299}, {"quantized layer": 15, "measured layer": 26, "mae": 0.14421586692333221, "cos": 0.9999954700469971}, {"quantized layer": 15, "measured layer": 27, "mae": 0.1775268167257309, "cos": 0.9999315142631531}, {"quantized layer": 16, "measured layer": 0, "mae": 0.0, "cos": 1.0}, {"quantized layer": 16, "measured layer": 1, "mae": 0.0, "cos": 1.0}, {"quantized layer": 16, "measured layer": 2, "mae": 0.0, "cos": 1.0}, {"quantized layer": 16, "measured layer": 3, "mae": 0.0, "cos": 1.0000001192092896}, {"quantized layer": 16, "measured layer": 4, "mae": 0.0, "cos": 0.9999999403953552}, {"quantized layer": 16, "measured layer": 5, "mae": 0.0, "cos": 0.9999998807907104}, {"quantized layer": 16, "measured layer": 6, "mae": 0.0, "cos": 0.9999999403953552}, {"quantized layer": 16, "measured layer": 7, "mae": 0.0, "cos": 1.000000238418579}, {"quantized layer": 16, "measured layer": 8, "mae": 0.0, "cos": 1.0}, {"quantized layer": 16, "measured layer": 9, "mae": 0.0, "cos": 1.0}, {"quantized layer": 16, "measured layer": 10, "mae": 0.0, "cos": 1.0}, {"quantized layer": 16, "measured layer": 11, "mae": 0.0, "cos": 0.9999998807907104}, {"quantized layer": 16, "measured layer": 12, "mae": 0.0, "cos": 1.000000238418579}, {"quantized layer": 16, "measured layer": 13, "mae": 0.0, "cos": 1.0}, {"quantized layer": 16, "measured layer": 14, "mae": 0.0, "cos": 1.0}, {"quantized layer": 16, "measured layer": 15, "mae": 0.0, "cos": 0.9999999403953552}, {"quantized layer": 16, "measured layer": 16, "mae": 0.0, "cos": 1.0}, {"quantized layer": 16, "measured layer": 17, "mae": 0.04090918228030205, "cos": 0.9999997615814209}, {"quantized layer": 16, "measured layer": 18, "mae": 0.04260881245136261, "cos": 0.9999998807907104}, {"quantized layer": 16, "measured layer": 19, "mae": 0.043114062398672104, "cos": 0.9999996423721313}, {"quantized layer": 16, "measured layer": 20, "mae": 0.04705329239368439, "cos": 0.9999995827674866}, {"quantized layer": 16, "measured layer": 21, "mae": 0.054104581475257874, "cos": 0.9999997615814209}, {"quantized layer": 16, "measured layer": 22, "mae": 0.06392940878868103, "cos": 0.999999463558197}, {"quantized layer": 16, "measured layer": 23, "mae": 0.07484150677919388, "cos": 0.9999991059303284}, {"quantized layer": 16, "measured layer": 24, "mae": 0.09116815775632858, "cos": 0.9999988079071045}, {"quantized layer": 16, "measured layer": 25, "mae": 0.11512508988380432, "cos": 0.999997615814209}, {"quantized layer": 16, "measured layer": 26, "mae": 0.14338740706443787, "cos": 0.9999959468841553}, {"quantized layer": 16, "measured layer": 27, "mae": 0.1748468428850174, "cos": 0.99993896484375}, {"quantized layer": 17, "measured layer": 0, "mae": 0.0, "cos": 1.0}, {"quantized layer": 17, "measured layer": 1, "mae": 0.0, "cos": 1.0}, {"quantized layer": 17, "measured layer": 2, "mae": 0.0, "cos": 1.0}, {"quantized layer": 17, "measured layer": 3, "mae": 0.0, "cos": 1.0000001192092896}, {"quantized layer": 17, "measured layer": 4, "mae": 0.0, "cos": 0.9999999403953552}, {"quantized layer": 17, "measured layer": 5, "mae": 0.0, "cos": 0.9999998807907104}, {"quantized layer": 17, "measured layer": 6, "mae": 0.0, "cos": 0.9999999403953552}, {"quantized layer": 17, "measured layer": 7, "mae": 0.0, "cos": 1.000000238418579}, {"quantized layer": 17, "measured layer": 8, "mae": 0.0, "cos": 1.0}, {"quantized layer": 17, "measured layer": 9, "mae": 0.0, "cos": 1.0}, {"quantized layer": 17, "measured layer": 10, "mae": 0.0, "cos": 1.0}, {"quantized layer": 17, "measured layer": 11, "mae": 0.0, "cos": 0.9999998807907104}, {"quantized layer": 17, "measured layer": 12, "mae": 0.0, "cos": 1.000000238418579}, {"quantized layer": 17, "measured layer": 13, "mae": 0.0, "cos": 1.0}, {"quantized layer": 17, "measured layer": 14, "mae": 0.0, "cos": 1.0}, {"quantized layer": 17, "measured layer": 15, "mae": 0.0, "cos": 0.9999999403953552}, {"quantized layer": 17, "measured layer": 16, "mae": 0.0, "cos": 1.0}, {"quantized layer": 17, "measured layer": 17, "mae": 0.0, "cos": 1.0}, {"quantized layer": 17, "measured layer": 18, "mae": 0.046408627182245255, "cos": 0.9999996423721313}, {"quantized layer": 17, "measured layer": 19, "mae": 0.0470270998775959, "cos": 0.9999997615814209}, {"quantized layer": 17, "measured layer": 20, "mae": 0.05134778842329979, "cos": 0.9999995231628418}, {"quantized layer": 17, "measured layer": 21, "mae": 0.05963738635182381, "cos": 0.9999995231628418}, {"quantized layer": 17, "measured layer": 22, "mae": 0.07072684913873672, "cos": 0.9999994039535522}, {"quantized layer": 17, "measured layer": 23, "mae": 0.08385813981294632, "cos": 0.9999988675117493}, {"quantized layer": 17, "measured layer": 24, "mae": 0.10198520869016647, "cos": 0.9999985098838806}, {"quantized layer": 17, "measured layer": 25, "mae": 0.12755009531974792, "cos": 0.9999971389770508}, {"quantized layer": 17, "measured layer": 26, "mae": 0.15875625610351562, "cos": 0.9999949932098389}, {"quantized layer": 17, "measured layer": 27, "mae": 0.19562694430351257, "cos": 0.9999226331710815}, {"quantized layer": 18, "measured layer": 0, "mae": 0.0, "cos": 1.0}, {"quantized layer": 18, "measured layer": 1, "mae": 0.0, "cos": 1.0}, {"quantized layer": 18, "measured layer": 2, "mae": 0.0, "cos": 1.0}, {"quantized layer": 18, "measured layer": 3, "mae": 0.0, "cos": 1.0000001192092896}, {"quantized layer": 18, "measured layer": 4, "mae": 0.0, "cos": 0.9999999403953552}, {"quantized layer": 18, "measured layer": 5, "mae": 0.0, "cos": 0.9999998807907104}, {"quantized layer": 18, "measured layer": 6, "mae": 0.0, "cos": 0.9999999403953552}, {"quantized layer": 18, "measured layer": 7, "mae": 0.0, "cos": 1.000000238418579}, {"quantized layer": 18, "measured layer": 8, "mae": 0.0, "cos": 1.0}, {"quantized layer": 18, "measured layer": 9, "mae": 0.0, "cos": 1.0}, {"quantized layer": 18, "measured layer": 10, "mae": 0.0, "cos": 1.0}, {"quantized layer": 18, "measured layer": 11, "mae": 0.0, "cos": 0.9999998807907104}, {"quantized layer": 18, "measured layer": 12, "mae": 0.0, "cos": 1.000000238418579}, {"quantized layer": 18, "measured layer": 13, "mae": 0.0, "cos": 1.0}, {"quantized layer": 18, "measured layer": 14, "mae": 0.0, "cos": 1.0}, {"quantized layer": 18, "measured layer": 15, "mae": 0.0, "cos": 0.9999999403953552}, {"quantized layer": 18, "measured layer": 16, "mae": 0.0, "cos": 1.0}, {"quantized layer": 18, "measured layer": 17, "mae": 0.0, "cos": 1.0}, {"quantized layer": 18, "measured layer": 18, "mae": 0.0, "cos": 1.0}, {"quantized layer": 18, "measured layer": 19, "mae": 0.06448432058095932, "cos": 0.9999992847442627}, {"quantized layer": 18, "measured layer": 20, "mae": 0.0709313228726387, "cos": 0.9999994039535522}, {"quantized layer": 18, "measured layer": 21, "mae": 0.08189430832862854, "cos": 0.999998927116394}, {"quantized layer": 18, "measured layer": 22, "mae": 0.09824288636445999, "cos": 0.9999985694885254}, {"quantized layer": 18, "measured layer": 23, "mae": 0.11601051688194275, "cos": 0.999997615814209}, {"quantized layer": 18, "measured layer": 24, "mae": 0.1424543261528015, "cos": 0.9999970197677612}, {"quantized layer": 18, "measured layer": 25, "mae": 0.1800452619791031, "cos": 0.9999943375587463}, {"quantized layer": 18, "measured layer": 26, "mae": 0.22307245433330536, "cos": 0.9999902248382568}, {"quantized layer": 18, "measured layer": 27, "mae": 0.2721024751663208, "cos": 0.9998531341552734}, {"quantized layer": 19, "measured layer": 0, "mae": 0.0, "cos": 1.0}, {"quantized layer": 19, "measured layer": 1, "mae": 0.0, "cos": 1.0}, {"quantized layer": 19, "measured layer": 2, "mae": 0.0, "cos": 1.0}, {"quantized layer": 19, "measured layer": 3, "mae": 0.0, "cos": 1.0000001192092896}, {"quantized layer": 19, "measured layer": 4, "mae": 0.0, "cos": 0.9999999403953552}, {"quantized layer": 19, "measured layer": 5, "mae": 0.0, "cos": 0.9999998807907104}, {"quantized layer": 19, "measured layer": 6, "mae": 0.0, "cos": 0.9999999403953552}, {"quantized layer": 19, "measured layer": 7, "mae": 0.0, "cos": 1.000000238418579}, {"quantized layer": 19, "measured layer": 8, "mae": 0.0, "cos": 1.0}, {"quantized layer": 19, "measured layer": 9, "mae": 0.0, "cos": 1.0}, {"quantized layer": 19, "measured layer": 10, "mae": 0.0, "cos": 1.0}, {"quantized layer": 19, "measured layer": 11, "mae": 0.0, "cos": 0.9999998807907104}, {"quantized layer": 19, "measured layer": 12, "mae": 0.0, "cos": 1.000000238418579}, {"quantized layer": 19, "measured layer": 13, "mae": 0.0, "cos": 1.0}, {"quantized layer": 19, "measured layer": 14, "mae": 0.0, "cos": 1.0}, {"quantized layer": 19, "measured layer": 15, "mae": 0.0, "cos": 0.9999999403953552}, {"quantized layer": 19, "measured layer": 16, "mae": 0.0, "cos": 1.0}, {"quantized layer": 19, "measured layer": 17, "mae": 0.0, "cos": 1.0}, {"quantized layer": 19, "measured layer": 18, "mae": 0.0, "cos": 1.0}, {"quantized layer": 19, "measured layer": 19, "mae": 0.0, "cos": 0.9999998211860657}, {"quantized layer": 19, "measured layer": 20, "mae": 0.07440434396266937, "cos": 0.9999991655349731}, {"quantized layer": 19, "measured layer": 21, "mae": 0.08607099950313568, "cos": 0.999998927116394}, {"quantized layer": 19, "measured layer": 22, "mae": 0.10243421792984009, "cos": 0.9999984502792358}, {"quantized layer": 19, "measured layer": 23, "mae": 0.12066210806369781, "cos": 0.9999977350234985}, {"quantized layer": 19, "measured layer": 24, "mae": 0.14585550129413605, "cos": 0.9999967217445374}, {"quantized layer": 19, "measured layer": 25, "mae": 0.18341948091983795, "cos": 0.999994158744812}, {"quantized layer": 19, "measured layer": 26, "mae": 0.2279719114303589, "cos": 0.9999905228614807}, {"quantized layer": 19, "measured layer": 27, "mae": 0.2802230417728424, "cos": 0.9998512268066406}, {"quantized layer": 20, "measured layer": 0, "mae": 0.0, "cos": 1.0}, {"quantized layer": 20, "measured layer": 1, "mae": 0.0, "cos": 1.0}, {"quantized layer": 20, "measured layer": 2, "mae": 0.0, "cos": 1.0}, {"quantized layer": 20, "measured layer": 3, "mae": 0.0, "cos": 1.0000001192092896}, {"quantized layer": 20, "measured layer": 4, "mae": 0.0, "cos": 0.9999999403953552}, {"quantized layer": 20, "measured layer": 5, "mae": 0.0, "cos": 0.9999998807907104}, {"quantized layer": 20, "measured layer": 6, "mae": 0.0, "cos": 0.9999999403953552}, {"quantized layer": 20, "measured layer": 7, "mae": 0.0, "cos": 1.000000238418579}, {"quantized layer": 20, "measured layer": 8, "mae": 0.0, "cos": 1.0}, {"quantized layer": 20, "measured layer": 9, "mae": 0.0, "cos": 1.0}, {"quantized layer": 20, "measured layer": 10, "mae": 0.0, "cos": 1.0}, {"quantized layer": 20, "measured layer": 11, "mae": 0.0, "cos": 0.9999998807907104}, {"quantized layer": 20, "measured layer": 12, "mae": 0.0, "cos": 1.000000238418579}, {"quantized layer": 20, "measured layer": 13, "mae": 0.0, "cos": 1.0}, {"quantized layer": 20, "measured layer": 14, "mae": 0.0, "cos": 1.0}, {"quantized layer": 20, "measured layer": 15, "mae": 0.0, "cos": 0.9999999403953552}, {"quantized layer": 20, "measured layer": 16, "mae": 0.0, "cos": 1.0}, {"quantized layer": 20, "measured layer": 17, "mae": 0.0, "cos": 1.0}, {"quantized layer": 20, "measured layer": 18, "mae": 0.0, "cos": 1.0}, {"quantized layer": 20, "measured layer": 19, "mae": 0.0, "cos": 0.9999998211860657}, {"quantized layer": 20, "measured layer": 20, "mae": 0.0, "cos": 0.9999998807907104}, {"quantized layer": 20, "measured layer": 21, "mae": 0.12820009887218475, "cos": 0.999997615814209}, {"quantized layer": 20, "measured layer": 22, "mae": 0.14786289632320404, "cos": 0.999997079372406}, {"quantized layer": 20, "measured layer": 23, "mae": 0.1707708239555359, "cos": 0.9999958276748657}, {"quantized layer": 20, "measured layer": 24, "mae": 0.20365536212921143, "cos": 0.9999939203262329}, {"quantized layer": 20, "measured layer": 25, "mae": 0.25300416350364685, "cos": 0.9999898672103882}, {"quantized layer": 20, "measured layer": 26, "mae": 0.31275564432144165, "cos": 0.9999827742576599}, {"quantized layer": 20, "measured layer": 27, "mae": 0.3796125054359436, "cos": 0.9997366666793823}, {"quantized layer": 21, "measured layer": 0, "mae": 0.0, "cos": 1.0}, {"quantized layer": 21, "measured layer": 1, "mae": 0.0, "cos": 1.0}, {"quantized layer": 21, "measured layer": 2, "mae": 0.0, "cos": 1.0}, {"quantized layer": 21, "measured layer": 3, "mae": 0.0, "cos": 1.0000001192092896}, {"quantized layer": 21, "measured layer": 4, "mae": 0.0, "cos": 0.9999999403953552}, {"quantized layer": 21, "measured layer": 5, "mae": 0.0, "cos": 0.9999998807907104}, {"quantized layer": 21, "measured layer": 6, "mae": 0.0, "cos": 0.9999999403953552}, {"quantized layer": 21, "measured layer": 7, "mae": 0.0, "cos": 1.000000238418579}, {"quantized layer": 21, "measured layer": 8, "mae": 0.0, "cos": 1.0}, {"quantized layer": 21, "measured layer": 9, "mae": 0.0, "cos": 1.0}, {"quantized layer": 21, "measured layer": 10, "mae": 0.0, "cos": 1.0}, {"quantized layer": 21, "measured layer": 11, "mae": 0.0, "cos": 0.9999998807907104}, {"quantized layer": 21, "measured layer": 12, "mae": 0.0, "cos": 1.000000238418579}, {"quantized layer": 21, "measured layer": 13, "mae": 0.0, "cos": 1.0}, {"quantized layer": 21, "measured layer": 14, "mae": 0.0, "cos": 1.0}, {"quantized layer": 21, "measured layer": 15, "mae": 0.0, "cos": 0.9999999403953552}, {"quantized layer": 21, "measured layer": 16, "mae": 0.0, "cos": 1.0}, {"quantized layer": 21, "measured layer": 17, "mae": 0.0, "cos": 1.0}, {"quantized layer": 21, "measured layer": 18, "mae": 0.0, "cos": 1.0}, {"quantized layer": 21, "measured layer": 19, "mae": 0.0, "cos": 0.9999998211860657}, {"quantized layer": 21, "measured layer": 20, "mae": 0.0, "cos": 0.9999998807907104}, {"quantized layer": 21, "measured layer": 21, "mae": 0.0, "cos": 1.0}, {"quantized layer": 21, "measured layer": 22, "mae": 0.11491827666759491, "cos": 0.9999980330467224}, {"quantized layer": 21, "measured layer": 23, "mae": 0.1336328536272049, "cos": 0.9999973773956299}, {"quantized layer": 21, "measured layer": 24, "mae": 0.15988357365131378, "cos": 0.9999963045120239}, {"quantized layer": 21, "measured layer": 25, "mae": 0.20006754994392395, "cos": 0.9999935626983643}, {"quantized layer": 21, "measured layer": 26, "mae": 0.24770691990852356, "cos": 0.9999889135360718}, {"quantized layer": 21, "measured layer": 27, "mae": 0.3026694655418396, "cos": 0.9998318552970886}, {"quantized layer": 22, "measured layer": 0, "mae": 0.0, "cos": 1.0}, {"quantized layer": 22, "measured layer": 1, "mae": 0.0, "cos": 1.0}, {"quantized layer": 22, "measured layer": 2, "mae": 0.0, "cos": 1.0}, {"quantized layer": 22, "measured layer": 3, "mae": 0.0, "cos": 1.0000001192092896}, {"quantized layer": 22, "measured layer": 4, "mae": 0.0, "cos": 0.9999999403953552}, {"quantized layer": 22, "measured layer": 5, "mae": 0.0, "cos": 0.9999998807907104}, {"quantized layer": 22, "measured layer": 6, "mae": 0.0, "cos": 0.9999999403953552}, {"quantized layer": 22, "measured layer": 7, "mae": 0.0, "cos": 1.000000238418579}, {"quantized layer": 22, "measured layer": 8, "mae": 0.0, "cos": 1.0}, {"quantized layer": 22, "measured layer": 9, "mae": 0.0, "cos": 1.0}, {"quantized layer": 22, "measured layer": 10, "mae": 0.0, "cos": 1.0}, {"quantized layer": 22, "measured layer": 11, "mae": 0.0, "cos": 0.9999998807907104}, {"quantized layer": 22, "measured layer": 12, "mae": 0.0, "cos": 1.000000238418579}, {"quantized layer": 22, "measured layer": 13, "mae": 0.0, "cos": 1.0}, {"quantized layer": 22, "measured layer": 14, "mae": 0.0, "cos": 1.0}, {"quantized layer": 22, "measured layer": 15, "mae": 0.0, "cos": 0.9999999403953552}, {"quantized layer": 22, "measured layer": 16, "mae": 0.0, "cos": 1.0}, {"quantized layer": 22, "measured layer": 17, "mae": 0.0, "cos": 1.0}, {"quantized layer": 22, "measured layer": 18, "mae": 0.0, "cos": 1.0}, {"quantized layer": 22, "measured layer": 19, "mae": 0.0, "cos": 0.9999998211860657}, {"quantized layer": 22, "measured layer": 20, "mae": 0.0, "cos": 0.9999998807907104}, {"quantized layer": 22, "measured layer": 21, "mae": 0.0, "cos": 1.0}, {"quantized layer": 22, "measured layer": 22, "mae": 0.0, "cos": 1.0000001192092896}, {"quantized layer": 22, "measured layer": 23, "mae": 0.12354263663291931, "cos": 0.9999976754188538}, {"quantized layer": 22, "measured layer": 24, "mae": 0.1462956815958023, "cos": 0.9999970197677612}, {"quantized layer": 22, "measured layer": 25, "mae": 0.18052582442760468, "cos": 0.9999948740005493}, {"quantized layer": 22, "measured layer": 26, "mae": 0.22196519374847412, "cos": 0.9999916553497314}, {"quantized layer": 22, "measured layer": 27, "mae": 0.27418088912963867, "cos": 0.9998665452003479}, {"quantized layer": 23, "measured layer": 0, "mae": 0.0, "cos": 1.0}, {"quantized layer": 23, "measured layer": 1, "mae": 0.0, "cos": 1.0}, {"quantized layer": 23, "measured layer": 2, "mae": 0.0, "cos": 1.0}, {"quantized layer": 23, "measured layer": 3, "mae": 0.0, "cos": 1.0000001192092896}, {"quantized layer": 23, "measured layer": 4, "mae": 0.0, "cos": 0.9999999403953552}, {"quantized layer": 23, "measured layer": 5, "mae": 0.0, "cos": 0.9999998807907104}, {"quantized layer": 23, "measured layer": 6, "mae": 0.0, "cos": 0.9999999403953552}, {"quantized layer": 23, "measured layer": 7, "mae": 0.0, "cos": 1.000000238418579}, {"quantized layer": 23, "measured layer": 8, "mae": 0.0, "cos": 1.0}, {"quantized layer": 23, "measured layer": 9, "mae": 0.0, "cos": 1.0}, {"quantized layer": 23, "measured layer": 10, "mae": 0.0, "cos": 1.0}, {"quantized layer": 23, "measured layer": 11, "mae": 0.0, "cos": 0.9999998807907104}, {"quantized layer": 23, "measured layer": 12, "mae": 0.0, "cos": 1.000000238418579}, {"quantized layer": 23, "measured layer": 13, "mae": 0.0, "cos": 1.0}, {"quantized layer": 23, "measured layer": 14, "mae": 0.0, "cos": 1.0}, {"quantized layer": 23, "measured layer": 15, "mae": 0.0, "cos": 0.9999999403953552}, {"quantized layer": 23, "measured layer": 16, "mae": 0.0, "cos": 1.0}, {"quantized layer": 23, "measured layer": 17, "mae": 0.0, "cos": 1.0}, {"quantized layer": 23, "measured layer": 18, "mae": 0.0, "cos": 1.0}, {"quantized layer": 23, "measured layer": 19, "mae": 0.0, "cos": 0.9999998211860657}, {"quantized layer": 23, "measured layer": 20, "mae": 0.0, "cos": 0.9999998807907104}, {"quantized layer": 23, "measured layer": 21, "mae": 0.0, "cos": 1.0}, {"quantized layer": 23, "measured layer": 22, "mae": 0.0, "cos": 1.0000001192092896}, {"quantized layer": 23, "measured layer": 23, "mae": 0.0, "cos": 0.9999997615814209}, {"quantized layer": 23, "measured layer": 24, "mae": 0.13159117102622986, "cos": 0.999997615814209}, {"quantized layer": 23, "measured layer": 25, "mae": 0.1618894338607788, "cos": 0.9999958872795105}, {"quantized layer": 23, "measured layer": 26, "mae": 0.19708798825740814, "cos": 0.9999934434890747}, {"quantized layer": 23, "measured layer": 27, "mae": 0.23539169132709503, "cos": 0.9999027252197266}, {"quantized layer": 24, "measured layer": 0, "mae": 0.0, "cos": 1.0}, {"quantized layer": 24, "measured layer": 1, "mae": 0.0, "cos": 1.0}, {"quantized layer": 24, "measured layer": 2, "mae": 0.0, "cos": 1.0}, {"quantized layer": 24, "measured layer": 3, "mae": 0.0, "cos": 1.0000001192092896}, {"quantized layer": 24, "measured layer": 4, "mae": 0.0, "cos": 0.9999999403953552}, {"quantized layer": 24, "measured layer": 5, "mae": 0.0, "cos": 0.9999998807907104}, {"quantized layer": 24, "measured layer": 6, "mae": 0.0, "cos": 0.9999999403953552}, {"quantized layer": 24, "measured layer": 7, "mae": 0.0, "cos": 1.000000238418579}, {"quantized layer": 24, "measured layer": 8, "mae": 0.0, "cos": 1.0}, {"quantized layer": 24, "measured layer": 9, "mae": 0.0, "cos": 1.0}, {"quantized layer": 24, "measured layer": 10, "mae": 0.0, "cos": 1.0}, {"quantized layer": 24, "measured layer": 11, "mae": 0.0, "cos": 0.9999998807907104}, {"quantized layer": 24, "measured layer": 12, "mae": 0.0, "cos": 1.000000238418579}, {"quantized layer": 24, "measured layer": 13, "mae": 0.0, "cos": 1.0}, {"quantized layer": 24, "measured layer": 14, "mae": 0.0, "cos": 1.0}, {"quantized layer": 24, "measured layer": 15, "mae": 0.0, "cos": 0.9999999403953552}, {"quantized layer": 24, "measured layer": 16, "mae": 0.0, "cos": 1.0}, {"quantized layer": 24, "measured layer": 17, "mae": 0.0, "cos": 1.0}, {"quantized layer": 24, "measured layer": 18, "mae": 0.0, "cos": 1.0}, {"quantized layer": 24, "measured layer": 19, "mae": 0.0, "cos": 0.9999998211860657}, {"quantized layer": 24, "measured layer": 20, "mae": 0.0, "cos": 0.9999998807907104}, {"quantized layer": 24, "measured layer": 21, "mae": 0.0, "cos": 1.0}, {"quantized layer": 24, "measured layer": 22, "mae": 0.0, "cos": 1.0000001192092896}, {"quantized layer": 24, "measured layer": 23, "mae": 0.0, "cos": 0.9999997615814209}, {"quantized layer": 24, "measured layer": 24, "mae": 0.0, "cos": 1.000000238418579}, {"quantized layer": 24, "measured layer": 25, "mae": 0.18070988357067108, "cos": 0.999995231628418}, {"quantized layer": 24, "measured layer": 26, "mae": 0.22131870687007904, "cos": 0.9999921321868896}, {"quantized layer": 24, "measured layer": 27, "mae": 0.26828160881996155, "cos": 0.9998798370361328}, {"quantized layer": 25, "measured layer": 0, "mae": 0.0, "cos": 1.0}, {"quantized layer": 25, "measured layer": 1, "mae": 0.0, "cos": 1.0}, {"quantized layer": 25, "measured layer": 2, "mae": 0.0, "cos": 1.0}, {"quantized layer": 25, "measured layer": 3, "mae": 0.0, "cos": 1.0000001192092896}, {"quantized layer": 25, "measured layer": 4, "mae": 0.0, "cos": 0.9999999403953552}, {"quantized layer": 25, "measured layer": 5, "mae": 0.0, "cos": 0.9999998807907104}, {"quantized layer": 25, "measured layer": 6, "mae": 0.0, "cos": 0.9999999403953552}, {"quantized layer": 25, "measured layer": 7, "mae": 0.0, "cos": 1.000000238418579}, {"quantized layer": 25, "measured layer": 8, "mae": 0.0, "cos": 1.0}, {"quantized layer": 25, "measured layer": 9, "mae": 0.0, "cos": 1.0}, {"quantized layer": 25, "measured layer": 10, "mae": 0.0, "cos": 1.0}, {"quantized layer": 25, "measured layer": 11, "mae": 0.0, "cos": 0.9999998807907104}, {"quantized layer": 25, "measured layer": 12, "mae": 0.0, "cos": 1.000000238418579}, {"quantized layer": 25, "measured layer": 13, "mae": 0.0, "cos": 1.0}, {"quantized layer": 25, "measured layer": 14, "mae": 0.0, "cos": 1.0}, {"quantized layer": 25, "measured layer": 15, "mae": 0.0, "cos": 0.9999999403953552}, {"quantized layer": 25, "measured layer": 16, "mae": 0.0, "cos": 1.0}, {"quantized layer": 25, "measured layer": 17, "mae": 0.0, "cos": 1.0}, {"quantized layer": 25, "measured layer": 18, "mae": 0.0, "cos": 1.0}, {"quantized layer": 25, "measured layer": 19, "mae": 0.0, "cos": 0.9999998211860657}, {"quantized layer": 25, "measured layer": 20, "mae": 0.0, "cos": 0.9999998807907104}, {"quantized layer": 25, "measured layer": 21, "mae": 0.0, "cos": 1.0}, {"quantized layer": 25, "measured layer": 22, "mae": 0.0, "cos": 1.0000001192092896}, {"quantized layer": 25, "measured layer": 23, "mae": 0.0, "cos": 0.9999997615814209}, {"quantized layer": 25, "measured layer": 24, "mae": 0.0, "cos": 1.000000238418579}, {"quantized layer": 25, "measured layer": 25, "mae": 0.0, "cos": 0.9999998807907104}, {"quantized layer": 25, "measured layer": 26, "mae": 0.28192460536956787, "cos": 0.9999866485595703}, {"quantized layer": 25, "measured layer": 27, "mae": 0.3321806788444519, "cos": 0.999800980091095}, {"quantized layer": 26, "measured layer": 0, "mae": 0.0, "cos": 1.0}, {"quantized layer": 26, "measured layer": 1, "mae": 0.0, "cos": 1.0}, {"quantized layer": 26, "measured layer": 2, "mae": 0.0, "cos": 1.0}, {"quantized layer": 26, "measured layer": 3, "mae": 0.0, "cos": 1.0000001192092896}, {"quantized layer": 26, "measured layer": 4, "mae": 0.0, "cos": 0.9999999403953552}, {"quantized layer": 26, "measured layer": 5, "mae": 0.0, "cos": 0.9999998807907104}, {"quantized layer": 26, "measured layer": 6, "mae": 0.0, "cos": 0.9999999403953552}, {"quantized layer": 26, "measured layer": 7, "mae": 0.0, "cos": 1.000000238418579}, {"quantized layer": 26, "measured layer": 8, "mae": 0.0, "cos": 1.0}, {"quantized layer": 26, "measured layer": 9, "mae": 0.0, "cos": 1.0}, {"quantized layer": 26, "measured layer": 10, "mae": 0.0, "cos": 1.0}, {"quantized layer": 26, "measured layer": 11, "mae": 0.0, "cos": 0.9999998807907104}, {"quantized layer": 26, "measured layer": 12, "mae": 0.0, "cos": 1.000000238418579}, {"quantized layer": 26, "measured layer": 13, "mae": 0.0, "cos": 1.0}, {"quantized layer": 26, "measured layer": 14, "mae": 0.0, "cos": 1.0}, {"quantized layer": 26, "measured layer": 15, "mae": 0.0, "cos": 0.9999999403953552}, {"quantized layer": 26, "measured layer": 16, "mae": 0.0, "cos": 1.0}, {"quantized layer": 26, "measured layer": 17, "mae": 0.0, "cos": 1.0}, {"quantized layer": 26, "measured layer": 18, "mae": 0.0, "cos": 1.0}, {"quantized layer": 26, "measured layer": 19, "mae": 0.0, "cos": 0.9999998211860657}, {"quantized layer": 26, "measured layer": 20, "mae": 0.0, "cos": 0.9999998807907104}, {"quantized layer": 26, "measured layer": 21, "mae": 0.0, "cos": 1.0}, {"quantized layer": 26, "measured layer": 22, "mae": 0.0, "cos": 1.0000001192092896}, {"quantized layer": 26, "measured layer": 23, "mae": 0.0, "cos": 0.9999997615814209}, {"quantized layer": 26, "measured layer": 24, "mae": 0.0, "cos": 1.000000238418579}, {"quantized layer": 26, "measured layer": 25, "mae": 0.0, "cos": 0.9999998807907104}, {"quantized layer": 26, "measured layer": 26, "mae": 0.0, "cos": 0.9999998807907104}, {"quantized layer": 26, "measured layer": 27, "mae": 1.1436587572097778, "cos": 0.9878535270690918}]
+[
+    {
+        "quantized layer": 0,
+        "measured layer": 0,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 0,
+        "measured layer": 1,
+        "mae": 0.010898198932409286,
+        "cos": 0.9988634586334229
+    },
+    {
+        "quantized layer": 0,
+        "measured layer": 2,
+        "mae": 0.01131975557655096,
+        "cos": 0.9995851516723633
+    },
+    {
+        "quantized layer": 0,
+        "measured layer": 3,
+        "mae": 0.011521407403051853,
+        "cos": 0.999557614326477
+    },
+    {
+        "quantized layer": 0,
+        "measured layer": 4,
+        "mae": 0.015013732016086578,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 0,
+        "measured layer": 5,
+        "mae": 0.015189196914434433,
+        "cos": 0.9999998211860657
+    },
+    {
+        "quantized layer": 0,
+        "measured layer": 6,
+        "mae": 0.015000015497207642,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 0,
+        "measured layer": 7,
+        "mae": 0.01527728047221899,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 0,
+        "measured layer": 8,
+        "mae": 0.016016928479075432,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 0,
+        "measured layer": 9,
+        "mae": 0.0173573549836874,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 0,
+        "measured layer": 10,
+        "mae": 0.01542468462139368,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 0,
+        "measured layer": 11,
+        "mae": 0.014895441941916943,
+        "cos": 0.9999997615814209
+    },
+    {
+        "quantized layer": 0,
+        "measured layer": 12,
+        "mae": 0.01506379060447216,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 0,
+        "measured layer": 13,
+        "mae": 0.014997005462646484,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 0,
+        "measured layer": 14,
+        "mae": 0.015374031849205494,
+        "cos": 1.0000001192092896
+    },
+    {
+        "quantized layer": 0,
+        "measured layer": 15,
+        "mae": 0.015426273457705975,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 0,
+        "measured layer": 16,
+        "mae": 0.015650132670998573,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 0,
+        "measured layer": 17,
+        "mae": 0.01610700413584709,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 0,
+        "measured layer": 18,
+        "mae": 0.01687430776655674,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 0,
+        "measured layer": 19,
+        "mae": 0.017536206170916557,
+        "cos": 0.9999997615814209
+    },
+    {
+        "quantized layer": 0,
+        "measured layer": 20,
+        "mae": 0.01940193772315979,
+        "cos": 0.9999998211860657
+    },
+    {
+        "quantized layer": 0,
+        "measured layer": 21,
+        "mae": 0.02214999869465828,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 0,
+        "measured layer": 22,
+        "mae": 0.02574431709945202,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 0,
+        "measured layer": 23,
+        "mae": 0.030090102925896645,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 0,
+        "measured layer": 24,
+        "mae": 0.03615516796708107,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 0,
+        "measured layer": 25,
+        "mae": 0.04491738975048065,
+        "cos": 0.9999996423721313
+    },
+    {
+        "quantized layer": 0,
+        "measured layer": 26,
+        "mae": 0.05585889518260956,
+        "cos": 0.9999993443489075
+    },
+    {
+        "quantized layer": 0,
+        "measured layer": 27,
+        "mae": 0.06774304062128067,
+        "cos": 0.9999915361404419
+    },
+    {
+        "quantized layer": 1,
+        "measured layer": 0,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 1,
+        "measured layer": 1,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 1,
+        "measured layer": 2,
+        "mae": 0.009753834456205368,
+        "cos": 0.9997119903564453
+    },
+    {
+        "quantized layer": 1,
+        "measured layer": 3,
+        "mae": 0.01000097207725048,
+        "cos": 0.9996905326843262
+    },
+    {
+        "quantized layer": 1,
+        "measured layer": 4,
+        "mae": 0.014646130613982677,
+        "cos": 0.9999997615814209
+    },
+    {
+        "quantized layer": 1,
+        "measured layer": 5,
+        "mae": 0.015088208019733429,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 1,
+        "measured layer": 6,
+        "mae": 0.014856508933007717,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 1,
+        "measured layer": 7,
+        "mae": 0.015193813480436802,
+        "cos": 1.0000001192092896
+    },
+    {
+        "quantized layer": 1,
+        "measured layer": 8,
+        "mae": 0.015926850959658623,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 1,
+        "measured layer": 9,
+        "mae": 0.0169855747371912,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 1,
+        "measured layer": 10,
+        "mae": 0.01519574411213398,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 1,
+        "measured layer": 11,
+        "mae": 0.014633061364293098,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 1,
+        "measured layer": 12,
+        "mae": 0.01474958099424839,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 1,
+        "measured layer": 13,
+        "mae": 0.014683220535516739,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 1,
+        "measured layer": 14,
+        "mae": 0.015113115310668945,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 1,
+        "measured layer": 15,
+        "mae": 0.015433606691658497,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 1,
+        "measured layer": 16,
+        "mae": 0.015803588554263115,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 1,
+        "measured layer": 17,
+        "mae": 0.016300560906529427,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 1,
+        "measured layer": 18,
+        "mae": 0.017022212967276573,
+        "cos": 0.9999998211860657
+    },
+    {
+        "quantized layer": 1,
+        "measured layer": 19,
+        "mae": 0.017787232995033264,
+        "cos": 0.9999998211860657
+    },
+    {
+        "quantized layer": 1,
+        "measured layer": 20,
+        "mae": 0.01955641806125641,
+        "cos": 0.9999997615814209
+    },
+    {
+        "quantized layer": 1,
+        "measured layer": 21,
+        "mae": 0.022351114079356194,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 1,
+        "measured layer": 22,
+        "mae": 0.026045065373182297,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 1,
+        "measured layer": 23,
+        "mae": 0.030405493453145027,
+        "cos": 0.9999998211860657
+    },
+    {
+        "quantized layer": 1,
+        "measured layer": 24,
+        "mae": 0.03670389577746391,
+        "cos": 0.9999998211860657
+    },
+    {
+        "quantized layer": 1,
+        "measured layer": 25,
+        "mae": 0.046281419694423676,
+        "cos": 0.9999994039535522
+    },
+    {
+        "quantized layer": 1,
+        "measured layer": 26,
+        "mae": 0.05756952986121178,
+        "cos": 0.9999991655349731
+    },
+    {
+        "quantized layer": 1,
+        "measured layer": 27,
+        "mae": 0.06990905851125717,
+        "cos": 0.9999904036521912
+    },
+    {
+        "quantized layer": 2,
+        "measured layer": 0,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 2,
+        "measured layer": 1,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 2,
+        "measured layer": 2,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 2,
+        "measured layer": 3,
+        "mae": 0.010012640617787838,
+        "cos": 0.9996952414512634
+    },
+    {
+        "quantized layer": 2,
+        "measured layer": 4,
+        "mae": 0.020916657522320747,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 2,
+        "measured layer": 5,
+        "mae": 0.021428534761071205,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 2,
+        "measured layer": 6,
+        "mae": 0.021056033670902252,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 2,
+        "measured layer": 7,
+        "mae": 0.021282747387886047,
+        "cos": 1.0000001192092896
+    },
+    {
+        "quantized layer": 2,
+        "measured layer": 8,
+        "mae": 0.02192782610654831,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 2,
+        "measured layer": 9,
+        "mae": 0.023187395185232162,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 2,
+        "measured layer": 10,
+        "mae": 0.02141481824219227,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 2,
+        "measured layer": 11,
+        "mae": 0.020902052521705627,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 2,
+        "measured layer": 12,
+        "mae": 0.020985471084713936,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 2,
+        "measured layer": 13,
+        "mae": 0.02105550654232502,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 2,
+        "measured layer": 14,
+        "mae": 0.02140996605157852,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 2,
+        "measured layer": 15,
+        "mae": 0.021587319672107697,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 2,
+        "measured layer": 16,
+        "mae": 0.02175489254295826,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 2,
+        "measured layer": 17,
+        "mae": 0.022210469469428062,
+        "cos": 0.9999997615814209
+    },
+    {
+        "quantized layer": 2,
+        "measured layer": 18,
+        "mae": 0.022849448025226593,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 2,
+        "measured layer": 19,
+        "mae": 0.023427460342645645,
+        "cos": 0.9999997615814209
+    },
+    {
+        "quantized layer": 2,
+        "measured layer": 20,
+        "mae": 0.02508504129946232,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 2,
+        "measured layer": 21,
+        "mae": 0.027394846081733704,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 2,
+        "measured layer": 22,
+        "mae": 0.03066110983490944,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 2,
+        "measured layer": 23,
+        "mae": 0.034176718443632126,
+        "cos": 0.9999995231628418
+    },
+    {
+        "quantized layer": 2,
+        "measured layer": 24,
+        "mae": 0.03916472941637039,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 2,
+        "measured layer": 25,
+        "mae": 0.04736718162894249,
+        "cos": 0.9999995231628418
+    },
+    {
+        "quantized layer": 2,
+        "measured layer": 26,
+        "mae": 0.0613773874938488,
+        "cos": 0.9999992847442627
+    },
+    {
+        "quantized layer": 2,
+        "measured layer": 27,
+        "mae": 0.06331941485404968,
+        "cos": 0.999991238117218
+    },
+    {
+        "quantized layer": 3,
+        "measured layer": 0,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 3,
+        "measured layer": 1,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 3,
+        "measured layer": 2,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 3,
+        "measured layer": 3,
+        "mae": 0.0,
+        "cos": 1.0000001192092896
+    },
+    {
+        "quantized layer": 3,
+        "measured layer": 4,
+        "mae": 0.12181375920772552,
+        "cos": 0.9999684691429138
+    },
+    {
+        "quantized layer": 3,
+        "measured layer": 5,
+        "mae": 0.1227278783917427,
+        "cos": 0.9999790787696838
+    },
+    {
+        "quantized layer": 3,
+        "measured layer": 6,
+        "mae": 0.12229593843221664,
+        "cos": 0.9999796748161316
+    },
+    {
+        "quantized layer": 3,
+        "measured layer": 7,
+        "mae": 0.12250450998544693,
+        "cos": 0.9999803304672241
+    },
+    {
+        "quantized layer": 3,
+        "measured layer": 8,
+        "mae": 0.12378230690956116,
+        "cos": 0.9999805688858032
+    },
+    {
+        "quantized layer": 3,
+        "measured layer": 9,
+        "mae": 0.1259169727563858,
+        "cos": 0.9999808073043823
+    },
+    {
+        "quantized layer": 3,
+        "measured layer": 10,
+        "mae": 0.12322492897510529,
+        "cos": 0.9999813437461853
+    },
+    {
+        "quantized layer": 3,
+        "measured layer": 11,
+        "mae": 0.12213379889726639,
+        "cos": 0.9999815225601196
+    },
+    {
+        "quantized layer": 3,
+        "measured layer": 12,
+        "mae": 0.12212175875902176,
+        "cos": 0.9999822378158569
+    },
+    {
+        "quantized layer": 3,
+        "measured layer": 13,
+        "mae": 0.12199179083108902,
+        "cos": 0.9999825358390808
+    },
+    {
+        "quantized layer": 3,
+        "measured layer": 14,
+        "mae": 0.12269825488328934,
+        "cos": 0.9999827146530151
+    },
+    {
+        "quantized layer": 3,
+        "measured layer": 15,
+        "mae": 0.12295524775981903,
+        "cos": 0.9999828934669495
+    },
+    {
+        "quantized layer": 3,
+        "measured layer": 16,
+        "mae": 0.12324925512075424,
+        "cos": 0.9999831914901733
+    },
+    {
+        "quantized layer": 3,
+        "measured layer": 17,
+        "mae": 0.12416316568851471,
+        "cos": 0.9999828934669495
+    },
+    {
+        "quantized layer": 3,
+        "measured layer": 18,
+        "mae": 0.125392347574234,
+        "cos": 0.9999830722808838
+    },
+    {
+        "quantized layer": 3,
+        "measured layer": 19,
+        "mae": 0.12668104469776154,
+        "cos": 0.9999827146530151
+    },
+    {
+        "quantized layer": 3,
+        "measured layer": 20,
+        "mae": 0.12934541702270508,
+        "cos": 0.9999826550483704
+    },
+    {
+        "quantized layer": 3,
+        "measured layer": 21,
+        "mae": 0.13326799869537354,
+        "cos": 0.999982476234436
+    },
+    {
+        "quantized layer": 3,
+        "measured layer": 22,
+        "mae": 0.13894833624362946,
+        "cos": 0.999982476234436
+    },
+    {
+        "quantized layer": 3,
+        "measured layer": 23,
+        "mae": 0.14570803940296173,
+        "cos": 0.9999820590019226
+    },
+    {
+        "quantized layer": 3,
+        "measured layer": 24,
+        "mae": 0.15518368780612946,
+        "cos": 0.9999818801879883
+    },
+    {
+        "quantized layer": 3,
+        "measured layer": 25,
+        "mae": 0.16833828389644623,
+        "cos": 0.999981164932251
+    },
+    {
+        "quantized layer": 3,
+        "measured layer": 26,
+        "mae": 0.1841311901807785,
+        "cos": 0.9999796748161316
+    },
+    {
+        "quantized layer": 3,
+        "measured layer": 27,
+        "mae": 0.20276102423667908,
+        "cos": 0.9997886419296265
+    },
+    {
+        "quantized layer": 4,
+        "measured layer": 0,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 4,
+        "measured layer": 1,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 4,
+        "measured layer": 2,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 4,
+        "measured layer": 3,
+        "mae": 0.0,
+        "cos": 1.0000001192092896
+    },
+    {
+        "quantized layer": 4,
+        "measured layer": 4,
+        "mae": 0.0,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 4,
+        "measured layer": 5,
+        "mae": 0.14007137715816498,
+        "cos": 0.9999755024909973
+    },
+    {
+        "quantized layer": 4,
+        "measured layer": 6,
+        "mae": 0.1396673172712326,
+        "cos": 0.9999762773513794
+    },
+    {
+        "quantized layer": 4,
+        "measured layer": 7,
+        "mae": 0.13976547122001648,
+        "cos": 0.9999768733978271
+    },
+    {
+        "quantized layer": 4,
+        "measured layer": 8,
+        "mae": 0.14093643426895142,
+        "cos": 0.9999774694442749
+    },
+    {
+        "quantized layer": 4,
+        "measured layer": 9,
+        "mae": 0.14339300990104675,
+        "cos": 0.9999775886535645
+    },
+    {
+        "quantized layer": 4,
+        "measured layer": 10,
+        "mae": 0.13966254889965057,
+        "cos": 0.9999783635139465
+    },
+    {
+        "quantized layer": 4,
+        "measured layer": 11,
+        "mae": 0.1385623663663864,
+        "cos": 0.9999784231185913
+    },
+    {
+        "quantized layer": 4,
+        "measured layer": 12,
+        "mae": 0.13865818083286285,
+        "cos": 0.9999793767929077
+    },
+    {
+        "quantized layer": 4,
+        "measured layer": 13,
+        "mae": 0.13863691687583923,
+        "cos": 0.9999797344207764
+    },
+    {
+        "quantized layer": 4,
+        "measured layer": 14,
+        "mae": 0.13954268395900726,
+        "cos": 0.9999797940254211
+    },
+    {
+        "quantized layer": 4,
+        "measured layer": 15,
+        "mae": 0.14003168046474457,
+        "cos": 0.999980092048645
+    },
+    {
+        "quantized layer": 4,
+        "measured layer": 16,
+        "mae": 0.1404341459274292,
+        "cos": 0.9999801516532898
+    },
+    {
+        "quantized layer": 4,
+        "measured layer": 17,
+        "mae": 0.14160417020320892,
+        "cos": 0.9999802112579346
+    },
+    {
+        "quantized layer": 4,
+        "measured layer": 18,
+        "mae": 0.14345486462116241,
+        "cos": 0.9999798536300659
+    },
+    {
+        "quantized layer": 4,
+        "measured layer": 19,
+        "mae": 0.14540810883045197,
+        "cos": 0.9999799728393555
+    },
+    {
+        "quantized layer": 4,
+        "measured layer": 20,
+        "mae": 0.1488688588142395,
+        "cos": 0.9999799132347107
+    },
+    {
+        "quantized layer": 4,
+        "measured layer": 21,
+        "mae": 0.15463128685951233,
+        "cos": 0.9999797940254211
+    },
+    {
+        "quantized layer": 4,
+        "measured layer": 22,
+        "mae": 0.1626826673746109,
+        "cos": 0.9999794960021973
+    },
+    {
+        "quantized layer": 4,
+        "measured layer": 23,
+        "mae": 0.17160744965076447,
+        "cos": 0.9999788999557495
+    },
+    {
+        "quantized layer": 4,
+        "measured layer": 24,
+        "mae": 0.18510308861732483,
+        "cos": 0.9999785423278809
+    },
+    {
+        "quantized layer": 4,
+        "measured layer": 25,
+        "mae": 0.20499229431152344,
+        "cos": 0.9999773502349854
+    },
+    {
+        "quantized layer": 4,
+        "measured layer": 26,
+        "mae": 0.23012419044971466,
+        "cos": 0.999974250793457
+    },
+    {
+        "quantized layer": 4,
+        "measured layer": 27,
+        "mae": 0.2613327205181122,
+        "cos": 0.999687910079956
+    },
+    {
+        "quantized layer": 5,
+        "measured layer": 0,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 5,
+        "measured layer": 1,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 5,
+        "measured layer": 2,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 5,
+        "measured layer": 3,
+        "mae": 0.0,
+        "cos": 1.0000001192092896
+    },
+    {
+        "quantized layer": 5,
+        "measured layer": 4,
+        "mae": 0.0,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 5,
+        "measured layer": 5,
+        "mae": 0.0,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 5,
+        "measured layer": 6,
+        "mae": 0.026621440425515175,
+        "cos": 0.9999997019767761
+    },
+    {
+        "quantized layer": 5,
+        "measured layer": 7,
+        "mae": 0.02729293890297413,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 5,
+        "measured layer": 8,
+        "mae": 0.028448309749364853,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 5,
+        "measured layer": 9,
+        "mae": 0.030913380905985832,
+        "cos": 0.9999997615814209
+    },
+    {
+        "quantized layer": 5,
+        "measured layer": 10,
+        "mae": 0.028109755367040634,
+        "cos": 0.9999998211860657
+    },
+    {
+        "quantized layer": 5,
+        "measured layer": 11,
+        "mae": 0.02730138599872589,
+        "cos": 0.9999997615814209
+    },
+    {
+        "quantized layer": 5,
+        "measured layer": 12,
+        "mae": 0.02763308398425579,
+        "cos": 0.9999997615814209
+    },
+    {
+        "quantized layer": 5,
+        "measured layer": 13,
+        "mae": 0.027728090062737465,
+        "cos": 0.9999998211860657
+    },
+    {
+        "quantized layer": 5,
+        "measured layer": 14,
+        "mae": 0.028563054278492928,
+        "cos": 0.9999995231628418
+    },
+    {
+        "quantized layer": 5,
+        "measured layer": 15,
+        "mae": 0.029409898445010185,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 5,
+        "measured layer": 16,
+        "mae": 0.030438702553510666,
+        "cos": 0.9999997615814209
+    },
+    {
+        "quantized layer": 5,
+        "measured layer": 17,
+        "mae": 0.03163290396332741,
+        "cos": 0.9999995827674866
+    },
+    {
+        "quantized layer": 5,
+        "measured layer": 18,
+        "mae": 0.03343186527490616,
+        "cos": 0.9999995231628418
+    },
+    {
+        "quantized layer": 5,
+        "measured layer": 19,
+        "mae": 0.034815628081560135,
+        "cos": 0.9999995231628418
+    },
+    {
+        "quantized layer": 5,
+        "measured layer": 20,
+        "mae": 0.038872066885232925,
+        "cos": 0.9999995231628418
+    },
+    {
+        "quantized layer": 5,
+        "measured layer": 21,
+        "mae": 0.044849131256341934,
+        "cos": 0.9999997019767761
+    },
+    {
+        "quantized layer": 5,
+        "measured layer": 22,
+        "mae": 0.05338864400982857,
+        "cos": 0.999999463558197
+    },
+    {
+        "quantized layer": 5,
+        "measured layer": 23,
+        "mae": 0.06211860477924347,
+        "cos": 0.9999991655349731
+    },
+    {
+        "quantized layer": 5,
+        "measured layer": 24,
+        "mae": 0.07623065263032913,
+        "cos": 0.9999990463256836
+    },
+    {
+        "quantized layer": 5,
+        "measured layer": 25,
+        "mae": 0.09883320331573486,
+        "cos": 0.9999977350234985
+    },
+    {
+        "quantized layer": 5,
+        "measured layer": 26,
+        "mae": 0.12494359910488129,
+        "cos": 0.9999958276748657
+    },
+    {
+        "quantized layer": 5,
+        "measured layer": 27,
+        "mae": 0.15340681374073029,
+        "cos": 0.9999367594718933
+    },
+    {
+        "quantized layer": 6,
+        "measured layer": 0,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 6,
+        "measured layer": 1,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 6,
+        "measured layer": 2,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 6,
+        "measured layer": 3,
+        "mae": 0.0,
+        "cos": 1.0000001192092896
+    },
+    {
+        "quantized layer": 6,
+        "measured layer": 4,
+        "mae": 0.0,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 6,
+        "measured layer": 5,
+        "mae": 0.0,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 6,
+        "measured layer": 6,
+        "mae": 0.0,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 6,
+        "measured layer": 7,
+        "mae": 0.04160067066550255,
+        "cos": 0.9999996423721313
+    },
+    {
+        "quantized layer": 6,
+        "measured layer": 8,
+        "mae": 0.04304514452815056,
+        "cos": 0.9999996423721313
+    },
+    {
+        "quantized layer": 6,
+        "measured layer": 9,
+        "mae": 0.04644535854458809,
+        "cos": 0.9999997615814209
+    },
+    {
+        "quantized layer": 6,
+        "measured layer": 10,
+        "mae": 0.03939555957913399,
+        "cos": 0.9999996423721313
+    },
+    {
+        "quantized layer": 6,
+        "measured layer": 11,
+        "mae": 0.03708040714263916,
+        "cos": 0.9999997019767761
+    },
+    {
+        "quantized layer": 6,
+        "measured layer": 12,
+        "mae": 0.03691653162240982,
+        "cos": 0.9999998211860657
+    },
+    {
+        "quantized layer": 6,
+        "measured layer": 13,
+        "mae": 0.03643589839339256,
+        "cos": 0.9999998211860657
+    },
+    {
+        "quantized layer": 6,
+        "measured layer": 14,
+        "mae": 0.03709295764565468,
+        "cos": 0.9999996423721313
+    },
+    {
+        "quantized layer": 6,
+        "measured layer": 15,
+        "mae": 0.037044454365968704,
+        "cos": 0.9999997615814209
+    },
+    {
+        "quantized layer": 6,
+        "measured layer": 16,
+        "mae": 0.03758992627263069,
+        "cos": 0.9999998211860657
+    },
+    {
+        "quantized layer": 6,
+        "measured layer": 17,
+        "mae": 0.038639165461063385,
+        "cos": 0.9999996423721313
+    },
+    {
+        "quantized layer": 6,
+        "measured layer": 18,
+        "mae": 0.04030516371130943,
+        "cos": 0.9999996423721313
+    },
+    {
+        "quantized layer": 6,
+        "measured layer": 19,
+        "mae": 0.04154519736766815,
+        "cos": 0.9999995231628418
+    },
+    {
+        "quantized layer": 6,
+        "measured layer": 20,
+        "mae": 0.04565580189228058,
+        "cos": 0.9999997615814209
+    },
+    {
+        "quantized layer": 6,
+        "measured layer": 21,
+        "mae": 0.05200664699077606,
+        "cos": 0.9999996423721313
+    },
+    {
+        "quantized layer": 6,
+        "measured layer": 22,
+        "mae": 0.060522839426994324,
+        "cos": 0.9999994039535522
+    },
+    {
+        "quantized layer": 6,
+        "measured layer": 23,
+        "mae": 0.0702679231762886,
+        "cos": 0.9999992847442627
+    },
+    {
+        "quantized layer": 6,
+        "measured layer": 24,
+        "mae": 0.08463121950626373,
+        "cos": 0.9999991655349731
+    },
+    {
+        "quantized layer": 6,
+        "measured layer": 25,
+        "mae": 0.10510499030351639,
+        "cos": 0.999998152256012
+    },
+    {
+        "quantized layer": 6,
+        "measured layer": 26,
+        "mae": 0.13083456456661224,
+        "cos": 0.9999968409538269
+    },
+    {
+        "quantized layer": 6,
+        "measured layer": 27,
+        "mae": 0.1596742570400238,
+        "cos": 0.999952495098114
+    },
+    {
+        "quantized layer": 7,
+        "measured layer": 0,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 7,
+        "measured layer": 1,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 7,
+        "measured layer": 2,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 7,
+        "measured layer": 3,
+        "mae": 0.0,
+        "cos": 1.0000001192092896
+    },
+    {
+        "quantized layer": 7,
+        "measured layer": 4,
+        "mae": 0.0,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 7,
+        "measured layer": 5,
+        "mae": 0.0,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 7,
+        "measured layer": 6,
+        "mae": 0.0,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 7,
+        "measured layer": 7,
+        "mae": 0.0,
+        "cos": 1.000000238418579
+    },
+    {
+        "quantized layer": 7,
+        "measured layer": 8,
+        "mae": 0.040572281926870346,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 7,
+        "measured layer": 9,
+        "mae": 0.043726976960897446,
+        "cos": 0.9999996423721313
+    },
+    {
+        "quantized layer": 7,
+        "measured layer": 10,
+        "mae": 0.036482103168964386,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 7,
+        "measured layer": 11,
+        "mae": 0.033838383853435516,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 7,
+        "measured layer": 12,
+        "mae": 0.03372178599238396,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 7,
+        "measured layer": 13,
+        "mae": 0.0333518348634243,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 7,
+        "measured layer": 14,
+        "mae": 0.03416033834218979,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 7,
+        "measured layer": 15,
+        "mae": 0.0341474786400795,
+        "cos": 0.9999998211860657
+    },
+    {
+        "quantized layer": 7,
+        "measured layer": 16,
+        "mae": 0.03446974232792854,
+        "cos": 0.9999998211860657
+    },
+    {
+        "quantized layer": 7,
+        "measured layer": 17,
+        "mae": 0.03541651740670204,
+        "cos": 0.9999997615814209
+    },
+    {
+        "quantized layer": 7,
+        "measured layer": 18,
+        "mae": 0.03721774369478226,
+        "cos": 0.9999998211860657
+    },
+    {
+        "quantized layer": 7,
+        "measured layer": 19,
+        "mae": 0.03833303973078728,
+        "cos": 0.9999995827674866
+    },
+    {
+        "quantized layer": 7,
+        "measured layer": 20,
+        "mae": 0.04238555207848549,
+        "cos": 0.9999996423721313
+    },
+    {
+        "quantized layer": 7,
+        "measured layer": 21,
+        "mae": 0.04915458336472511,
+        "cos": 0.9999996423721313
+    },
+    {
+        "quantized layer": 7,
+        "measured layer": 22,
+        "mae": 0.058191731572151184,
+        "cos": 0.9999995231628418
+    },
+    {
+        "quantized layer": 7,
+        "measured layer": 23,
+        "mae": 0.06795516610145569,
+        "cos": 0.9999991655349731
+    },
+    {
+        "quantized layer": 7,
+        "measured layer": 24,
+        "mae": 0.08234886825084686,
+        "cos": 0.9999991655349731
+    },
+    {
+        "quantized layer": 7,
+        "measured layer": 25,
+        "mae": 0.10410316288471222,
+        "cos": 0.9999980926513672
+    },
+    {
+        "quantized layer": 7,
+        "measured layer": 26,
+        "mae": 0.13003236055374146,
+        "cos": 0.9999968409538269
+    },
+    {
+        "quantized layer": 7,
+        "measured layer": 27,
+        "mae": 0.16316384077072144,
+        "cos": 0.9999493360519409
+    },
+    {
+        "quantized layer": 8,
+        "measured layer": 0,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 8,
+        "measured layer": 1,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 8,
+        "measured layer": 2,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 8,
+        "measured layer": 3,
+        "mae": 0.0,
+        "cos": 1.0000001192092896
+    },
+    {
+        "quantized layer": 8,
+        "measured layer": 4,
+        "mae": 0.0,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 8,
+        "measured layer": 5,
+        "mae": 0.0,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 8,
+        "measured layer": 6,
+        "mae": 0.0,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 8,
+        "measured layer": 7,
+        "mae": 0.0,
+        "cos": 1.000000238418579
+    },
+    {
+        "quantized layer": 8,
+        "measured layer": 8,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 8,
+        "measured layer": 9,
+        "mae": 0.041805680841207504,
+        "cos": 0.9999996423721313
+    },
+    {
+        "quantized layer": 8,
+        "measured layer": 10,
+        "mae": 0.0345761775970459,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 8,
+        "measured layer": 11,
+        "mae": 0.031918004155159,
+        "cos": 0.9999997615814209
+    },
+    {
+        "quantized layer": 8,
+        "measured layer": 12,
+        "mae": 0.03151307255029678,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 8,
+        "measured layer": 13,
+        "mae": 0.030638718977570534,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 8,
+        "measured layer": 14,
+        "mae": 0.031028004363179207,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 8,
+        "measured layer": 15,
+        "mae": 0.0307286586612463,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 8,
+        "measured layer": 16,
+        "mae": 0.030744174495339394,
+        "cos": 0.9999997615814209
+    },
+    {
+        "quantized layer": 8,
+        "measured layer": 17,
+        "mae": 0.03143518790602684,
+        "cos": 0.9999997615814209
+    },
+    {
+        "quantized layer": 8,
+        "measured layer": 18,
+        "mae": 0.0329551137983799,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 8,
+        "measured layer": 19,
+        "mae": 0.03382982686161995,
+        "cos": 0.9999997615814209
+    },
+    {
+        "quantized layer": 8,
+        "measured layer": 20,
+        "mae": 0.03716770187020302,
+        "cos": 0.9999997615814209
+    },
+    {
+        "quantized layer": 8,
+        "measured layer": 21,
+        "mae": 0.04284067824482918,
+        "cos": 0.9999996423721313
+    },
+    {
+        "quantized layer": 8,
+        "measured layer": 22,
+        "mae": 0.05027663707733154,
+        "cos": 0.9999996423721313
+    },
+    {
+        "quantized layer": 8,
+        "measured layer": 23,
+        "mae": 0.0588817335665226,
+        "cos": 0.9999992847442627
+    },
+    {
+        "quantized layer": 8,
+        "measured layer": 24,
+        "mae": 0.07168006896972656,
+        "cos": 0.999999463558197
+    },
+    {
+        "quantized layer": 8,
+        "measured layer": 25,
+        "mae": 0.0907849669456482,
+        "cos": 0.9999984502792358
+    },
+    {
+        "quantized layer": 8,
+        "measured layer": 26,
+        "mae": 0.11307647079229355,
+        "cos": 0.9999974966049194
+    },
+    {
+        "quantized layer": 8,
+        "measured layer": 27,
+        "mae": 0.13802406191825867,
+        "cos": 0.9999634027481079
+    },
+    {
+        "quantized layer": 9,
+        "measured layer": 0,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 9,
+        "measured layer": 1,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 9,
+        "measured layer": 2,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 9,
+        "measured layer": 3,
+        "mae": 0.0,
+        "cos": 1.0000001192092896
+    },
+    {
+        "quantized layer": 9,
+        "measured layer": 4,
+        "mae": 0.0,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 9,
+        "measured layer": 5,
+        "mae": 0.0,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 9,
+        "measured layer": 6,
+        "mae": 0.0,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 9,
+        "measured layer": 7,
+        "mae": 0.0,
+        "cos": 1.000000238418579
+    },
+    {
+        "quantized layer": 9,
+        "measured layer": 8,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 9,
+        "measured layer": 9,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 9,
+        "measured layer": 10,
+        "mae": 0.0446539968252182,
+        "cos": 0.9999997615814209
+    },
+    {
+        "quantized layer": 9,
+        "measured layer": 11,
+        "mae": 0.04166216030716896,
+        "cos": 0.9999996423721313
+    },
+    {
+        "quantized layer": 9,
+        "measured layer": 12,
+        "mae": 0.04126827418804169,
+        "cos": 0.9999997615814209
+    },
+    {
+        "quantized layer": 9,
+        "measured layer": 13,
+        "mae": 0.04069438576698303,
+        "cos": 0.9999996423721313
+    },
+    {
+        "quantized layer": 9,
+        "measured layer": 14,
+        "mae": 0.04149002954363823,
+        "cos": 0.9999997019767761
+    },
+    {
+        "quantized layer": 9,
+        "measured layer": 15,
+        "mae": 0.041152581572532654,
+        "cos": 0.9999997019767761
+    },
+    {
+        "quantized layer": 9,
+        "measured layer": 16,
+        "mae": 0.0416816882789135,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 9,
+        "measured layer": 17,
+        "mae": 0.0426698736846447,
+        "cos": 0.9999996423721313
+    },
+    {
+        "quantized layer": 9,
+        "measured layer": 18,
+        "mae": 0.04460213705897331,
+        "cos": 0.9999996423721313
+    },
+    {
+        "quantized layer": 9,
+        "measured layer": 19,
+        "mae": 0.045346859842538834,
+        "cos": 0.9999995231628418
+    },
+    {
+        "quantized layer": 9,
+        "measured layer": 20,
+        "mae": 0.04934386536478996,
+        "cos": 0.9999995231628418
+    },
+    {
+        "quantized layer": 9,
+        "measured layer": 21,
+        "mae": 0.0560976080596447,
+        "cos": 0.9999996423721313
+    },
+    {
+        "quantized layer": 9,
+        "measured layer": 22,
+        "mae": 0.06484903395175934,
+        "cos": 0.9999995231628418
+    },
+    {
+        "quantized layer": 9,
+        "measured layer": 23,
+        "mae": 0.0758434608578682,
+        "cos": 0.9999991059303284
+    },
+    {
+        "quantized layer": 9,
+        "measured layer": 24,
+        "mae": 0.09372265636920929,
+        "cos": 0.9999986886978149
+    },
+    {
+        "quantized layer": 9,
+        "measured layer": 25,
+        "mae": 0.11870163679122925,
+        "cos": 0.9999972581863403
+    },
+    {
+        "quantized layer": 9,
+        "measured layer": 26,
+        "mae": 0.14793604612350464,
+        "cos": 0.9999954700469971
+    },
+    {
+        "quantized layer": 9,
+        "measured layer": 27,
+        "mae": 0.17948968708515167,
+        "cos": 0.9999332427978516
+    },
+    {
+        "quantized layer": 10,
+        "measured layer": 0,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 10,
+        "measured layer": 1,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 10,
+        "measured layer": 2,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 10,
+        "measured layer": 3,
+        "mae": 0.0,
+        "cos": 1.0000001192092896
+    },
+    {
+        "quantized layer": 10,
+        "measured layer": 4,
+        "mae": 0.0,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 10,
+        "measured layer": 5,
+        "mae": 0.0,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 10,
+        "measured layer": 6,
+        "mae": 0.0,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 10,
+        "measured layer": 7,
+        "mae": 0.0,
+        "cos": 1.000000238418579
+    },
+    {
+        "quantized layer": 10,
+        "measured layer": 8,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 10,
+        "measured layer": 9,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 10,
+        "measured layer": 10,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 10,
+        "measured layer": 11,
+        "mae": 0.040609899908304214,
+        "cos": 0.9999995827674866
+    },
+    {
+        "quantized layer": 10,
+        "measured layer": 12,
+        "mae": 0.03996928781270981,
+        "cos": 0.9999997615814209
+    },
+    {
+        "quantized layer": 10,
+        "measured layer": 13,
+        "mae": 0.03851693496108055,
+        "cos": 0.9999997615814209
+    },
+    {
+        "quantized layer": 10,
+        "measured layer": 14,
+        "mae": 0.03927161917090416,
+        "cos": 0.9999997019767761
+    },
+    {
+        "quantized layer": 10,
+        "measured layer": 15,
+        "mae": 0.03924135863780975,
+        "cos": 0.9999997615814209
+    },
+    {
+        "quantized layer": 10,
+        "measured layer": 16,
+        "mae": 0.039806902408599854,
+        "cos": 0.9999997019767761
+    },
+    {
+        "quantized layer": 10,
+        "measured layer": 17,
+        "mae": 0.04100841283798218,
+        "cos": 0.9999995827674866
+    },
+    {
+        "quantized layer": 10,
+        "measured layer": 18,
+        "mae": 0.04323793575167656,
+        "cos": 0.9999997615814209
+    },
+    {
+        "quantized layer": 10,
+        "measured layer": 19,
+        "mae": 0.044724155217409134,
+        "cos": 0.9999996423721313
+    },
+    {
+        "quantized layer": 10,
+        "measured layer": 20,
+        "mae": 0.04979192838072777,
+        "cos": 0.999999463558197
+    },
+    {
+        "quantized layer": 10,
+        "measured layer": 21,
+        "mae": 0.05784519761800766,
+        "cos": 0.9999993443489075
+    },
+    {
+        "quantized layer": 10,
+        "measured layer": 22,
+        "mae": 0.06861541420221329,
+        "cos": 0.9999994039535522
+    },
+    {
+        "quantized layer": 10,
+        "measured layer": 23,
+        "mae": 0.08164124935865402,
+        "cos": 0.9999988079071045
+    },
+    {
+        "quantized layer": 10,
+        "measured layer": 24,
+        "mae": 0.09955921024084091,
+        "cos": 0.9999985098838806
+    },
+    {
+        "quantized layer": 10,
+        "measured layer": 25,
+        "mae": 0.12688535451889038,
+        "cos": 0.9999971389770508
+    },
+    {
+        "quantized layer": 10,
+        "measured layer": 26,
+        "mae": 0.15971964597702026,
+        "cos": 0.9999951720237732
+    },
+    {
+        "quantized layer": 10,
+        "measured layer": 27,
+        "mae": 0.1969369798898697,
+        "cos": 0.9999228715896606
+    },
+    {
+        "quantized layer": 11,
+        "measured layer": 0,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 11,
+        "measured layer": 1,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 11,
+        "measured layer": 2,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 11,
+        "measured layer": 3,
+        "mae": 0.0,
+        "cos": 1.0000001192092896
+    },
+    {
+        "quantized layer": 11,
+        "measured layer": 4,
+        "mae": 0.0,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 11,
+        "measured layer": 5,
+        "mae": 0.0,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 11,
+        "measured layer": 6,
+        "mae": 0.0,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 11,
+        "measured layer": 7,
+        "mae": 0.0,
+        "cos": 1.000000238418579
+    },
+    {
+        "quantized layer": 11,
+        "measured layer": 8,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 11,
+        "measured layer": 9,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 11,
+        "measured layer": 10,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 11,
+        "measured layer": 11,
+        "mae": 0.0,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 11,
+        "measured layer": 12,
+        "mae": 0.047323789447546005,
+        "cos": 0.9999996423721313
+    },
+    {
+        "quantized layer": 11,
+        "measured layer": 13,
+        "mae": 0.04647819697856903,
+        "cos": 0.9999994039535522
+    },
+    {
+        "quantized layer": 11,
+        "measured layer": 14,
+        "mae": 0.0469319224357605,
+        "cos": 0.9999994039535522
+    },
+    {
+        "quantized layer": 11,
+        "measured layer": 15,
+        "mae": 0.046406179666519165,
+        "cos": 0.9999992847442627
+    },
+    {
+        "quantized layer": 11,
+        "measured layer": 16,
+        "mae": 0.04648204147815704,
+        "cos": 0.9999995231628418
+    },
+    {
+        "quantized layer": 11,
+        "measured layer": 17,
+        "mae": 0.04757221043109894,
+        "cos": 0.9999992847442627
+    },
+    {
+        "quantized layer": 11,
+        "measured layer": 18,
+        "mae": 0.04906083270907402,
+        "cos": 0.999999463558197
+    },
+    {
+        "quantized layer": 11,
+        "measured layer": 19,
+        "mae": 0.04960373044013977,
+        "cos": 0.9999993443489075
+    },
+    {
+        "quantized layer": 11,
+        "measured layer": 20,
+        "mae": 0.05375691130757332,
+        "cos": 0.9999992847442627
+    },
+    {
+        "quantized layer": 11,
+        "measured layer": 21,
+        "mae": 0.05995869264006615,
+        "cos": 0.9999994039535522
+    },
+    {
+        "quantized layer": 11,
+        "measured layer": 22,
+        "mae": 0.0684179812669754,
+        "cos": 0.9999991655349731
+    },
+    {
+        "quantized layer": 11,
+        "measured layer": 23,
+        "mae": 0.07811475545167923,
+        "cos": 0.999998927116394
+    },
+    {
+        "quantized layer": 11,
+        "measured layer": 24,
+        "mae": 0.0912667065858841,
+        "cos": 0.9999988079071045
+    },
+    {
+        "quantized layer": 11,
+        "measured layer": 25,
+        "mae": 0.11196635663509369,
+        "cos": 0.9999977946281433
+    },
+    {
+        "quantized layer": 11,
+        "measured layer": 26,
+        "mae": 0.13691022992134094,
+        "cos": 0.9999966025352478
+    },
+    {
+        "quantized layer": 11,
+        "measured layer": 27,
+        "mae": 0.1657508760690689,
+        "cos": 0.9999502897262573
+    },
+    {
+        "quantized layer": 12,
+        "measured layer": 0,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 12,
+        "measured layer": 1,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 12,
+        "measured layer": 2,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 12,
+        "measured layer": 3,
+        "mae": 0.0,
+        "cos": 1.0000001192092896
+    },
+    {
+        "quantized layer": 12,
+        "measured layer": 4,
+        "mae": 0.0,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 12,
+        "measured layer": 5,
+        "mae": 0.0,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 12,
+        "measured layer": 6,
+        "mae": 0.0,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 12,
+        "measured layer": 7,
+        "mae": 0.0,
+        "cos": 1.000000238418579
+    },
+    {
+        "quantized layer": 12,
+        "measured layer": 8,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 12,
+        "measured layer": 9,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 12,
+        "measured layer": 10,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 12,
+        "measured layer": 11,
+        "mae": 0.0,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 12,
+        "measured layer": 12,
+        "mae": 0.0,
+        "cos": 1.000000238418579
+    },
+    {
+        "quantized layer": 12,
+        "measured layer": 13,
+        "mae": 0.05315280333161354,
+        "cos": 0.9999996423721313
+    },
+    {
+        "quantized layer": 12,
+        "measured layer": 14,
+        "mae": 0.05374722182750702,
+        "cos": 0.999999463558197
+    },
+    {
+        "quantized layer": 12,
+        "measured layer": 15,
+        "mae": 0.05283880978822708,
+        "cos": 0.9999995827674866
+    },
+    {
+        "quantized layer": 12,
+        "measured layer": 16,
+        "mae": 0.052814435213804245,
+        "cos": 0.9999996423721313
+    },
+    {
+        "quantized layer": 12,
+        "measured layer": 17,
+        "mae": 0.05376662313938141,
+        "cos": 0.9999995827674866
+    },
+    {
+        "quantized layer": 12,
+        "measured layer": 18,
+        "mae": 0.055823709815740585,
+        "cos": 0.9999995231628418
+    },
+    {
+        "quantized layer": 12,
+        "measured layer": 19,
+        "mae": 0.056877296417951584,
+        "cos": 0.9999995231628418
+    },
+    {
+        "quantized layer": 12,
+        "measured layer": 20,
+        "mae": 0.06244776025414467,
+        "cos": 0.9999994039535522
+    },
+    {
+        "quantized layer": 12,
+        "measured layer": 21,
+        "mae": 0.07162105292081833,
+        "cos": 0.9999993443489075
+    },
+    {
+        "quantized layer": 12,
+        "measured layer": 22,
+        "mae": 0.08405499905347824,
+        "cos": 0.9999991059303284
+    },
+    {
+        "quantized layer": 12,
+        "measured layer": 23,
+        "mae": 0.09894603490829468,
+        "cos": 0.9999982714653015
+    },
+    {
+        "quantized layer": 12,
+        "measured layer": 24,
+        "mae": 0.12018944323062897,
+        "cos": 0.9999978542327881
+    },
+    {
+        "quantized layer": 12,
+        "measured layer": 25,
+        "mae": 0.14992257952690125,
+        "cos": 0.9999961853027344
+    },
+    {
+        "quantized layer": 12,
+        "measured layer": 26,
+        "mae": 0.18794706463813782,
+        "cos": 0.9999934434890747
+    },
+    {
+        "quantized layer": 12,
+        "measured layer": 27,
+        "mae": 0.2290259450674057,
+        "cos": 0.99989914894104
+    },
+    {
+        "quantized layer": 13,
+        "measured layer": 0,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 13,
+        "measured layer": 1,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 13,
+        "measured layer": 2,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 13,
+        "measured layer": 3,
+        "mae": 0.0,
+        "cos": 1.0000001192092896
+    },
+    {
+        "quantized layer": 13,
+        "measured layer": 4,
+        "mae": 0.0,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 13,
+        "measured layer": 5,
+        "mae": 0.0,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 13,
+        "measured layer": 6,
+        "mae": 0.0,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 13,
+        "measured layer": 7,
+        "mae": 0.0,
+        "cos": 1.000000238418579
+    },
+    {
+        "quantized layer": 13,
+        "measured layer": 8,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 13,
+        "measured layer": 9,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 13,
+        "measured layer": 10,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 13,
+        "measured layer": 11,
+        "mae": 0.0,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 13,
+        "measured layer": 12,
+        "mae": 0.0,
+        "cos": 1.000000238418579
+    },
+    {
+        "quantized layer": 13,
+        "measured layer": 13,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 13,
+        "measured layer": 14,
+        "mae": 0.03682014346122742,
+        "cos": 0.9999996423721313
+    },
+    {
+        "quantized layer": 13,
+        "measured layer": 15,
+        "mae": 0.03601954132318497,
+        "cos": 0.9999996423721313
+    },
+    {
+        "quantized layer": 13,
+        "measured layer": 16,
+        "mae": 0.03558044880628586,
+        "cos": 0.9999997615814209
+    },
+    {
+        "quantized layer": 13,
+        "measured layer": 17,
+        "mae": 0.036346472799777985,
+        "cos": 0.9999996423721313
+    },
+    {
+        "quantized layer": 13,
+        "measured layer": 18,
+        "mae": 0.03801893815398216,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 13,
+        "measured layer": 19,
+        "mae": 0.03840738162398338,
+        "cos": 0.9999997019767761
+    },
+    {
+        "quantized layer": 13,
+        "measured layer": 20,
+        "mae": 0.042159199714660645,
+        "cos": 0.9999997615814209
+    },
+    {
+        "quantized layer": 13,
+        "measured layer": 21,
+        "mae": 0.04849987477064133,
+        "cos": 0.9999997615814209
+    },
+    {
+        "quantized layer": 13,
+        "measured layer": 22,
+        "mae": 0.05778475105762482,
+        "cos": 0.9999996423721313
+    },
+    {
+        "quantized layer": 13,
+        "measured layer": 23,
+        "mae": 0.06865565478801727,
+        "cos": 0.9999992847442627
+    },
+    {
+        "quantized layer": 13,
+        "measured layer": 24,
+        "mae": 0.0843314677476883,
+        "cos": 0.9999991655349731
+    },
+    {
+        "quantized layer": 13,
+        "measured layer": 25,
+        "mae": 0.10709071159362793,
+        "cos": 0.9999979138374329
+    },
+    {
+        "quantized layer": 13,
+        "measured layer": 26,
+        "mae": 0.13308753073215485,
+        "cos": 0.9999963045120239
+    },
+    {
+        "quantized layer": 13,
+        "measured layer": 27,
+        "mae": 0.16080032289028168,
+        "cos": 0.9999467134475708
+    },
+    {
+        "quantized layer": 14,
+        "measured layer": 0,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 14,
+        "measured layer": 1,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 14,
+        "measured layer": 2,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 14,
+        "measured layer": 3,
+        "mae": 0.0,
+        "cos": 1.0000001192092896
+    },
+    {
+        "quantized layer": 14,
+        "measured layer": 4,
+        "mae": 0.0,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 14,
+        "measured layer": 5,
+        "mae": 0.0,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 14,
+        "measured layer": 6,
+        "mae": 0.0,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 14,
+        "measured layer": 7,
+        "mae": 0.0,
+        "cos": 1.000000238418579
+    },
+    {
+        "quantized layer": 14,
+        "measured layer": 8,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 14,
+        "measured layer": 9,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 14,
+        "measured layer": 10,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 14,
+        "measured layer": 11,
+        "mae": 0.0,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 14,
+        "measured layer": 12,
+        "mae": 0.0,
+        "cos": 1.000000238418579
+    },
+    {
+        "quantized layer": 14,
+        "measured layer": 13,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 14,
+        "measured layer": 14,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 14,
+        "measured layer": 15,
+        "mae": 0.042163070291280746,
+        "cos": 0.9999997615814209
+    },
+    {
+        "quantized layer": 14,
+        "measured layer": 16,
+        "mae": 0.041778311133384705,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 14,
+        "measured layer": 17,
+        "mae": 0.04231175407767296,
+        "cos": 0.9999996423721313
+    },
+    {
+        "quantized layer": 14,
+        "measured layer": 18,
+        "mae": 0.04431972652673721,
+        "cos": 0.9999998211860657
+    },
+    {
+        "quantized layer": 14,
+        "measured layer": 19,
+        "mae": 0.04454289749264717,
+        "cos": 0.9999996423721313
+    },
+    {
+        "quantized layer": 14,
+        "measured layer": 20,
+        "mae": 0.04892624169588089,
+        "cos": 0.9999996423721313
+    },
+    {
+        "quantized layer": 14,
+        "measured layer": 21,
+        "mae": 0.05678882822394371,
+        "cos": 0.9999996423721313
+    },
+    {
+        "quantized layer": 14,
+        "measured layer": 22,
+        "mae": 0.0677383691072464,
+        "cos": 0.9999992847442627
+    },
+    {
+        "quantized layer": 14,
+        "measured layer": 23,
+        "mae": 0.08037090301513672,
+        "cos": 0.9999988079071045
+    },
+    {
+        "quantized layer": 14,
+        "measured layer": 24,
+        "mae": 0.09793980419635773,
+        "cos": 0.9999982118606567
+    },
+    {
+        "quantized layer": 14,
+        "measured layer": 25,
+        "mae": 0.12442345917224884,
+        "cos": 0.9999970197677612
+    },
+    {
+        "quantized layer": 14,
+        "measured layer": 26,
+        "mae": 0.1562463790178299,
+        "cos": 0.9999948740005493
+    },
+    {
+        "quantized layer": 14,
+        "measured layer": 27,
+        "mae": 0.19391614198684692,
+        "cos": 0.9999192953109741
+    },
+    {
+        "quantized layer": 15,
+        "measured layer": 0,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 15,
+        "measured layer": 1,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 15,
+        "measured layer": 2,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 15,
+        "measured layer": 3,
+        "mae": 0.0,
+        "cos": 1.0000001192092896
+    },
+    {
+        "quantized layer": 15,
+        "measured layer": 4,
+        "mae": 0.0,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 15,
+        "measured layer": 5,
+        "mae": 0.0,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 15,
+        "measured layer": 6,
+        "mae": 0.0,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 15,
+        "measured layer": 7,
+        "mae": 0.0,
+        "cos": 1.000000238418579
+    },
+    {
+        "quantized layer": 15,
+        "measured layer": 8,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 15,
+        "measured layer": 9,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 15,
+        "measured layer": 10,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 15,
+        "measured layer": 11,
+        "mae": 0.0,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 15,
+        "measured layer": 12,
+        "mae": 0.0,
+        "cos": 1.000000238418579
+    },
+    {
+        "quantized layer": 15,
+        "measured layer": 13,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 15,
+        "measured layer": 14,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 15,
+        "measured layer": 15,
+        "mae": 0.0,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 15,
+        "measured layer": 16,
+        "mae": 0.03716505318880081,
+        "cos": 0.9999997615814209
+    },
+    {
+        "quantized layer": 15,
+        "measured layer": 17,
+        "mae": 0.03761688619852066,
+        "cos": 0.9999997019767761
+    },
+    {
+        "quantized layer": 15,
+        "measured layer": 18,
+        "mae": 0.0393797941505909,
+        "cos": 0.9999997615814209
+    },
+    {
+        "quantized layer": 15,
+        "measured layer": 19,
+        "mae": 0.03982234373688698,
+        "cos": 0.9999996423721313
+    },
+    {
+        "quantized layer": 15,
+        "measured layer": 20,
+        "mae": 0.04425055533647537,
+        "cos": 0.9999996423721313
+    },
+    {
+        "quantized layer": 15,
+        "measured layer": 21,
+        "mae": 0.051025986671447754,
+        "cos": 0.9999997019767761
+    },
+    {
+        "quantized layer": 15,
+        "measured layer": 22,
+        "mae": 0.06127595156431198,
+        "cos": 0.9999995231628418
+    },
+    {
+        "quantized layer": 15,
+        "measured layer": 23,
+        "mae": 0.07249017059803009,
+        "cos": 0.9999991655349731
+    },
+    {
+        "quantized layer": 15,
+        "measured layer": 24,
+        "mae": 0.09074537456035614,
+        "cos": 0.9999986886978149
+    },
+    {
+        "quantized layer": 15,
+        "measured layer": 25,
+        "mae": 0.11535535752773285,
+        "cos": 0.9999973773956299
+    },
+    {
+        "quantized layer": 15,
+        "measured layer": 26,
+        "mae": 0.14421586692333221,
+        "cos": 0.9999954700469971
+    },
+    {
+        "quantized layer": 15,
+        "measured layer": 27,
+        "mae": 0.1775268167257309,
+        "cos": 0.9999315142631531
+    },
+    {
+        "quantized layer": 16,
+        "measured layer": 0,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 16,
+        "measured layer": 1,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 16,
+        "measured layer": 2,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 16,
+        "measured layer": 3,
+        "mae": 0.0,
+        "cos": 1.0000001192092896
+    },
+    {
+        "quantized layer": 16,
+        "measured layer": 4,
+        "mae": 0.0,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 16,
+        "measured layer": 5,
+        "mae": 0.0,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 16,
+        "measured layer": 6,
+        "mae": 0.0,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 16,
+        "measured layer": 7,
+        "mae": 0.0,
+        "cos": 1.000000238418579
+    },
+    {
+        "quantized layer": 16,
+        "measured layer": 8,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 16,
+        "measured layer": 9,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 16,
+        "measured layer": 10,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 16,
+        "measured layer": 11,
+        "mae": 0.0,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 16,
+        "measured layer": 12,
+        "mae": 0.0,
+        "cos": 1.000000238418579
+    },
+    {
+        "quantized layer": 16,
+        "measured layer": 13,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 16,
+        "measured layer": 14,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 16,
+        "measured layer": 15,
+        "mae": 0.0,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 16,
+        "measured layer": 16,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 16,
+        "measured layer": 17,
+        "mae": 0.04090918228030205,
+        "cos": 0.9999997615814209
+    },
+    {
+        "quantized layer": 16,
+        "measured layer": 18,
+        "mae": 0.04260881245136261,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 16,
+        "measured layer": 19,
+        "mae": 0.043114062398672104,
+        "cos": 0.9999996423721313
+    },
+    {
+        "quantized layer": 16,
+        "measured layer": 20,
+        "mae": 0.04705329239368439,
+        "cos": 0.9999995827674866
+    },
+    {
+        "quantized layer": 16,
+        "measured layer": 21,
+        "mae": 0.054104581475257874,
+        "cos": 0.9999997615814209
+    },
+    {
+        "quantized layer": 16,
+        "measured layer": 22,
+        "mae": 0.06392940878868103,
+        "cos": 0.999999463558197
+    },
+    {
+        "quantized layer": 16,
+        "measured layer": 23,
+        "mae": 0.07484150677919388,
+        "cos": 0.9999991059303284
+    },
+    {
+        "quantized layer": 16,
+        "measured layer": 24,
+        "mae": 0.09116815775632858,
+        "cos": 0.9999988079071045
+    },
+    {
+        "quantized layer": 16,
+        "measured layer": 25,
+        "mae": 0.11512508988380432,
+        "cos": 0.999997615814209
+    },
+    {
+        "quantized layer": 16,
+        "measured layer": 26,
+        "mae": 0.14338740706443787,
+        "cos": 0.9999959468841553
+    },
+    {
+        "quantized layer": 16,
+        "measured layer": 27,
+        "mae": 0.1748468428850174,
+        "cos": 0.99993896484375
+    },
+    {
+        "quantized layer": 17,
+        "measured layer": 0,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 17,
+        "measured layer": 1,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 17,
+        "measured layer": 2,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 17,
+        "measured layer": 3,
+        "mae": 0.0,
+        "cos": 1.0000001192092896
+    },
+    {
+        "quantized layer": 17,
+        "measured layer": 4,
+        "mae": 0.0,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 17,
+        "measured layer": 5,
+        "mae": 0.0,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 17,
+        "measured layer": 6,
+        "mae": 0.0,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 17,
+        "measured layer": 7,
+        "mae": 0.0,
+        "cos": 1.000000238418579
+    },
+    {
+        "quantized layer": 17,
+        "measured layer": 8,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 17,
+        "measured layer": 9,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 17,
+        "measured layer": 10,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 17,
+        "measured layer": 11,
+        "mae": 0.0,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 17,
+        "measured layer": 12,
+        "mae": 0.0,
+        "cos": 1.000000238418579
+    },
+    {
+        "quantized layer": 17,
+        "measured layer": 13,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 17,
+        "measured layer": 14,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 17,
+        "measured layer": 15,
+        "mae": 0.0,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 17,
+        "measured layer": 16,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 17,
+        "measured layer": 17,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 17,
+        "measured layer": 18,
+        "mae": 0.046408627182245255,
+        "cos": 0.9999996423721313
+    },
+    {
+        "quantized layer": 17,
+        "measured layer": 19,
+        "mae": 0.0470270998775959,
+        "cos": 0.9999997615814209
+    },
+    {
+        "quantized layer": 17,
+        "measured layer": 20,
+        "mae": 0.05134778842329979,
+        "cos": 0.9999995231628418
+    },
+    {
+        "quantized layer": 17,
+        "measured layer": 21,
+        "mae": 0.05963738635182381,
+        "cos": 0.9999995231628418
+    },
+    {
+        "quantized layer": 17,
+        "measured layer": 22,
+        "mae": 0.07072684913873672,
+        "cos": 0.9999994039535522
+    },
+    {
+        "quantized layer": 17,
+        "measured layer": 23,
+        "mae": 0.08385813981294632,
+        "cos": 0.9999988675117493
+    },
+    {
+        "quantized layer": 17,
+        "measured layer": 24,
+        "mae": 0.10198520869016647,
+        "cos": 0.9999985098838806
+    },
+    {
+        "quantized layer": 17,
+        "measured layer": 25,
+        "mae": 0.12755009531974792,
+        "cos": 0.9999971389770508
+    },
+    {
+        "quantized layer": 17,
+        "measured layer": 26,
+        "mae": 0.15875625610351562,
+        "cos": 0.9999949932098389
+    },
+    {
+        "quantized layer": 17,
+        "measured layer": 27,
+        "mae": 0.19562694430351257,
+        "cos": 0.9999226331710815
+    },
+    {
+        "quantized layer": 18,
+        "measured layer": 0,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 18,
+        "measured layer": 1,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 18,
+        "measured layer": 2,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 18,
+        "measured layer": 3,
+        "mae": 0.0,
+        "cos": 1.0000001192092896
+    },
+    {
+        "quantized layer": 18,
+        "measured layer": 4,
+        "mae": 0.0,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 18,
+        "measured layer": 5,
+        "mae": 0.0,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 18,
+        "measured layer": 6,
+        "mae": 0.0,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 18,
+        "measured layer": 7,
+        "mae": 0.0,
+        "cos": 1.000000238418579
+    },
+    {
+        "quantized layer": 18,
+        "measured layer": 8,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 18,
+        "measured layer": 9,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 18,
+        "measured layer": 10,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 18,
+        "measured layer": 11,
+        "mae": 0.0,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 18,
+        "measured layer": 12,
+        "mae": 0.0,
+        "cos": 1.000000238418579
+    },
+    {
+        "quantized layer": 18,
+        "measured layer": 13,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 18,
+        "measured layer": 14,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 18,
+        "measured layer": 15,
+        "mae": 0.0,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 18,
+        "measured layer": 16,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 18,
+        "measured layer": 17,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 18,
+        "measured layer": 18,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 18,
+        "measured layer": 19,
+        "mae": 0.06448432058095932,
+        "cos": 0.9999992847442627
+    },
+    {
+        "quantized layer": 18,
+        "measured layer": 20,
+        "mae": 0.0709313228726387,
+        "cos": 0.9999994039535522
+    },
+    {
+        "quantized layer": 18,
+        "measured layer": 21,
+        "mae": 0.08189430832862854,
+        "cos": 0.999998927116394
+    },
+    {
+        "quantized layer": 18,
+        "measured layer": 22,
+        "mae": 0.09824288636445999,
+        "cos": 0.9999985694885254
+    },
+    {
+        "quantized layer": 18,
+        "measured layer": 23,
+        "mae": 0.11601051688194275,
+        "cos": 0.999997615814209
+    },
+    {
+        "quantized layer": 18,
+        "measured layer": 24,
+        "mae": 0.1424543261528015,
+        "cos": 0.9999970197677612
+    },
+    {
+        "quantized layer": 18,
+        "measured layer": 25,
+        "mae": 0.1800452619791031,
+        "cos": 0.9999943375587463
+    },
+    {
+        "quantized layer": 18,
+        "measured layer": 26,
+        "mae": 0.22307245433330536,
+        "cos": 0.9999902248382568
+    },
+    {
+        "quantized layer": 18,
+        "measured layer": 27,
+        "mae": 0.2721024751663208,
+        "cos": 0.9998531341552734
+    },
+    {
+        "quantized layer": 19,
+        "measured layer": 0,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 19,
+        "measured layer": 1,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 19,
+        "measured layer": 2,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 19,
+        "measured layer": 3,
+        "mae": 0.0,
+        "cos": 1.0000001192092896
+    },
+    {
+        "quantized layer": 19,
+        "measured layer": 4,
+        "mae": 0.0,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 19,
+        "measured layer": 5,
+        "mae": 0.0,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 19,
+        "measured layer": 6,
+        "mae": 0.0,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 19,
+        "measured layer": 7,
+        "mae": 0.0,
+        "cos": 1.000000238418579
+    },
+    {
+        "quantized layer": 19,
+        "measured layer": 8,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 19,
+        "measured layer": 9,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 19,
+        "measured layer": 10,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 19,
+        "measured layer": 11,
+        "mae": 0.0,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 19,
+        "measured layer": 12,
+        "mae": 0.0,
+        "cos": 1.000000238418579
+    },
+    {
+        "quantized layer": 19,
+        "measured layer": 13,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 19,
+        "measured layer": 14,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 19,
+        "measured layer": 15,
+        "mae": 0.0,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 19,
+        "measured layer": 16,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 19,
+        "measured layer": 17,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 19,
+        "measured layer": 18,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 19,
+        "measured layer": 19,
+        "mae": 0.0,
+        "cos": 0.9999998211860657
+    },
+    {
+        "quantized layer": 19,
+        "measured layer": 20,
+        "mae": 0.07440434396266937,
+        "cos": 0.9999991655349731
+    },
+    {
+        "quantized layer": 19,
+        "measured layer": 21,
+        "mae": 0.08607099950313568,
+        "cos": 0.999998927116394
+    },
+    {
+        "quantized layer": 19,
+        "measured layer": 22,
+        "mae": 0.10243421792984009,
+        "cos": 0.9999984502792358
+    },
+    {
+        "quantized layer": 19,
+        "measured layer": 23,
+        "mae": 0.12066210806369781,
+        "cos": 0.9999977350234985
+    },
+    {
+        "quantized layer": 19,
+        "measured layer": 24,
+        "mae": 0.14585550129413605,
+        "cos": 0.9999967217445374
+    },
+    {
+        "quantized layer": 19,
+        "measured layer": 25,
+        "mae": 0.18341948091983795,
+        "cos": 0.999994158744812
+    },
+    {
+        "quantized layer": 19,
+        "measured layer": 26,
+        "mae": 0.2279719114303589,
+        "cos": 0.9999905228614807
+    },
+    {
+        "quantized layer": 19,
+        "measured layer": 27,
+        "mae": 0.2802230417728424,
+        "cos": 0.9998512268066406
+    },
+    {
+        "quantized layer": 20,
+        "measured layer": 0,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 20,
+        "measured layer": 1,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 20,
+        "measured layer": 2,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 20,
+        "measured layer": 3,
+        "mae": 0.0,
+        "cos": 1.0000001192092896
+    },
+    {
+        "quantized layer": 20,
+        "measured layer": 4,
+        "mae": 0.0,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 20,
+        "measured layer": 5,
+        "mae": 0.0,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 20,
+        "measured layer": 6,
+        "mae": 0.0,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 20,
+        "measured layer": 7,
+        "mae": 0.0,
+        "cos": 1.000000238418579
+    },
+    {
+        "quantized layer": 20,
+        "measured layer": 8,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 20,
+        "measured layer": 9,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 20,
+        "measured layer": 10,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 20,
+        "measured layer": 11,
+        "mae": 0.0,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 20,
+        "measured layer": 12,
+        "mae": 0.0,
+        "cos": 1.000000238418579
+    },
+    {
+        "quantized layer": 20,
+        "measured layer": 13,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 20,
+        "measured layer": 14,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 20,
+        "measured layer": 15,
+        "mae": 0.0,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 20,
+        "measured layer": 16,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 20,
+        "measured layer": 17,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 20,
+        "measured layer": 18,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 20,
+        "measured layer": 19,
+        "mae": 0.0,
+        "cos": 0.9999998211860657
+    },
+    {
+        "quantized layer": 20,
+        "measured layer": 20,
+        "mae": 0.0,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 20,
+        "measured layer": 21,
+        "mae": 0.12820009887218475,
+        "cos": 0.999997615814209
+    },
+    {
+        "quantized layer": 20,
+        "measured layer": 22,
+        "mae": 0.14786289632320404,
+        "cos": 0.999997079372406
+    },
+    {
+        "quantized layer": 20,
+        "measured layer": 23,
+        "mae": 0.1707708239555359,
+        "cos": 0.9999958276748657
+    },
+    {
+        "quantized layer": 20,
+        "measured layer": 24,
+        "mae": 0.20365536212921143,
+        "cos": 0.9999939203262329
+    },
+    {
+        "quantized layer": 20,
+        "measured layer": 25,
+        "mae": 0.25300416350364685,
+        "cos": 0.9999898672103882
+    },
+    {
+        "quantized layer": 20,
+        "measured layer": 26,
+        "mae": 0.31275564432144165,
+        "cos": 0.9999827742576599
+    },
+    {
+        "quantized layer": 20,
+        "measured layer": 27,
+        "mae": 0.3796125054359436,
+        "cos": 0.9997366666793823
+    },
+    {
+        "quantized layer": 21,
+        "measured layer": 0,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 21,
+        "measured layer": 1,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 21,
+        "measured layer": 2,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 21,
+        "measured layer": 3,
+        "mae": 0.0,
+        "cos": 1.0000001192092896
+    },
+    {
+        "quantized layer": 21,
+        "measured layer": 4,
+        "mae": 0.0,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 21,
+        "measured layer": 5,
+        "mae": 0.0,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 21,
+        "measured layer": 6,
+        "mae": 0.0,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 21,
+        "measured layer": 7,
+        "mae": 0.0,
+        "cos": 1.000000238418579
+    },
+    {
+        "quantized layer": 21,
+        "measured layer": 8,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 21,
+        "measured layer": 9,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 21,
+        "measured layer": 10,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 21,
+        "measured layer": 11,
+        "mae": 0.0,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 21,
+        "measured layer": 12,
+        "mae": 0.0,
+        "cos": 1.000000238418579
+    },
+    {
+        "quantized layer": 21,
+        "measured layer": 13,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 21,
+        "measured layer": 14,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 21,
+        "measured layer": 15,
+        "mae": 0.0,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 21,
+        "measured layer": 16,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 21,
+        "measured layer": 17,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 21,
+        "measured layer": 18,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 21,
+        "measured layer": 19,
+        "mae": 0.0,
+        "cos": 0.9999998211860657
+    },
+    {
+        "quantized layer": 21,
+        "measured layer": 20,
+        "mae": 0.0,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 21,
+        "measured layer": 21,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 21,
+        "measured layer": 22,
+        "mae": 0.11491827666759491,
+        "cos": 0.9999980330467224
+    },
+    {
+        "quantized layer": 21,
+        "measured layer": 23,
+        "mae": 0.1336328536272049,
+        "cos": 0.9999973773956299
+    },
+    {
+        "quantized layer": 21,
+        "measured layer": 24,
+        "mae": 0.15988357365131378,
+        "cos": 0.9999963045120239
+    },
+    {
+        "quantized layer": 21,
+        "measured layer": 25,
+        "mae": 0.20006754994392395,
+        "cos": 0.9999935626983643
+    },
+    {
+        "quantized layer": 21,
+        "measured layer": 26,
+        "mae": 0.24770691990852356,
+        "cos": 0.9999889135360718
+    },
+    {
+        "quantized layer": 21,
+        "measured layer": 27,
+        "mae": 0.3026694655418396,
+        "cos": 0.9998318552970886
+    },
+    {
+        "quantized layer": 22,
+        "measured layer": 0,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 22,
+        "measured layer": 1,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 22,
+        "measured layer": 2,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 22,
+        "measured layer": 3,
+        "mae": 0.0,
+        "cos": 1.0000001192092896
+    },
+    {
+        "quantized layer": 22,
+        "measured layer": 4,
+        "mae": 0.0,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 22,
+        "measured layer": 5,
+        "mae": 0.0,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 22,
+        "measured layer": 6,
+        "mae": 0.0,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 22,
+        "measured layer": 7,
+        "mae": 0.0,
+        "cos": 1.000000238418579
+    },
+    {
+        "quantized layer": 22,
+        "measured layer": 8,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 22,
+        "measured layer": 9,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 22,
+        "measured layer": 10,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 22,
+        "measured layer": 11,
+        "mae": 0.0,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 22,
+        "measured layer": 12,
+        "mae": 0.0,
+        "cos": 1.000000238418579
+    },
+    {
+        "quantized layer": 22,
+        "measured layer": 13,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 22,
+        "measured layer": 14,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 22,
+        "measured layer": 15,
+        "mae": 0.0,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 22,
+        "measured layer": 16,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 22,
+        "measured layer": 17,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 22,
+        "measured layer": 18,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 22,
+        "measured layer": 19,
+        "mae": 0.0,
+        "cos": 0.9999998211860657
+    },
+    {
+        "quantized layer": 22,
+        "measured layer": 20,
+        "mae": 0.0,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 22,
+        "measured layer": 21,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 22,
+        "measured layer": 22,
+        "mae": 0.0,
+        "cos": 1.0000001192092896
+    },
+    {
+        "quantized layer": 22,
+        "measured layer": 23,
+        "mae": 0.12354263663291931,
+        "cos": 0.9999976754188538
+    },
+    {
+        "quantized layer": 22,
+        "measured layer": 24,
+        "mae": 0.1462956815958023,
+        "cos": 0.9999970197677612
+    },
+    {
+        "quantized layer": 22,
+        "measured layer": 25,
+        "mae": 0.18052582442760468,
+        "cos": 0.9999948740005493
+    },
+    {
+        "quantized layer": 22,
+        "measured layer": 26,
+        "mae": 0.22196519374847412,
+        "cos": 0.9999916553497314
+    },
+    {
+        "quantized layer": 22,
+        "measured layer": 27,
+        "mae": 0.27418088912963867,
+        "cos": 0.9998665452003479
+    },
+    {
+        "quantized layer": 23,
+        "measured layer": 0,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 23,
+        "measured layer": 1,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 23,
+        "measured layer": 2,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 23,
+        "measured layer": 3,
+        "mae": 0.0,
+        "cos": 1.0000001192092896
+    },
+    {
+        "quantized layer": 23,
+        "measured layer": 4,
+        "mae": 0.0,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 23,
+        "measured layer": 5,
+        "mae": 0.0,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 23,
+        "measured layer": 6,
+        "mae": 0.0,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 23,
+        "measured layer": 7,
+        "mae": 0.0,
+        "cos": 1.000000238418579
+    },
+    {
+        "quantized layer": 23,
+        "measured layer": 8,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 23,
+        "measured layer": 9,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 23,
+        "measured layer": 10,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 23,
+        "measured layer": 11,
+        "mae": 0.0,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 23,
+        "measured layer": 12,
+        "mae": 0.0,
+        "cos": 1.000000238418579
+    },
+    {
+        "quantized layer": 23,
+        "measured layer": 13,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 23,
+        "measured layer": 14,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 23,
+        "measured layer": 15,
+        "mae": 0.0,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 23,
+        "measured layer": 16,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 23,
+        "measured layer": 17,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 23,
+        "measured layer": 18,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 23,
+        "measured layer": 19,
+        "mae": 0.0,
+        "cos": 0.9999998211860657
+    },
+    {
+        "quantized layer": 23,
+        "measured layer": 20,
+        "mae": 0.0,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 23,
+        "measured layer": 21,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 23,
+        "measured layer": 22,
+        "mae": 0.0,
+        "cos": 1.0000001192092896
+    },
+    {
+        "quantized layer": 23,
+        "measured layer": 23,
+        "mae": 0.0,
+        "cos": 0.9999997615814209
+    },
+    {
+        "quantized layer": 23,
+        "measured layer": 24,
+        "mae": 0.13159117102622986,
+        "cos": 0.999997615814209
+    },
+    {
+        "quantized layer": 23,
+        "measured layer": 25,
+        "mae": 0.1618894338607788,
+        "cos": 0.9999958872795105
+    },
+    {
+        "quantized layer": 23,
+        "measured layer": 26,
+        "mae": 0.19708798825740814,
+        "cos": 0.9999934434890747
+    },
+    {
+        "quantized layer": 23,
+        "measured layer": 27,
+        "mae": 0.23539169132709503,
+        "cos": 0.9999027252197266
+    },
+    {
+        "quantized layer": 24,
+        "measured layer": 0,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 24,
+        "measured layer": 1,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 24,
+        "measured layer": 2,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 24,
+        "measured layer": 3,
+        "mae": 0.0,
+        "cos": 1.0000001192092896
+    },
+    {
+        "quantized layer": 24,
+        "measured layer": 4,
+        "mae": 0.0,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 24,
+        "measured layer": 5,
+        "mae": 0.0,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 24,
+        "measured layer": 6,
+        "mae": 0.0,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 24,
+        "measured layer": 7,
+        "mae": 0.0,
+        "cos": 1.000000238418579
+    },
+    {
+        "quantized layer": 24,
+        "measured layer": 8,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 24,
+        "measured layer": 9,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 24,
+        "measured layer": 10,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 24,
+        "measured layer": 11,
+        "mae": 0.0,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 24,
+        "measured layer": 12,
+        "mae": 0.0,
+        "cos": 1.000000238418579
+    },
+    {
+        "quantized layer": 24,
+        "measured layer": 13,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 24,
+        "measured layer": 14,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 24,
+        "measured layer": 15,
+        "mae": 0.0,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 24,
+        "measured layer": 16,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 24,
+        "measured layer": 17,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 24,
+        "measured layer": 18,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 24,
+        "measured layer": 19,
+        "mae": 0.0,
+        "cos": 0.9999998211860657
+    },
+    {
+        "quantized layer": 24,
+        "measured layer": 20,
+        "mae": 0.0,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 24,
+        "measured layer": 21,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 24,
+        "measured layer": 22,
+        "mae": 0.0,
+        "cos": 1.0000001192092896
+    },
+    {
+        "quantized layer": 24,
+        "measured layer": 23,
+        "mae": 0.0,
+        "cos": 0.9999997615814209
+    },
+    {
+        "quantized layer": 24,
+        "measured layer": 24,
+        "mae": 0.0,
+        "cos": 1.000000238418579
+    },
+    {
+        "quantized layer": 24,
+        "measured layer": 25,
+        "mae": 0.18070988357067108,
+        "cos": 0.999995231628418
+    },
+    {
+        "quantized layer": 24,
+        "measured layer": 26,
+        "mae": 0.22131870687007904,
+        "cos": 0.9999921321868896
+    },
+    {
+        "quantized layer": 24,
+        "measured layer": 27,
+        "mae": 0.26828160881996155,
+        "cos": 0.9998798370361328
+    },
+    {
+        "quantized layer": 25,
+        "measured layer": 0,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 25,
+        "measured layer": 1,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 25,
+        "measured layer": 2,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 25,
+        "measured layer": 3,
+        "mae": 0.0,
+        "cos": 1.0000001192092896
+    },
+    {
+        "quantized layer": 25,
+        "measured layer": 4,
+        "mae": 0.0,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 25,
+        "measured layer": 5,
+        "mae": 0.0,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 25,
+        "measured layer": 6,
+        "mae": 0.0,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 25,
+        "measured layer": 7,
+        "mae": 0.0,
+        "cos": 1.000000238418579
+    },
+    {
+        "quantized layer": 25,
+        "measured layer": 8,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 25,
+        "measured layer": 9,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 25,
+        "measured layer": 10,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 25,
+        "measured layer": 11,
+        "mae": 0.0,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 25,
+        "measured layer": 12,
+        "mae": 0.0,
+        "cos": 1.000000238418579
+    },
+    {
+        "quantized layer": 25,
+        "measured layer": 13,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 25,
+        "measured layer": 14,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 25,
+        "measured layer": 15,
+        "mae": 0.0,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 25,
+        "measured layer": 16,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 25,
+        "measured layer": 17,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 25,
+        "measured layer": 18,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 25,
+        "measured layer": 19,
+        "mae": 0.0,
+        "cos": 0.9999998211860657
+    },
+    {
+        "quantized layer": 25,
+        "measured layer": 20,
+        "mae": 0.0,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 25,
+        "measured layer": 21,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 25,
+        "measured layer": 22,
+        "mae": 0.0,
+        "cos": 1.0000001192092896
+    },
+    {
+        "quantized layer": 25,
+        "measured layer": 23,
+        "mae": 0.0,
+        "cos": 0.9999997615814209
+    },
+    {
+        "quantized layer": 25,
+        "measured layer": 24,
+        "mae": 0.0,
+        "cos": 1.000000238418579
+    },
+    {
+        "quantized layer": 25,
+        "measured layer": 25,
+        "mae": 0.0,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 25,
+        "measured layer": 26,
+        "mae": 0.28192460536956787,
+        "cos": 0.9999866485595703
+    },
+    {
+        "quantized layer": 25,
+        "measured layer": 27,
+        "mae": 0.3321806788444519,
+        "cos": 0.999800980091095
+    },
+    {
+        "quantized layer": 26,
+        "measured layer": 0,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 26,
+        "measured layer": 1,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 26,
+        "measured layer": 2,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 26,
+        "measured layer": 3,
+        "mae": 0.0,
+        "cos": 1.0000001192092896
+    },
+    {
+        "quantized layer": 26,
+        "measured layer": 4,
+        "mae": 0.0,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 26,
+        "measured layer": 5,
+        "mae": 0.0,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 26,
+        "measured layer": 6,
+        "mae": 0.0,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 26,
+        "measured layer": 7,
+        "mae": 0.0,
+        "cos": 1.000000238418579
+    },
+    {
+        "quantized layer": 26,
+        "measured layer": 8,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 26,
+        "measured layer": 9,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 26,
+        "measured layer": 10,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 26,
+        "measured layer": 11,
+        "mae": 0.0,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 26,
+        "measured layer": 12,
+        "mae": 0.0,
+        "cos": 1.000000238418579
+    },
+    {
+        "quantized layer": 26,
+        "measured layer": 13,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 26,
+        "measured layer": 14,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 26,
+        "measured layer": 15,
+        "mae": 0.0,
+        "cos": 0.9999999403953552
+    },
+    {
+        "quantized layer": 26,
+        "measured layer": 16,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 26,
+        "measured layer": 17,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 26,
+        "measured layer": 18,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 26,
+        "measured layer": 19,
+        "mae": 0.0,
+        "cos": 0.9999998211860657
+    },
+    {
+        "quantized layer": 26,
+        "measured layer": 20,
+        "mae": 0.0,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 26,
+        "measured layer": 21,
+        "mae": 0.0,
+        "cos": 1.0
+    },
+    {
+        "quantized layer": 26,
+        "measured layer": 22,
+        "mae": 0.0,
+        "cos": 1.0000001192092896
+    },
+    {
+        "quantized layer": 26,
+        "measured layer": 23,
+        "mae": 0.0,
+        "cos": 0.9999997615814209
+    },
+    {
+        "quantized layer": 26,
+        "measured layer": 24,
+        "mae": 0.0,
+        "cos": 1.000000238418579
+    },
+    {
+        "quantized layer": 26,
+        "measured layer": 25,
+        "mae": 0.0,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 26,
+        "measured layer": 26,
+        "mae": 0.0,
+        "cos": 0.9999998807907104
+    },
+    {
+        "quantized layer": 26,
+        "measured layer": 27,
+        "mae": 1.1436587572097778,
+        "cos": 0.9878535270690918
+    }
+]
