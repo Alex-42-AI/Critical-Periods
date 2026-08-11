@@ -86,7 +86,7 @@ original_types = (torch.float16, torch.float32, torch.float64)
 
 BITS = 4
 
-model_names = ("HuggingFaceTB/SmolLM2-360M", "Qwen/Qwen2.5-3B", "Qwen/Qwen2.5-7B-Instruct", "microsoft/Phi-3-mini-4k-instruct", "HuggingFaceTB/SmolLM2-1.7B-Instruct")
+model_names = ("HuggingFaceTB/SmolLM3-3B", "mistralai/Mistral-7B-Instruct-v0.3", "allenai/OLMo-1B-hf", "allenai/OLMo-7B-hf", "meta-llama/Llama-3.2-1B", "meta-llama/Llama-3.2-3B")[2:]
 
 prompts = ["Explain gravity.", "What is 173 × 29?", "Write a Python function to reverse a list.", "Translate 'Good morning' into Bulgarian.", "Why is the sky blue?"]
 
@@ -97,17 +97,14 @@ for model_name in model_names:
     for original_type in original_types:
         experiments.append((model_name, original_type))
 
-for case, (model_name, original_type) in enumerate(experiments[START:], START):
+for case, (model_name, original_type) in enumerate(experiments[START:], START + 15):
     print(case, model_name, original_type)
 
-    case_dir = Path(f"reverse/case{case:03d}")
+    case_dir = Path(f"reverse_new/case{case:03d}")
     case_dir.mkdir(parents=True, exist_ok=True)
 
     case_unquantized_dir = case_dir / "unquantized"
     case_unquantized_dir.mkdir(parents=True, exist_ok=True)
-
-    case_quantized_dir = case_dir / "quantized"
-    case_quantized_dir.mkdir(parents=True, exist_ok=True)
 
     with open(case_dir / "metadata.json", "w", encoding="utf-8") as f:
         dump({"Device": device, "Model": model_name, "Original type": str(original_type)[6:], "quantization": f"int{BITS}", "prompts": prompts}, f, indent=4)
@@ -115,8 +112,7 @@ for case, (model_name, original_type) in enumerate(experiments[START:], START):
     prompts_dir = case_dir / "prompts"
     prompts_dir.mkdir(parents=True, exist_ok=True)
 
-    global_fp_heatmap_mae, global_q_heatmap_mae = [], []
-    global_fp_RMSNorm_json, global_q_RMSNorm_json = [], []
+    global_fp_heatmap_mae, global_fp_RMSNorm_json = [], []
     global_fp_q_RMSNorm_json = []
     global_fp_q_damage = {"mae": [], "cosine": []}
 
@@ -131,11 +127,8 @@ for case, (model_name, original_type) in enumerate(experiments[START:], START):
         prompt_unquantized_dir = prompt_dir / "unquantized"
         prompt_unquantized_dir.mkdir(parents=True, exist_ok=True)
 
-        prompt_quantized_dir = prompt_dir / "quantized"
-        prompt_quantized_dir.mkdir(parents=True, exist_ok=True)
-
-        prompt_fp_heatmap_mae, prompt_q_heatmap_mae, prompt_result_json = [], [], []
-        prompt_fp_RMSNorm_json, prompt_q_RMSNorm_json = [], []
+        prompt_fp_heatmap_mae, prompt_result_json = [], []
+        prompt_fp_RMSNorm_json = []
 
         with open(prompt_dir / "content.txt", "w", encoding="utf-8") as f:
             f.write(prompt)
@@ -195,7 +188,7 @@ for case, (model_name, original_type) in enumerate(experiments[START:], START):
             dump({"mae": mae, "cos": cosine}, f, indent=4)
 
         for j, layer in enumerate(quantized.model.layers):
-            fp_result_json, q_result_json = [], []
+            fp_result_json = []
 
             s_layer = prompt_dir / f"spared_layer{j:03d}"
             s_layer.mkdir(parents=True, exist_ok=True)
@@ -203,11 +196,7 @@ for case, (model_name, original_type) in enumerate(experiments[START:], START):
             layer_unquantized_dir = s_layer / "unquantized"
             layer_unquantized_dir.mkdir(parents=True, exist_ok=True)
 
-            layer_quantized_dir = s_layer / "quantized"
-            layer_quantized_dir.mkdir(parents=True, exist_ok=True)
-
             fp_damage_plot = {"layer": [], "mae": [], "cosine": []}
-            q_damage_plot = {"layer": [], "mae": [], "cosine": []}
 
             with torch.no_grad():
                 restore_layer = {key: value.cpu().clone() for key, value in layer.state_dict().items()}
@@ -220,36 +209,22 @@ for case, (model_name, original_type) in enumerate(experiments[START:], START):
 
                 for k, (fp, q, hybrid) in enumerate(list(zip(unquantized_hidden, quantized_hidden, outputs_hybrid.hidden_states))[:-1]):
                     mae_fp = torch.mean(torch.abs(fp.float() - hybrid.float())).item()
-                    mae_q = torch.mean(torch.abs(q.float() - hybrid.float())).item()
 
                     cosine_fp = torch.nn.functional.cosine_similarity(fp.float().flatten(), hybrid.float().flatten(), dim=0).item()
-                    cosine_q = torch.nn.functional.cosine_similarity(q.float().flatten(), hybrid.float().flatten(), dim=0).item()
 
                     fp_damage_plot["layer"].append(k)
                     fp_damage_plot["mae"].append(mae_fp)
                     fp_damage_plot["cosine"].append(cosine_fp)
 
-                    q_damage_plot["layer"].append(k)
-                    q_damage_plot["mae"].append(mae_q)
-                    q_damage_plot["cosine"].append(cosine_q)
-
                     prompt_fp_heatmap_mae.append({"spared_layer": j, "measured_layer": k, "mae": mae_fp})
                     global_fp_heatmap_mae.append({"prompt": i, "spared_layer": j, "measured_layer": k, "mae": mae_fp})
 
-                    prompt_q_heatmap_mae.append({"spared_layer": j, "measured_layer": k, "mae": mae_q})
-                    global_q_heatmap_mae.append({"prompt": i, "spared_layer": j, "measured_layer": k, "mae": mae_q})
-
                     fp_result_json.append({"measured layer": k, "mae": mae_fp, "cosine": cosine_fp})
-                    q_result_json.append({"measured layer": k, "mae": mae_q, "cosine": cosine_q})
 
-                    prompt_result_json.append({"spared layer": j, "measured layer": k, "mae vs unquantized": mae_fp, "cosine vs unquantized": cosine_fp, "mae vs quantized": mae_q, "cosine vs quantized": cosine_q})
-
+                    prompt_result_json.append({"spared layer": j, "measured layer": k, "mae vs unquantized": mae_fp, "cosine vs unquantized": cosine_fp})
 
                 with open(layer_unquantized_dir / f"layer{j}_damage_results.json", "w", encoding="utf-8") as f:
                     dump(fp_result_json, f, indent=4)
-
-                with open(layer_quantized_dir / f"layer{j}_damage_results.json", "w", encoding="utf-8") as f:
-                    dump(q_result_json, f, indent=4)
 
                 with open(layer_unquantized_dir / f"layer{j}RMSNorm.json", "w") as f:
                     fp, hybrid = unquantized_hidden[-1], outputs_hybrid.hidden_states[-1]
@@ -261,16 +236,6 @@ for case, (model_name, original_type) in enumerate(experiments[START:], START):
                     prompt_fp_RMSNorm_json.append({"quantized layer": j, "mae": mae, "cos": cos})
                     global_fp_RMSNorm_json.append({"prompt": prompt, "quantized layer": j, "mae": mae, "cos": cos})
 
-                with open(layer_quantized_dir / f"layer{j}RMSNorm.json", "w") as f:
-                    q, hybrid = quantized_hidden[-1], outputs_hybrid.hidden_states[-1]
-
-                    mae = torch.mean(torch.abs(q.float() - hybrid.float())).item()
-                    cos = torch.nn.functional.cosine_similarity(q.float().flatten(), hybrid.float().flatten(), 0).item()
-
-                    dump({"mae": mae, "cos": cos}, f, indent=4)
-                    prompt_q_RMSNorm_json.append({"quantized layer": j, "mae": mae, "cos": cos})
-                    global_q_RMSNorm_json.append({"prompt": prompt, "quantized layer": j, "mae": mae, "cos": cos})
-
                 del outputs_hybrid
 
             finally:
@@ -279,9 +244,8 @@ for case, (model_name, original_type) in enumerate(experiments[START:], START):
                 del restore_layer
 
             plot_damage(fp_damage_plot["layer"], fp_damage_plot["mae"], fp_damage_plot["cosine"], f"{Path(model_name).name} | Prompt {i}\nSpared layer {j} | Hybrid vs unquantized", layer_unquantized_dir, f"layer{j}_damage")
-            plot_damage(q_damage_plot["layer"], q_damage_plot["mae"], q_damage_plot["cosine"], f"{Path(model_name).name} | Prompt {i}\nSpared layer {j} | Hybrid vs quantized", layer_quantized_dir, f"layer{j}_damage")
 
-            del fp_damage_plot, q_damage_plot
+            del fp_damage_plot
 
         del quantized, unquantized_hidden, quantized_hidden
 
@@ -299,12 +263,6 @@ for case, (model_name, original_type) in enumerate(experiments[START:], START):
 
         with open(prompt_unquantized_dir / f"prompt{i}_RMSNorm.json", "w", encoding="utf-8") as f:
             dump(prompt_fp_RMSNorm_json, f, indent=4)
-
-        df = DataFrame(prompt_q_heatmap_mae)
-        plot_heatmap(df, "spared_layer", "measured_layer", "mae", "Measured layer", "Spared layer", f"{Path(model_name).name} | Prompt {i}\nHybrid vs quantized | int{BITS}", prompt_quantized_dir / "heatmap_mae.png", prompt_quantized_dir / "heatmap_mae.pdf")
-
-        with open(prompt_quantized_dir / f"prompt{i}_RMSNorm.json", "w", encoding="utf-8") as f:
-            dump(prompt_q_RMSNorm_json, f, indent=4)
 
         del prompt_result_json
 
@@ -325,13 +283,6 @@ for case, (model_name, original_type) in enumerate(experiments[START:], START):
 
     with open(case_unquantized_dir / "RMSNorm.json", "w", encoding="utf-8") as f:
         dump(global_fp_RMSNorm_json, f, indent=4)
-
-    df = DataFrame(global_q_heatmap_mae)
-    df = df.groupby(["spared_layer", "measured_layer"], as_index=False)[["mae"]].mean()
-    plot_heatmap(df, "spared_layer", "measured_layer", "mae", "Measured layer", "Spared layer", f"{Path(model_name).name}\nMean hybrid vs quantized MAE across {len(prompts)} prompts", case_quantized_dir / "heatmap_mae.png", case_quantized_dir / "heatmap_mae.pdf")
-
-    with open(case_quantized_dir / "RMSNorm.json", "w", encoding="utf-8") as f:
-        dump(global_q_RMSNorm_json, f, indent=4)
 
     del tokenizer, inputs
 
