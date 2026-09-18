@@ -204,7 +204,7 @@ for case, (model_name, original_type) in enumerate(experiments[START:], START):
                     fp_h_damage_plot["cosine"].append(cosine)
 
                     prompt_fp_h_heatmap.append({"spared layer": j, "measured hidden": k, "mae": mae, "cosine": cosine})
-                    global_fp_h_heatmap.append({"prompt": i, "spared layer": j, "measured hidden": k, "mae": mae, "cosine": cosine})
+                    global_fp_h_heatmap.append({"prompt": prompt, "spared layer": j, "measured hidden": k, "mae": mae, "cosine": cosine})
 
                     fp_h_result_json.append({"measured hidden": k, "mae": mae, "cosine": cosine})
                     prompt_result_json.append({"spared layer": j, "measured hidden": k, "mae": mae, "cosine": cosine})
