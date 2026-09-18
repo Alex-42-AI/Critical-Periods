@@ -164,7 +164,7 @@ for case, (model_name, original_type) in enumerate(experiments[START:], START):
 
         for k, (fp, q) in enumerate(list(zip(unquantized_hidden, quantized_hidden))[1:], 1):
             mae = torch.mean(torch.abs(fp.float() - q.float())).item()
-            cosine = torch.nn.functional.cosine_similarity(fp.float().flatten(), q.float().flatten(), dim=0).item()
+            cosine = torch.nn.functional.cosine_similarity(fp.double().flatten(), q.double().flatten(), dim=0).item()
 
             prompt_fp_q_damage.append({"layer": k, "mae": mae, "cosine": cosine})
 
@@ -197,7 +197,7 @@ for case, (model_name, original_type) in enumerate(experiments[START:], START):
 
                 for k, (fp, q, hybrid) in enumerate(list(zip(unquantized_hidden, quantized_hidden, outputs_hybrid.hidden_states))[1:], 1):
                     mae = torch.mean(torch.abs(fp.float() - hybrid.float())).item()
-                    cosine = torch.nn.functional.cosine_similarity(fp.float().flatten(), hybrid.float().flatten(), dim=0).item()
+                    cosine = torch.nn.functional.cosine_similarity(fp.double().flatten(), hybrid.double().flatten(), dim=0).item()
 
                     fp_h_damage_plot["layer"].append(k)
                     fp_h_damage_plot["mae"].append(mae)
