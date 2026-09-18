@@ -15,6 +15,10 @@ from json import dump
 
 def quantize_tensor(weight):
     max_int = 2 ** (q_bits - 1) - 1
+
+    if not max_int:
+        return weight.clone()
+
     scale = weight.abs().max() / max_int
 
     return torch.round(weight / scale) * scale
@@ -29,12 +33,30 @@ def quantize(lyr):
                 weight.copy_(quantized)
 
 
-# def last_layer_hook(module, inp, out):
-#     captures["last_layer"] = out[0].detach()
-#
-#
-# def norm_hook(module, inp, out):
-#     captures["norm"] = out.detach()
+def plot_heatmap(dataframe, index, columns, value, xlabel, ylabel, title, *output_files):
+    pivot = dataframe.pivot(index=index, columns=columns, values=value)
+
+    fig, ax = plt.subplots(figsize=(10, 8))
+
+    image = ax.imshow(pivot, aspect="auto", cmap="viridis")
+
+    ax.set_xticks(range(len(pivot.columns)))
+    ax.set_xticklabels(pivot.columns)
+
+    ax.set_yticks(range(len(pivot.index)))
+    ax.set_yticklabels(pivot.index)
+
+    ax.set_xlabel(xlabel)
+    ax.set_ylabel(ylabel)
+    ax.set_title(title)
+
+    fig.colorbar(image, ax=ax, label=value.upper())
+    fig.tight_layout()
+
+    for output_file in output_files:
+        plt.savefig(output_file, bbox_inches="tight")
+
+    plt.close(fig)
 
 
 device = "cuda" if (p := torch.cuda.is_available()) else "cpu"
@@ -53,8 +75,8 @@ START = 0
 experiments = []
 
 for model_name in model_names:
-    for i, original_type in enumerate(original_types):
-        for q_bits in q_bits_ls[2 - i:]:
+    for i, q_bits in enumerate(q_bits_ls):
+        for original_type in original_types[max(0, 2 - i):]:
             experiments.append((model_name, original_type, q_bits))
 
 for case, (model_name, original_type, q_bits) in enumerate(experiments[START:], START):
@@ -67,9 +89,9 @@ for case, (model_name, original_type, q_bits) in enumerate(experiments[START:], 
     prompts_dir.mkdir(parents=True, exist_ok=True)
 
     with open(case_dir / "metadata.json", "w") as f:
-        dump({"Device": device, "Model": model_name, "Original type": str(original_type), "Quantization": f"int{q_bits}", "Prompts": prompts}, f, indent=4)
+        dump({"Device": device, "Model": model_name, "Original type": str(original_type)[6:], "Quantization": f"int{q_bits}", "Prompts": prompts}, f, indent=4)
 
-    global_heatmap_mae, global_result_json, global_RMSNorm_json = [], [], []
+    global_heatmap, global_result_json = [], []
 
     tokenizer = AutoTokenizer.from_pretrained(model_name)
 
@@ -78,7 +100,7 @@ for case, (model_name, original_type, q_bits) in enumerate(experiments[START:], 
 
         prompt_dir = prompts_dir / f"prompt{i}"
         prompt_dir.mkdir(parents=True, exist_ok=True)
-        prompt_heatmap_mae, prompt_result_json, prompt_RMSNorm_json = [], [], []
+        prompt_heatmap, prompt_result_json = [], []
 
         with open(prompt_dir / "content.txt", "w", encoding="utf-8") as f:
             f.write(f"{prompt}\n")
@@ -86,41 +108,24 @@ for case, (model_name, original_type, q_bits) in enumerate(experiments[START:], 
         inputs = tokenizer(prompt, return_tensors="pt")
         inputs = {k: v.to(device) for k, v in inputs.items()}
 
-        model = AutoModelForCausalLM.from_pretrained(model_name, dtype=original_type).to(device)
-        model.eval()
+        unquantized = AutoModelForCausalLM.from_pretrained(model_name, dtype=original_type).to(device)
+        unquantized.eval()
 
         # Verification experiment:
         # hidden_states[-1] corresponds to the output of the model's final RMSNorm,
         # rather than an additional transformer layer. This was verified by comparing
         # the final transformer-layer and RMSNorm outputs using forward hooks.
-        #
-        # with torch.inference_mode():
-        #     outputs = model(**inputs, output_hidden_states=True)
-        #
-        # captures = {}
-        #
-        # h1 = model.model.layers[-1].register_forward_hook(last_layer_hook)
-        # h2 = model.model.norm.register_forward_hook(norm_hook)
-        #
-        # with torch.inference_mode():
-        #     outputs = model(**inputs, output_hidden_states=True)
-        #
-        # h1.remove(), h2.remove()
-        #
-        # print(torch.mean(torch.abs(captures["last_layer"] - outputs.hidden_states[-1])))
-        # print(torch.mean(torch.abs(captures["norm"] - outputs.hidden_states[-1])))
-        # print(torch.mean(torch.abs(captures["last_layer"] - captures["norm"])))
 
         with torch.inference_mode():
-            outputs_fp = model(**inputs, output_hidden_states=True)
-            baseline_hidden = outputs_fp.hidden_states
+            outputs_unquantized = unquantized(**inputs, output_hidden_states=True)
+            unquantized_hidden = outputs_unquantized.hidden_states
 
-        del model, outputs_fp
+        del unquantized, outputs_unquantized
 
-        model_q = AutoModelForCausalLM.from_pretrained(model_name, dtype=original_type).to(device)
-        model_q.eval()
+        quantized = AutoModelForCausalLM.from_pretrained(model_name, dtype=original_type).to(device)
+        quantized.eval()
 
-        for j, layer in enumerate(model_q.model.layers[:-1]):
+        for j, layer in enumerate(quantized.model.layers):
             layer_result_json = []
             q_layer = prompt_dir / f"q_layer{j:03d}"
             q_layer.mkdir(exist_ok=True)
@@ -133,30 +138,21 @@ for case, (model_name, original_type, q_bits) in enumerate(experiments[START:], 
                 quantize(layer)
 
                 with torch.inference_mode():
-                    outputs_q = model_q(**inputs, output_hidden_states=True)
+                    outputs_quantized = quantized(**inputs, output_hidden_states=True)
+                    quantized_hidden = outputs_quantized.hidden_states
 
-                for k, (fp, q) in enumerate(list(zip(baseline_hidden, outputs_q.hidden_states))[:-1]):
+                for k, (fp, q) in enumerate(list(zip(unquantized_hidden, quantized_hidden))[1:], 1):
                     mae = torch.mean(torch.abs(fp.float() - q.float())).item()
-                    cos = torch.nn.functional.cosine_similarity(fp.float().flatten(), q.float().flatten(), 0).item()
+                    cos = torch.nn.functional.cosine_similarity(fp.double().flatten(), q.double().flatten(), 0).item()
 
                     damage_plot["layer"].append(k), damage_plot["mae"].append(mae), damage_plot["cosine"].append(cos)
 
-                    prompt_heatmap_mae.append({"quantized_layer": j, "measured_layer": k, "mae": mae})
-                    global_heatmap_mae.append({"prompt": i, "quantized_layer": j, "measured_layer": k, "mae": mae})
+                    prompt_heatmap.append({"quantized layer": j, "measured hidden": k, "mae": mae, "cosine": cos})
+                    global_heatmap.append({"prompt": prompt, "quantized layer": j, "measured hidden": k, "mae": mae, "cosine": cos})
 
-                    layer_result_json.append({"measured layer": k, "mae": mae, "cos": cos})
-                    prompt_result_json.append({"quantized layer": j, "measured layer": k, "mae": mae, "cos": cos})
-                    global_result_json.append({"prompt": prompt, "quantized layer": j, "measured layer": k, "mae": mae, "cos": cos})
-
-                with open(q_layer / f"layer{j}_RMSNorm.json", "w") as f:
-                    fp, q = baseline_hidden[-1], outputs_q.hidden_states[-1]
-
-                    mae = torch.mean(torch.abs(fp.float() - q.float())).item()
-                    cos = torch.nn.functional.cosine_similarity(fp.float().flatten(), q.float().flatten(), 0).item()
-
-                    dump({"mae": mae, "cos": cos}, f, indent=4)
-                    prompt_RMSNorm_json.append({"quantized layer": j, "mae": mae, "cos": cos})
-                    global_RMSNorm_json.append({"prompt": prompt, "quantized layer": j, "mae": mae, "cos": cos})
+                    layer_result_json.append({"measured hidden": k, "mae": mae, "cos": cos})
+                    prompt_result_json.append({"quantized layer": j, "measured hidden": k, "mae": mae, "cos": cos})
+                    global_result_json.append({"prompt": prompt, "quantized layer": j, "measured hidden": k, "mae": mae, "cos": cos})
 
                 with open(q_layer / f"layer{j}_results.json", "w") as f:
                     dump(layer_result_json, f, indent=4)
@@ -166,12 +162,12 @@ for case, (model_name, original_type, q_bits) in enumerate(experiments[START:], 
             finally:
                 layer.load_state_dict(restore_layer)
 
-                del restore_layer, outputs_q
+                del restore_layer, outputs_quantized
 
             fig, ax1 = plt.subplots(figsize=(9, 4))
 
             ax1.plot(damage_plot["layer"], damage_plot["mae"], marker="o", color="tab:red")
-            ax1.set_xlabel("Measured layer")
+            ax1.set_xlabel("Measured hidden")
             ax1.set_ylabel("MAE", color="tab:red")
 
             ax2 = ax1.twinx()
@@ -187,7 +183,7 @@ for case, (model_name, original_type, q_bits) in enumerate(experiments[START:], 
 
             del damage_plot
 
-        del model_q, baseline_hidden, inputs
+        del quantized, unquantized_hidden, inputs
 
         collect()
 
@@ -200,52 +196,11 @@ for case, (model_name, original_type, q_bits) in enumerate(experiments[START:], 
 
             del prompt_result_json
 
-        quantized_layers = [result["quantized layer"] for result in prompt_RMSNorm_json]
-        rmsnorm_mae = [result["mae"] for result in prompt_RMSNorm_json]
-        rmsnorm_cosine = [result["cos"] for result in prompt_RMSNorm_json]
+        df = DataFrame(prompt_heatmap)
+        plot_heatmap(df, "quantized layer", "measured hidden", "mae", "Measured hidden", "Quantized layer", f"{Path(model_name).name}\nPrompt {i}: MAE representation damage | {str(original_type)[6:]} → int{q_bits}", prompt_dir / "heatmap_mae.png", prompt_dir / "heatmap_mae.pdf")
 
-        fig, ax1 = plt.subplots(figsize=(9, 4))
-
-        ax1.plot(quantized_layers, rmsnorm_mae, marker="o", color="tab:red")
-        ax1.set_xlabel("Quantized layer")
-        ax1.set_ylabel("MAE", color="tab:red")
-        ax1.tick_params(axis="y", labelcolor="tab:red")
-
-        ax2 = ax1.twinx()
-
-        ax2.plot(quantized_layers, rmsnorm_cosine, marker="s", color="tab:blue")
-        ax2.set_ylabel("Cosine similarity", color="tab:blue")
-        ax2.tick_params(axis="y", labelcolor="tab:blue")
-
-        plt.title(f"{Path(model_name).name} | Prompt {i}\nFinal RMSNorm output damage | {str(original_type)[6:]} → int{q_bits}")
-
-        ax1.grid(True)
-        fig.tight_layout()
-
-        plt.savefig(prompt_dir / f"prompt{i}_RMSNorm_plot.png", bbox_inches="tight")
-        plt.savefig(prompt_dir / f"prompt{i}_RMSNorm_plot.pdf", bbox_inches="tight")
-
-        plt.close(fig)
-
-        with open(prompt_dir / f"prompt{i}_RMSNorm.json", "w") as f:
-            dump(prompt_RMSNorm_json, f, indent=4)
-
-            del prompt_RMSNorm_json
-
-        df = DataFrame(prompt_heatmap_mae)
-
-        pivot = df.pivot(index="quantized_layer", columns="measured_layer", values="mae")
-
-        plt.figure(figsize=(10, 8))
-        plt.imshow(pivot, aspect="auto", cmap="viridis")
-        plt.title(f"{Path(model_name).name}\nPrompt {i}: MAE representation damage | {str(original_type)[6:]} → int{q_bits}")
-        plt.xticks(range(len(pivot.columns)), pivot.columns)
-        plt.yticks(range(len(pivot.index)), pivot.index)
-        plt.xlabel("Measured layer")
-        plt.ylabel("Quantized layer")
-        plt.colorbar(label="Hidden-state MAE")
-        plt.savefig(prompt_dir / f"prompt{i}_heatmap_mae.png", bbox_inches="tight")
-        plt.savefig(prompt_dir / f"prompt{i}_heatmap_mae.pdf", bbox_inches="tight")
+        df = DataFrame(prompt_heatmap)
+        plot_heatmap(df, "quantized layer", "measured hidden", "cosine", "Measured hidden", "Quantized layer", f"{Path(model_name).name}\nPrompt {i}: cos sim representation damage | {str(original_type)[6:]} → int{q_bits}", prompt_dir / "heatmap_cos_sim.png", prompt_dir / "heatmap_cos_sim.pdf")
 
     del tokenizer
 
@@ -254,23 +209,10 @@ for case, (model_name, original_type, q_bits) in enumerate(experiments[START:], 
 
         del global_result_json
 
-    with open(case_dir / "global_RMSNorm.json", "w") as f:
-        dump(global_RMSNorm_json, f, indent=4)
+    df = DataFrame(global_heatmap)
+    df = df.groupby(["quantized layer", "measured hidden"], as_index=False)[["mae"]].mean()
+    plot_heatmap(df, "quantized layer", "measured hidden", "mae", "Measured hidden", "Quantized layer", f"Model: {Path(model_name).name} | {str(original_type)[6:]} → int{q_bits}", case_dir / "heatmap_mae.png", case_dir / "heatmap_mae.pdf")
 
-        del global_RMSNorm_json
-
-    df = DataFrame(global_heatmap_mae)
-    df = df.groupby(["quantized_layer", "measured_layer"], as_index=False)[["mae"]].mean()
-
-    pivot = df.pivot(index="quantized_layer", columns="measured_layer", values="mae")
-
-    plt.figure(figsize=(10, 8))
-    plt.imshow(pivot, aspect="auto")
-    plt.title(f"Model: {Path(model_name).name} | {str(original_type)[6:]} → int{q_bits}")
-    plt.xticks(range(len(pivot.columns)), pivot.columns)
-    plt.yticks(range(len(pivot.index)), pivot.index)
-    plt.xlabel("Measured layer")
-    plt.ylabel("Quantized layer")
-    plt.colorbar(label="Hidden-state MAE")
-    plt.savefig(case_dir / "heatmap_mae.png", bbox_inches="tight")
-    plt.savefig(case_dir / "heatmap_mae.pdf", bbox_inches="tight")
+    df = DataFrame(global_heatmap)
+    df = df.groupby(["quantized layer", "measured hidden"], as_index=False)[["cosine"]].mean()
+    plot_heatmap(df, "quantized layer", "measured hidden", "cosine", "Measured hidden", "Quantized layer", f"Model: {Path(model_name).name} | {str(original_type)[6:]} → int{q_bits}", case_dir / "heatmap_cos_sim.png", case_dir / "heatmap_cos_sim.pdf")
