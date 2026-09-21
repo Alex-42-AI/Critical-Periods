@@ -69,7 +69,7 @@ and the quantized-and-dequantized weight is
 
 $$
 \hat W =
-\operator{round}\left(\frac{W}{s}\right)s.
+round\left(\frac{W}{s}\right)s.
 $$
 
 The implementation operates on `torch.nn.Linear` modules.
