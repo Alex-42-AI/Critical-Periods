@@ -92,7 +92,7 @@ model_names = ("HuggingFaceTB/SmolLM2-360M", "Qwen/Qwen2.5-3B", "Qwen/Qwen2.5-7B
 
 prompts = ["Explain gravity.", "What is 173 × 29?", "Write a Python function to reverse a list.", "Translate 'Good morning' into Bulgarian.", "Why is the sky blue?"]
 
-START = 21
+START = 0
 experiments = []
 
 for model_name in model_names:

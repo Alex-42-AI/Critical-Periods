@@ -67,7 +67,7 @@ q_bits_ls = (32, 16, 8, 4, 2)
 
 model_names = ("HuggingFaceTB/SmolLM2-360M", "HuggingFaceTB/SmolLM2-1.7B-Instruct", "HuggingFaceTB/SmolLM3-3B",
                "Qwen/Qwen2.5-3B", "Qwen/Qwen2.5-7B-Instruct", "microsoft/Phi-3-mini-4k-instruct",
-               "mistralai/Mistral-7B-Instruct-v0.3")
+               "mistralai/Mistral-7B-Instruct-v0.3", "meta-llama/Llama-3.2-1B", "meta-llama/Llama-3.2-3B")
 
 prompts = ["Explain gravity.", "What is 173 × 29?", "Write a Python function to reverse a list.", "Translate 'Good morning' into Bulgarian.", "Why is the sky blue?"]
 
