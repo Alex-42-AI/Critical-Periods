@@ -97,7 +97,7 @@ Two metrics are used to compare hidden-state representations.
 For reference representation \(H\) and experimental representation \(\hat H\):
 
 $$
-\mathrm{MAE}
+\MAE
 =
 \frac{1}{n}
 \sum_i |H_i-\hat H_i|.
