@@ -1,8 +1,8 @@
 {
     "Device": "cuda",
     "Model": "HuggingFaceTB/SmolLM3-3B",
-    "Original type": "torch.float32",
-    "Quantization": "int2",
+    "Original type": "float16",
+    "Quantization": "int4",
     "Prompts": [
         "Explain gravity.",
         "What is 173 \u00d7 29?",

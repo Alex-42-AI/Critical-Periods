@@ -1,8 +1,8 @@
 {
     "Device": "cuda",
     "Model": "Qwen/Qwen2.5-7B-Instruct",
-    "Original type": "torch.float16",
-    "Quantization": "int8",
+    "Original type": "float64",
+    "Quantization": "int32",
     "Prompts": [
         "Explain gravity.",
         "What is 173 \u00d7 29?",

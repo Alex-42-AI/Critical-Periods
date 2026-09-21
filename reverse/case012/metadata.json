@@ -1,6 +1,6 @@
 {
     "Device": "cuda",
-    "Model": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+    "Model": "allenai/OLMo-7B-hf",
     "Original type": "float16",
     "quantization": "int4",
     "prompts": [

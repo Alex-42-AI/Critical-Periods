@@ -1,7 +1,7 @@
 {
     "Device": "cuda",
     "Model": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
-    "Original type": "torch.float32",
+    "Original type": "float32",
     "Quantization": "int8",
     "Prompts": [
         "Explain gravity.",
