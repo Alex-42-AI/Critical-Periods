@@ -87,11 +87,12 @@ device = "cuda" if (p := torch.cuda.is_available()) else "cpu"
 BITS = 4
 
 model_names = ("HuggingFaceTB/SmolLM2-360M", "Qwen/Qwen2.5-3B", "Qwen/Qwen2.5-7B-Instruct", "allenai/OLMo-1B-hf",
-               "allenai/OLMo-7B-hf", "microsoft/Phi-3-mini-4k-instruct", "HuggingFaceTB/SmolLM2-1.7B-Instruct")
+               "allenai/OLMo-7B-hf", "microsoft/Phi-3-mini-4k-instruct", "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+               "meta-llama/Llama-3.2-1B", "meta-llama/Llama-3.2-3B")
 
 prompts = ["Explain gravity.", "What is 173 × 29?", "Write a Python function to reverse a list.", "Translate 'Good morning' into Bulgarian.", "Why is the sky blue?"]
 
-START = 5
+START = 21
 experiments = []
 
 for model_name in model_names:
