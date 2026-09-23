@@ -17,6 +17,10 @@ from pathlib import Path
 
 def quantize_tensor(weight):
     max_int = 2 ** (BITS - 1) - 1
+
+    if not max_int:
+        return weight.clone()
+
     scale = weight.abs().max() / max_int
 
     return torch.round(weight / scale) * scale
@@ -91,6 +95,7 @@ model_names = ("HuggingFaceTB/SmolLM2-360M", "Qwen/Qwen2.5-3B", "Qwen/Qwen2.5-7B
                "meta-llama/Llama-3.2-1B", "meta-llama/Llama-3.2-3B")
 
 prompts = ["Explain gravity.", "What is 173 × 29?", "Write a Python function to reverse a list.", "Translate 'Good morning' into Bulgarian.", "Why is the sky blue?"]
+total_prompts = len(prompts)
 
 START = 0
 experiments = []
@@ -122,7 +127,7 @@ for case, (model_name, original_type) in enumerate(experiments[START:], START):
     for i, prompt in enumerate(prompts):
         print(prompt)
 
-        prompt_dir = prompts_dir / f"prompt{i}"
+        prompt_dir = prompts_dir / f"prompt{i:0{total_prompts}d}"
         prompt_dir.mkdir(parents=True, exist_ok=True)
 
         prompt_fp_h_dir = prompt_dir / "unquantized_vs_hybrid"
@@ -165,7 +170,7 @@ for case, (model_name, original_type) in enumerate(experiments[START:], START):
 
         for k, (fp, q) in enumerate(list(zip(unquantized_hidden, quantized_hidden))[1:], 1):
             mae = torch.mean(torch.abs(fp.float() - q.float())).item()
-            cosine = torch.nn.functional.cosine_similarity(fp.double().flatten(), q.double().flatten(), dim=0).item()
+            cosine = torch.nn.functional.cosine_similarity(fp.double().flatten(), q.double().flatten(), 0).item()
 
             prompt_fp_q_damage.append({"layer": k, "mae": mae, "cosine": cosine})
 
@@ -198,7 +203,7 @@ for case, (model_name, original_type) in enumerate(experiments[START:], START):
 
                 for k, (fp, q, hybrid) in enumerate(list(zip(unquantized_hidden, quantized_hidden, outputs_hybrid.hidden_states))[1:], 1):
                     mae = torch.mean(torch.abs(fp.float() - hybrid.float())).item()
-                    cosine = torch.nn.functional.cosine_similarity(fp.double().flatten(), hybrid.double().flatten(), dim=0).item()
+                    cosine = torch.nn.functional.cosine_similarity(fp.double().flatten(), hybrid.double().flatten(), 0).item()
 
                     fp_h_damage_plot["layer"].append(k)
                     fp_h_damage_plot["mae"].append(mae)

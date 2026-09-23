@@ -70,6 +70,7 @@ model_names = ("HuggingFaceTB/SmolLM2-360M", "HuggingFaceTB/SmolLM2-1.7B-Instruc
                "mistralai/Mistral-7B-Instruct-v0.3", "meta-llama/Llama-3.2-1B", "meta-llama/Llama-3.2-3B")
 
 prompts = ["Explain gravity.", "What is 173 × 29?", "Write a Python function to reverse a list.", "Translate 'Good morning' into Bulgarian.", "Why is the sky blue?"]
+total_prompts = len(prompts)
 
 START = 0
 experiments = []
@@ -98,7 +99,7 @@ for case, (model_name, original_type, q_bits) in enumerate(experiments[START:], 
     for i, prompt in enumerate(prompts):
         print(prompt)
 
-        prompt_dir = prompts_dir / f"prompt{i}"
+        prompt_dir = prompts_dir / f"prompt{i:0{total_prompts}d}"
         prompt_dir.mkdir(parents=True, exist_ok=True)
         prompt_heatmap, prompt_result_json = [], []
 
