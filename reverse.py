@@ -95,7 +95,7 @@ model_names = ("HuggingFaceTB/SmolLM2-360M", "Qwen/Qwen2.5-3B", "Qwen/Qwen2.5-7B
                "meta-llama/Llama-3.2-1B", "meta-llama/Llama-3.2-3B")
 
 prompts = ["Explain gravity.", "What is 173 × 29?", "Write a Python function to reverse a list.", "Translate 'Good morning' into Bulgarian.", "Why is the sky blue?"]
-total_prompts = len(prompts)
+format_prompt_index = len(str(len(prompts))) - 1
 
 START = 0
 experiments = []
@@ -127,7 +127,7 @@ for case, (model_name, original_type) in enumerate(experiments[START:], START):
     for i, prompt in enumerate(prompts):
         print(prompt)
 
-        prompt_dir = prompts_dir / f"prompt{i:0{total_prompts}d}"
+        prompt_dir = prompts_dir / f"prompt{i:0{format_prompt_index}d}"
         prompt_dir.mkdir(parents=True, exist_ok=True)
 
         prompt_fp_h_dir = prompt_dir / "unquantized_vs_hybrid"
